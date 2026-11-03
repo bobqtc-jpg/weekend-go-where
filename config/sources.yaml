@@ -1,0 +1,61 @@
+# Where the weekly refresh looks for events. Each source lists one or more
+# fetch strategies, implemented in refresh/fetch.py:
+#   page       fixed URLs, each one article (for pages rewritten every week)
+#   feed       RSS or Atom feed; recent entries are fetched in full
+#   wordpress  WordPress REST API search for recent posts
+#   index      an index page; links matching link_pattern are fetched
+#
+# UNTESTED: this environment's network policy blocks these hosts, so the URLs
+# and strategies are best guesses from web search until the first live run.
+
+defaults:
+  lookback_days: 10
+  max_items: 6
+  title_filter: "(?i)weekend|things to do|what'?s on|happening|events?|school holiday|festival|this (week|month)"
+
+sources:
+  - id: sassymama
+    name: Sassy Mama Singapore
+    strategies:
+      - type: page
+        urls:
+          - https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/
+      - type: index
+        url: https://www.sassymamasg.com/category/whats-on/things-to-do-with-kids/
+        link_pattern: "^https://www\\.sassymamasg\\.com/[a-z0-9-]+/$"
+        max_items: 4
+
+  - id: bykido
+    name: ByKido
+    strategies:
+      - type: feed
+        url: https://www.bykido.com/blogs/events-and-activities.atom
+
+  - id: littledayout
+    name: Little Day Out
+    strategies:
+      - type: wordpress
+        base: https://www.littledayout.com
+        search: ["things to do", "weekend"]
+
+  - id: honeykids
+    name: Honeykids Asia
+    strategies:
+      - type: page
+        urls:
+          - https://honeykidsasia.com/things-to-do-with-kids-this-weekend-singapore/
+
+  - id: sunnycitykids
+    name: Sunny City Kids
+    strategies:
+      - type: index
+        url: https://sunnycitykids.beehiiv.com/archive
+        link_pattern: "^https://sunnycitykids\\.beehiiv\\.com/p/[a-z0-9-]+$"
+        max_items: 2
+
+  - id: timeout
+    name: Time Out Singapore (kids)
+    strategies:
+      - type: page
+        urls:
+          - https://www.timeout.com/singapore/kids/the-best-things-to-do-with-kids-in-singapore-this-month

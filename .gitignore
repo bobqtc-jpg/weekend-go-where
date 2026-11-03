@@ -1,0 +1,11 @@
+# Fetched article text for the current refresh run; rebuilt every run
+inbox/
+
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+.pytest_cache/
+node_modules/
+dist/
+.DS_Store

@@ -1,0 +1,26 @@
+# Household settings that drive filtering and sorting.
+
+home:
+  label: Marine Parade
+  # Approximate centre of Marine Parade town centre; good enough for sorting by
+  # distance. Refine with a OneMap lookup once onemap.gov.sg is reachable.
+  lat: 1.3020
+  lng: 103.9060
+  transport: [mrt, bus, car]
+
+kids:
+  - label: toddler
+    age_years: 2 # update as they grow; the default filter is "suits this age"
+
+planning:
+  plan_day: thursday
+  weekend_days: [saturday, sunday]
+  include_public_holidays: true
+
+filters:
+  dietary: [] # no dietary filter
+  include_paid_indoor_playgrounds: true
+
+refresh:
+  # Keep events this many days after they end, then drop them.
+  keep_ended_events_days: 7

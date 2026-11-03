@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weekend-go-where"
+version = "0.1.0"
+description = "Weekly refresh for a private Singapore family weekend planner"
+requires-python = ">=3.11"
+dependencies = [
+  "requests>=2.31",
+  "feedparser>=6.0",
+  "trafilatura>=1.12",
+  "jsonschema>=4.21",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["refresh"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
