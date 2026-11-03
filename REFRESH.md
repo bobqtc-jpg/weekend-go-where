@@ -27,6 +27,12 @@ the session reads the articles itself and writes the structured events.
 - **For families, in Singapore:** skip items aimed only at adults (dining promotions, buffets, school open houses, parenting talks) and anything outside Singapore.
 - **Stated facts only:** use `null` (or `"unclear"`) instead of guessing.
 - **Dates:** `YYYY-MM-DD`; a one-day event has `start` equal to `end`. When the article only says "this weekend", take the dates from its dated title, such as "(7 to 8 Nov 2026)", and say so in `notes`.
+- **Missing dates:** apply these fixed rules and say which one you used in `notes`, so every run treats them the same way:
+  - **No start ("now till 19 Sep 2027"):** start on the first day of the period the article covers (from its dated title), else its publish date.
+  - **No end ("opens 3 Nov"):** end on the last day of the period the article covers, else 7 days after its publish date.
+  - **Months only ("October to March"):** the first day of the first month to the last day of the last month.
+  - **Recurring with no end ("every Saturday"):** one candidate for the period the article covers, with `days` set.
+  - **No usable date at all:** skip it.
 - **`days`:** the days the event runs within its date range; leave it empty when it runs every day or the article does not say.
 - **`summary`:** one or two sentences in your own words, at most 280 characters. Never copy sentences from the article.
 - **`audience.toddler_ok`:** `yes` when the stated ages include 2, or the event is billed for toddlers or all ages; `no` when the minimum age is 4 or more, or it is clearly for older children; otherwise `unclear`.

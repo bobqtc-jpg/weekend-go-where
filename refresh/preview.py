@@ -49,8 +49,10 @@ def weekend_events(events: list[dict], saturday: date, sunday: date, all_ages: b
     return picked
 
 
-def _short(d: str) -> str:
-    return date.fromisoformat(d).strftime("%-d %b")
+def _short(d: str, year: int) -> str:
+    """'7 Nov', or '19 Sep 2027' when the year differs from the weekend's."""
+    day = date.fromisoformat(d)
+    return day.strftime("%-d %b" if day.year == year else "%-d %b %Y")
 
 
 def _cell(text: str | None) -> str:
@@ -67,7 +69,7 @@ def render(events: list[dict], saturday: date, sunday: date) -> str:
     for e in events:
         on = "/".join(label for d, label in ((saturday, "Sat"), (sunday, "Sun")) if runs_on(e, d))
         start, end = e["dates"]["start"], e["dates"]["end"]
-        span = "" if start == end else f", {_short(start)} to {_short(end)}"
+        span = "" if start == end else f", {_short(start, saturday.year)} to {_short(end, saturday.year)}"
         when = f"{on}{span}" + (f"; {e['dates']['times']}" if e["dates"].get("times") else "")
         cost = e["cost"]
         price = "Free" if cost.get("is_free") is True else (cost.get("price_text") or "Not stated")

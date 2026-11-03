@@ -68,10 +68,13 @@ def test_same_title_on_other_dates_stays_separate(validator):
     assert len(events) == 2
 
 
-def test_conflicting_dates_are_flagged(validator):
-    wider = candidate(start="2026-11-01", end="2026-11-30")
-    events, _ = run({"a__one": [candidate()], "b__two": [wider]}, validator)
+def test_conflicting_dates_are_widened_and_flagged(validator):
+    # One source says "now till 30 Nov" (start inferred), another gives the full run.
+    inferred_start = candidate(start="2026-11-07", end="2026-11-30")
+    explicit = candidate(start="2026-10-27", end="2026-11-30")
+    events, _ = run({"a__one": [inferred_start], "b__two": [explicit]}, validator)
     (event,) = events
+    assert (event["dates"]["start"], event["dates"]["end"]) == ("2026-10-27", "2026-11-30")
     assert "Sources differ on dates" in event["notes"]
 
 

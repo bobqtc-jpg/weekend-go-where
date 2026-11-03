@@ -103,7 +103,11 @@ def _fill_gaps(dst: dict, src: dict) -> None:
 
 
 def fold_in(existing: dict, new: dict, today: date) -> None:
-    """Merge `new` into `existing`: add its sources, fill unknown fields, flag date conflicts."""
+    """Merge `new` into `existing`: add its sources, fill unknown fields, widen and flag date conflicts.
+
+    Sources often differ because one only says "now till X" (start inferred) or gives no
+    end date (end inferred), so the merged event takes the widest range and notes the conflict.
+    """
     known_urls = {s["url"] for s in existing["sources"]}
     existing["sources"].extend(s for s in new["sources"] if s["url"] not in known_urls)
     existing["last_seen"] = today.isoformat()
@@ -111,6 +115,8 @@ def fold_in(existing: dict, new: dict, today: date) -> None:
     old_range = (existing["dates"]["start"], existing["dates"]["end"])
     new_range = (new["dates"]["start"], new["dates"]["end"])
     if old_range != new_range:
+        existing["dates"]["start"] = min(old_range[0], new_range[0])
+        existing["dates"]["end"] = max(old_range[1], new_range[1])
         note = f"Sources differ on dates: {old_range[0]} to {old_range[1]} vs {new_range[0]} to {new_range[1]}."
         notes = existing.get("notes") or ""
         if note not in notes:

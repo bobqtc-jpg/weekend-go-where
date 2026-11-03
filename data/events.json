@@ -1,4 +1,2385 @@
 {
-  "updated": null,
-  "events": []
+  "updated": "2026-11-03",
+  "events": [
+    {
+      "title": "Curio: The Outbreak Protocol",
+      "summary": "A 3pm science show in the Wonder Lab Theatre that challenges the audience to decode the secrets of the human blueprint and find a cure to save the citizens of Curio.",
+      "category": "performance",
+      "venue": {
+        "name": "Wonder Lab Theatre, Hall F, Science Centre Singapore",
+        "address": "15 Science Centre Road, Singapore 609081",
+        "region": "west",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-05-30",
+        "end": "2026-11-16",
+        "times": "3pm",
+        "days": [
+          "sat",
+          "sun"
+        ]
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "$5",
+        "min_sgd": 5
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Weekends and public holidays only. The article gives the run as 30 May - 16 Nov 2026, so the start year is taken as 2026. It does not say whether the $5 is on top of Science Centre admission, and gives no recommended age.",
+      "id": "ev_7a7e08053417",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/latest-exhibitions-and-events-at-science-centre-singapore",
+          "article_title": "2026 Happenings At Science Centre Singapore",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "ONE Ocean: Every Action Ripples",
+      "summary": "An immersive ocean exhibition drawn from real marine research, using large-scale projections, spatial soundscapes and free-roaming VR to show how the seas, ecosystems and everyday life are connected.",
+      "category": "exhibition",
+      "venue": {
+        "name": "Science Centre Singapore",
+        "address": "15 Science Centre Road, Singapore 609081",
+        "region": "west",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-05-30",
+        "end": "2027-01-03",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "From $10",
+        "min_sgd": 10
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Running since 30 May 2026. The article gives no recommended age.",
+      "id": "ev_f4a6c8bef9da",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/latest-exhibitions-and-events-at-science-centre-singapore",
+          "article_title": "2026 Happenings At Science Centre Singapore",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Into the Ocean: Journey Beneath",
+      "summary": "An exhibition that leads visitors down through five ocean zones, from surface waters into the pitch-dark deep, with rarely seen footage from the research ship OceanXplorer, plus a storytelling kids' tour and an upcycled eco-bag sewing workshop.",
+      "category": "exhibition",
+      "venue": {
+        "name": "ArtScience Museum",
+        "address": "6 Bayfront Ave, Singapore 018974",
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-06-06",
+        "end": "2026-11-11",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "yes"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "From $19.50",
+        "min_sgd": 19.5
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "The accompanying programme is billed for visitors of all ages. Dates, times and prices for the Into the Ocean Kid's Tour and the Create an Eco-Friendly Bag workshop are not given.",
+      "id": "ev_666a3348f938",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Disney Garden of Wonder",
+      "summary": "Disney and Pixar favourites return as topiary sculptures at Floral Fantasy, from Toy Story 5's Woody, Jessie and Buzz to Frozen's Elsa, Anna and Olaf, plus Mickey Mouse, Winnie the Pooh and a line-up of Disney princesses.",
+      "category": "exhibition",
+      "venue": {
+        "name": "Floral Fantasy, Gardens by the Bay",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-06-08",
+        "end": "2027-03-14",
+        "times": "10am - 9pm",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "From $12 per adult and $8 per child aged 3 to 12",
+        "min_sgd": 8
+      },
+      "booking": {
+        "required": true,
+        "url": "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/disney-garden-of-wonder-at-floral-fantasy.html",
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Start not stated ('now till 14 March 2027'); taken from the article's dated title (6 - 8 Nov 2026). Mickey and Minnie meet-and-greets on select weekends (dates not given). Entry for under-3s not mentioned. Sources differ on dates: 2026-11-06 to 2027-03-14 vs 2026-06-08 to 2027-03-14.",
+      "id": "ev_c8a1453bff59",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        },
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "REINVENTION: ALLPLAY 2026",
+      "summary": "A free play festival around Geneo at Singapore Science Park, with hands-on PlayLab exhibits such as chain-reaction machines, a tall climbing structure, an AR nature mission with Mandai X's Ranger Buddies and an outdoor sports court.",
+      "category": "festival",
+      "venue": {
+        "name": "Geneo, Singapore Science Park",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-08-01",
+        "end": "2026-11-22",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free entry; some activities are paid",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "mixed",
+      "notes": "Start day not stated: the article says it runs from August until 22 Nov 2026, so the start is set to 1 Aug 2026. Activities are refreshed regularly. PlayLab is at The Canopy at Geneo; Kent Ridge MRT (Exit E) gives sheltered access. Walkways are stroller-friendly.",
+      "id": "ev_736c4b13da9f",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "A S.U.R.E. Mystery",
+      "summary": "A free National Library Board detective game: study illustrated crime scenes at participating libraries or online, weigh up clues and suspects across four mysteries, and finish missions for a chance at prizes.",
+      "category": "other",
+      "venue": {
+        "name": "16 participating public libraries and online",
+        "address": null,
+        "region": null,
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-10-01",
+        "end": "2027-03-31",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free; Singpass login needed for online submissions",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "The article gives months only (Oct 2026 to Mar 2027), so start and end are set to 1 Oct 2026 and 31 Mar 2027. Libraries include Tampines, Woodlands, Jurong, Punggol, Sengkang and HarbourFront. New cases every few weeks; interactive theatre sessions on selected Saturdays (dates not given).",
+      "id": "ev_c6e4ddaefb4e",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Sunflower Surprise at Flower Dome",
+      "summary": "Seasonal show of more than 5,000 sunflowers in 20 varieties inside the Flower Dome, staged against scenery inspired by the historic towns and coast of Portugal.",
+      "category": "exhibition",
+      "venue": {
+        "name": "Flower Dome, Gardens by the Bay",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-10-09",
+        "end": "2026-11-09",
+        "times": "9am - 9pm",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Standard Flower Dome admission applies",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Start not stated ('now till 9 November'); taken from the article's dated title (6 - 8 Nov 2026). Event name taken from the article's Gardens by the Bay link. Sources differ on dates: 2026-11-06 to 2026-11-09 vs 2026-10-09 to 2026-11-09.",
+      "id": "ev_17c646fbd330",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        },
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Deepavali Open House",
+      "summary": "The Indian Heritage Centre's yearly Deepavali celebration, with free craft stations, a weekend bazaar on Campbell Lane, a vintage saree photobooth and cultural performances.",
+      "category": "festival",
+      "venue": {
+        "name": "Indian Heritage Centre",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-10-17",
+        "end": "2026-11-08",
+        "times": "10am - 6pm; until 8pm on Saturdays",
+        "days": [
+          "sat",
+          "sun"
+        ]
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free; selected programmes are paid",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "mixed",
+      "notes": "Runs over four weekends, so only 7-8 Nov remains. The Saturday dance showcases (6pm-7pm) and guided tours are described with October dates and may not run on 7 Nov; the paid workshops were in October and on 1 Nov. Free Deepavali money packets while stocks last.",
+      "id": "ev_d35ac6a9fcff",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "HIIT THE BEACH",
+      "summary": "Free beach workout pop-up by The Magnum Ice Cream Company, where eight interactive stations put speed and agility to the test, alongside giant inflatable ice creams and exclusive merch.",
+      "category": "sport",
+      "venue": {
+        "name": "Palawan Beach, Sentosa",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-10-24",
+        "end": "2027-01-31",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "outdoor",
+      "notes": "Dates given without years ('24 October - 31 January'); read as 24 Oct 2026 to 31 Jan 2027.",
+      "id": "ev_1de707b15af4",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        },
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "NLB Snoopy Pop-Up Library",
+      "summary": "Peanuts-themed pop-up library with about 10,000 physical and digital books picked by the National Library Board, plus photo-friendly sets like Charlie Brown's Classroom and the Peanuts School Bus, reading nooks in a Snoopy Garden and activities at Lucy's Booth.",
+      "category": "other",
+      "venue": {
+        "name": "Plaza Singapura",
+        "address": "Level 3, Plaza Singapura",
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-10-27",
+        "end": "2027-09-19",
+        "times": "10am - 10pm daily",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free entry",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": "https://go.gov.sg/snoopy-daypass",
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Start not stated ('now till 19 September 2027'); taken from the article's dated title (6 - 8 Nov 2026). Entry needs a library-compliant ID, an NLB eCard or a QR day pass (request via the booking link). Sources differ on dates: 2026-11-06 to 2027-09-19 vs 2026-10-27 to 2027-09-19.",
+      "id": "ev_71664149bfc9",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        },
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        },
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/the-best-things-to-do-with-kids-in-singapore-this-week-2-to-8-nov-2026",
+          "article_title": "The Best Things To Do With Kids In Singapore This Week (2 to 8 Nov 2026)",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "CATS The Musical",
+      "summary": "Andrew Lloyd Webber's long-running West End and Broadway musical comes to Singapore, with costumed cats on stage, lively dance routines and famous songs such as 'Memory'.",
+      "category": "performance",
+      "venue": {
+        "name": "Sands Theatre, Marina Bay Sands",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-10-29",
+        "end": "2026-11-22",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": null,
+        "min_sgd": null
+      },
+      "booking": {
+        "required": true,
+        "url": "https://www.marinabaysands.com/entertainment/shows/cats-the-musical.html",
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Ticketed; the article gives no ticket prices or age guidance.",
+      "id": "ev_872ae64beb87",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Our Climate-Ready Home",
+      "summary": "Free travelling exhibition where children learn how Singapore is preparing for hotter days, heavier rain and rising seas through hands-on displays, games and storytelling, and can meet mascots such as Water Wally, Water Sally and Captain Green.",
+      "category": "exhibition",
+      "venue": {
+        "name": "Westgate",
+        "address": null,
+        "region": "west",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-10-31",
+        "end": "2026-11-04",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "unclear",
+      "notes": "Westgate run ends Wednesday 4 Nov, before the weekend; the exhibition moves to Kampung Admiralty from 18 to 22 Nov. Billed as family-friendly; no ages given.",
+      "id": "ev_e41709215915",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "SHIPPED! Vessels of Taste",
+      "summary": "ArCH Square's free first-anniversary exhibition traces everyday food containers, from ceramics and bottles to tiffins and jars, through artefacts from shipwrecks such as the Temasek Wreck, with a digital kiosk on the layers beneath Singapore.",
+      "category": "exhibition",
+      "venue": {
+        "name": "ArCH Square",
+        "address": "51 Waterloo Street, Singapore 187969",
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-10-31",
+        "end": "2027-03-31",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free; some special workshops and programmes may need registration",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "unclear",
+      "notes": "Co-curated with the Museum of Food. A monthly programme, Unarchived, starts in November (taken as November 2026 from the exhibition dates) with hands-on food activities, family tours and lunchtime talks; the article gives no dates for it.",
+      "id": "ev_884fe92ea49d",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Gateway Kids Club storytelling",
+      "summary": "Free storytelling sessions for children at Gateway Theatre, with a fresh theme every month; November's theme centres on fathers.",
+      "category": "storytelling",
+      "venue": {
+        "name": "Gateway Dance Studio, Gateway Theatre",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-01",
+        "end": "2026-11-30",
+        "times": "10am or 11am",
+        "days": [
+          "sat",
+          "sun"
+        ]
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "The article says sessions are every Saturday but lists 'selected weekend days in November', so the exact dates are unclear.",
+      "id": "ev_c13bf04c1619",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Wild Wild Wet Festive Floats",
+      "summary": "As part of Downtown East's Sweet Christmas, giant gummy bear, macaron and popsicle floats drift along the waterpark's Shiok River and Tsunami Pool, and a new Lickers ice-cream outlet opens inside.",
+      "category": "play",
+      "venue": {
+        "name": "Wild Wild Wet",
+        "address": "1 Pasir Ris Close, Singapore 519599",
+        "region": "east",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-01",
+        "end": "2026-12-31",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Wild Wild Wet admission from $21 (Child Off-Peak Day Pass)",
+        "min_sgd": 21
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "outdoor",
+      "notes": "Day Passes used between 1 Nov and 31 Dec include a free scoop of Lickers ice cream. Kids born in December get free entry during their birthday month (T&Cs apply).",
+      "id": "ev_9d2e0f5f0a6c",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "WonderGround: A Journey Beneath Your Feet",
+      "summary": "An underground-themed soft-play art space for toddlers and preschoolers at The Artground, where little ones crawl through tunnels, root networks and sparkly caverns, with rotating clay workshops, baby-friendly shows and live creature encounters.",
+      "category": "play",
+      "venue": {
+        "name": "The Artground, One Holland Village",
+        "address": "7 Holland Village Way #01-20 One Holland Village, Singapore 275748",
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-02",
+        "end": "2027-03-31",
+        "times": "9.15am - 6pm daily; sessions last 1 hr 15 min",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": 3,
+        "toddler_ok": "yes"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Weekdays $8 per person; weekends, public and school holidays $12 per child, $10 per adult",
+        "min_sgd": 8
+      },
+      "booking": {
+        "required": false,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Start date not stated; it is already open, so the start is set to 2 Nov 2026, the first day of the week in the article's title. Best suited to ages 3 and under. Advance booking recommended. Grip socks required ($3 a pair if needed). Created by artist Aida Sa'ad (Yellow Mushmellow).",
+      "id": "ev_19ac609b31e9",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Glowing Oceans",
+      "summary": "A new exhibition of living bioluminescence: walk through a lagoon of live plankton that glow blue as you move, with hands-on galaxy tables, touch tanks and bubble pods for studying the organisms.",
+      "category": "exhibition",
+      "venue": {
+        "name": "Science Centre Singapore",
+        "address": null,
+        "region": "west",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-03",
+        "end": "2026-11-08",
+        "times": "10am - 5pm; closed Mondays except public holidays and school holidays",
+        "days": [
+          "tue",
+          "wed",
+          "thu",
+          "fri",
+          "sat",
+          "sun"
+        ]
+      },
+      "audience": {
+        "age_min": 4,
+        "age_max": null,
+        "toddler_ok": "no"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Singaporeans/PRs $7 off-peak, $10-$12 peak; standard $14 child, $18 adult; includes Science Centre admission",
+        "min_sgd": 7
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Opens 3 Nov 2026. The article gives no end date, so the end is set to 8 Nov, the last day of the week in its title (2 - 8 Nov 2026). Wet, low-light experience: not suitable for children under 4, and children 4 and up must be supervised by an adult. Super Glow Bundles from $15.",
+      "id": "ev_6b8ba9184d4d",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        },
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/the-best-things-to-do-with-kids-in-singapore-this-week-2-to-8-nov-2026",
+          "article_title": "The Best Things To Do With Kids In Singapore This Week (2 to 8 Nov 2026)",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Horizon of Khufu",
+      "summary": "A 45-minute VR adventure inside the Great Pyramid of Giza, in which headset-wearing visitors roam secret corridors and discover the rites of ancient Egypt.",
+      "category": "exhibition",
+      "venue": {
+        "name": "GROUNDSEESAW, Parkview Square",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-06",
+        "end": "2026-11-30",
+        "times": "Timeslots from 10am to 5pm",
+        "days": []
+      },
+      "audience": {
+        "age_min": 8,
+        "age_max": null,
+        "toddler_ok": "no"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "From $35",
+        "min_sgd": 35
+      },
+      "booking": {
+        "required": true,
+        "url": "http://fever.pxf.io/oN6AdW",
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Start not stated ('now till 30 November'); taken from the article's dated title (6 - 8 Nov 2026). For ages 8 and up; under-16s must be with an adult. The article spells the venue 'Parkview Squar2'.",
+      "id": "ev_f05fc65b768a",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "How To Be A Kid",
+      "summary": "A family play about grief and growing up: after their grandmother's death, 12-year-old Molly looks after her brother and discovers it is all right to be sad and lean on others.",
+      "category": "performance",
+      "venue": {
+        "name": "Gateway Theatre Black Box",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-06",
+        "end": "2026-11-15",
+        "times": null,
+        "days": [
+          "fri",
+          "sat",
+          "sun"
+        ]
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "$45",
+        "min_sgd": 45
+      },
+      "booking": {
+        "required": true,
+        "url": "https://www.sistic.com.sg/events/kid1126",
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Two runs: 6-8 Nov and 13-15 Nov 2026 (Friday to Sunday each week). Show times and age guidance are not given; the story deals with a death in the family.",
+      "id": "ev_4a45adb19b0f",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        },
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/the-best-things-to-do-with-kids-in-singapore-this-week-2-to-8-nov-2026",
+          "article_title": "The Best Things To Do With Kids In Singapore This Week (2 to 8 Nov 2026)",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Junior and the Holiday Magic",
+      "summary": "Early-Christmas musical for kids built around a North Pole adventure, with optional pre-show drama workshops where children play drama games, hear stories and act out make-believe scenes with the show's main characters.",
+      "category": "performance",
+      "venue": {
+        "name": "Drama Centre Theatre, National Library",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-06",
+        "end": "2026-11-21",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Show tickets from $20; pre-show workshop add-on $50",
+        "min_sgd": 20
+      },
+      "booking": {
+        "required": true,
+        "url": "https://www.sistic.com.sg/events/magic1126",
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Start not stated (show dates 'now till 21 November'); taken from the article's dated title (6 - 8 Nov 2026). Pre-show drama workshops run only on 8 and 15 Nov.",
+      "id": "ev_40fe7d59d7a4",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Sesame Street Magical Art World Chapter 2",
+      "summary": "Compact interactive art show themed on Sesame Street, with eight zones of character-inspired artwork and hands-on elements such as shadow play, mirrors, sensory play and comic strips; a 30-minute slot is enough to see it all.",
+      "category": "exhibition",
+      "venue": {
+        "name": "Marina Square",
+        "address": "Level 3, Marina Square",
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-06",
+        "end": "2026-12-31",
+        "times": "12.30pm - 8pm",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Free entry with a same-day Marina Square spend of $20 on weekdays or $30 on weekends",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": false,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Start not stated ('now till 31 December'); taken from the article's dated title (6 - 8 Nov 2026). Show physical receipts at #03-153; max 2 passes per visitor a day, each for up to 2 people; first come, first served.",
+      "id": "ev_2e9cea89c091",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Toy Story | PEACEMINUSONE: THE FIRST FAN pop-up",
+      "summary": "Free-entry pop-up store where PEACEMINUSONE gives Woody, Buzz Lightyear and other Toy Story favourites its signature look, with 100-plus collectibles and fashion pieces, including Singapore-only totes, tees and caps.",
+      "category": "market",
+      "venue": {
+        "name": "Clarke Quay",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-06",
+        "end": "2026-11-11",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free entry",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "unclear",
+      "notes": "Start not stated ('now till 11 November'); taken from the article's dated title (6 - 8 Nov 2026). Mainly a merchandise pop-up.",
+      "id": "ev_087478582d64",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "AIA Merry-thon 2026",
+      "summary": "A festive trail walk through Rainforest Wild Adventure East and West where families scan a QR code and clear digital checkpoints, collecting Happy Socks and a lucky-draw entry at the finish.",
+      "category": "nature",
+      "venue": {
+        "name": "Rainforest Wild Adventure East & West, Mandai Wildlife Reserve",
+        "address": null,
+        "region": "north",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-07",
+        "end": "2027-01-03",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": null,
+        "price_text": null,
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "outdoor",
+      "notes": "Launch event 7 to 9 Nov, 10am to 6pm, adds a 3D photo booth, DIY windmill workshop, tapir digital game and gachapon; each launch registration includes two park tickets. No price is stated for other visitors; AIA customers get 30% off park tickets via the AIA+ app.",
+      "id": "ev_a912792ee449",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Borealis at Supertree Grove",
+      "summary": "Free light-and-sound show at Supertree Grove, created by Dan Ache, an artist based in Switzerland, that conjures the Northern Lights using layered lighting and cloud-like particles.",
+      "category": "performance",
+      "venue": {
+        "name": "Supertree Grove, Gardens by the Bay",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-07",
+        "end": "2026-11-08",
+        "times": "9pm - 9.30pm (also Mondays 8pm - 8.30pm)",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "outdoor",
+      "notes": "Recurs on Mondays and weekends with no end date given; dates limited to this weekend from the article's dated title (6 - 8 Nov 2026).",
+      "id": "ev_a405c0eeaa27",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Fire Station Open House",
+      "summary": "Free guided Saturday-morning visits to selected working fire stations, where kids get close to emergency vehicles, watch a demo of firefighters suiting up in full protective gear and see the equipment in action.",
+      "category": "other",
+      "venue": {
+        "name": "Selected SCDF fire stations",
+        "address": null,
+        "region": null,
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-07",
+        "end": "2026-11-07",
+        "times": "9am - 9.50am or 10am - 10.50am",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "yes"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "unclear",
+      "notes": "Recurs every Saturday with no end date given; date limited to this weekend from the article's dated title (6 - 8 Nov 2026). Stations not named and registration not mentioned. The article says tots will love it.",
+      "id": "ev_0ce04c0da1e2",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Movies by the Beach",
+      "summary": "Free open-air screenings of family-friendly films, from action to comedy, on the roof garden at Palawan Kidz City; bring a picnic mat and simply turn up.",
+      "category": "other",
+      "venue": {
+        "name": "Palawan Kidz City Roof Garden, Sentosa",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-07",
+        "end": "2026-11-08",
+        "times": "7pm",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": false,
+        "url": null,
+        "opens": null
+      },
+      "setting": "outdoor",
+      "notes": "Recurs every Saturday and Sunday with no end date given; dates limited to this weekend from the article's dated title (6 - 8 Nov 2026). No pre-booking needed.",
+      "id": "ev_1435e7b10a98",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "PokéXciting!",
+      "summary": "A two-day Pokémon 30th anniversary celebration with a parade of all 27 starter Pokémon at Jewel's Forest Valley, stage shows at Terminal 3, character meet-and-greets, themed photo spots and exclusive merchandise.",
+      "category": "festival",
+      "venue": {
+        "name": "Jewel Changi Airport and Changi Airport Terminal 3",
+        "address": null,
+        "region": "east",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-07",
+        "end": "2026-11-08",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free admission",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Parade at Jewel Forest Valley; stage shows at Changi Airport Terminal 3. Includes the Singapore debut of an exclusive PokéXciting! Pikachu. Show times are not given in the article.",
+      "id": "ev_6f5dc2317a73",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        },
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/the-best-things-to-do-with-kids-in-singapore-this-week-2-to-8-nov-2026",
+          "article_title": "The Best Things To Do With Kids In Singapore This Week (2 to 8 Nov 2026)",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Singapore Cat Festival 2026",
+      "summary": "A weekend for cat lovers at Singapore EXPO with more than 100 exhibitors, oversized interactive cat-themed installations, a cat show, a best-dressed cat contest, stage games and cats waiting to be adopted.",
+      "category": "festival",
+      "venue": {
+        "name": "Singapore EXPO Hall 6",
+        "address": "1 Expo Drive, Singapore 486150",
+        "region": "east",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-07",
+        "end": "2026-11-08",
+        "times": "10am - 8pm",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "yes"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "From $7; children aged 12 and below enter free",
+        "min_sgd": 7
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Toddler rating rests on free entry for children aged 12 and below; no other age guidance is given. Includes the CFA Cat Show and a marketplace. Pet cats must be kept in a secure carrier or a properly fitted harness.",
+      "id": "ev_a96783785f78",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        },
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/the-best-things-to-do-with-kids-in-singapore-this-week-2-to-8-nov-2026",
+          "article_title": "The Best Things To Do With Kids In Singapore This Week (2 to 8 Nov 2026)",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Snoopy, Charlie Brown and Lucy Meet-and-Greet",
+      "summary": "Peanuts favourites Snoopy, Charlie Brown and Lucy make appearances at the NLB Snoopy Pop-Up Library, with three sessions on each of three days.",
+      "category": "other",
+      "venue": {
+        "name": "NLB Snoopy Pop-Up Library, Plaza Singapura",
+        "address": "Level 3, 68 Orchard Road, Singapore 238839",
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-07",
+        "end": "2026-11-09",
+        "times": "11am, 2pm and 4pm",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free (the pop-up library's admission is free)",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": false,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "No advance booking: meet-and-greet passes are handed out 30 minutes before each session. Part of the NLB Snoopy Pop-Up Library listing.",
+      "id": "ev_60f0370f4e94",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
+          "article_title": "Things To Do With Kids In Singapore This Weekend: 2 - 8 Nov 2026 [Updated Weekly]",
+          "published": "2026-11-02"
+        },
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/the-best-things-to-do-with-kids-in-singapore-this-week-2-to-8-nov-2026",
+          "article_title": "The Best Things To Do With Kids In Singapore This Week (2 to 8 Nov 2026)",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Zoolympix: Stars of Mandai Festive Challenge",
+      "summary": "Kids work through 10 animal-inspired agility, balance and strength stations at the Zoolympix Village, plus bonus outposts inside the wildlife parks, and earn a medal once their activity card is complete.",
+      "category": "sport",
+      "venue": {
+        "name": "Zoolympix Village, East Lawn, Mandai Wildlife Reserve",
+        "address": null,
+        "region": "north",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-07",
+        "end": "2027-01-03",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": 3,
+        "age_max": 12,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Free Village entry for local residents with selected park tickets; Village-only passes and multi-park bundles available",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": true,
+        "url": "https://www.mandai.com/en/discover-mandai/events/zoolympix.html",
+        "opens": null
+      },
+      "setting": "outdoor",
+      "notes": "Billed for ages 3 to 12, though the article says the challenges come in difficulty levels so toddlers can take part too. Prices of the Village-only passes are not stated.",
+      "id": "ev_b6f273e41c11",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Free Family Screenings at vOilah! French Film Festival 2026",
+      "summary": "The French film festival holds 20 free community screenings at CCs, community hubs and libraries, with animated and family titles such as Asterix and Pets on a Train, plus an open-air beach screening on Sentosa.",
+      "category": "festival",
+      "venue": {
+        "name": "Community clubs and hubs, public libraries, Palawan Beach (Sentosa) and Serangoon Garden Country Club",
+        "address": null,
+        "region": null,
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-12",
+        "end": "2026-11-29",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free admission for community screenings",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": false,
+        "url": null,
+        "opens": null
+      },
+      "setting": "mixed",
+      "notes": "The article gives no dates or times per venue; check the full schedule on voilah.sg. Seating is first come, first served. The Palawan Beach screening is part of Sentosa's Movies by the Beach; bring a mat and insect repellent.",
+      "id": "ev_a0bd0ffe6fb2",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "The Ultimate Holiday Playdate at Suntec City",
+      "summary": "Suntec City's atrium becomes a Powerpuff Girls and We Bare Bears play zone with a giant claw-machine ball pit, a super slide and a floor-is-lava course, plus carnival games, character meet-and-greets and evening snow showers.",
+      "category": "play",
+      "venue": {
+        "name": "Suntec City Atrium (Tower 1 & 2) and Suntec Plaza",
+        "address": "3 Temasek Boulevard, Singapore 038983",
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-12",
+        "end": "2026-12-27",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": null,
+        "price_text": "Free entry for Suntec+ Members; carnival games, retail pop-up and meet-and-greets priced separately",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "mixed",
+      "notes": "Powerpuff Girls meet-and-greets at 2pm, 4pm and 6pm on weekends from 14 Nov to 27 Dec, plus Christmas Day; a $30 same-day receipt unlocks a photo pass. Outdoor snow showers at Suntec Plaza on Fri to Sun evenings from 7.30pm. Entry terms for non-members are not stated.",
+      "id": "ev_b3a8dc64ba2f",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Early READ Fiesta 2026/2027",
+      "summary": "NLB's free reading festival for children up to six and their older siblings, with sensory and tinkering stations, an activity map, author story sessions and stage shows at four large libraries.",
+      "category": "festival",
+      "venue": {
+        "name": "Woodlands Regional Library, Punggol Regional Library, Central Public Library and Jurong Regional Library",
+        "address": null,
+        "region": null,
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-13",
+        "end": "2027-03-20",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": 0,
+        "age_max": 6,
+        "toddler_ok": "yes"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free; walk-ins welcome, selected popular workshops need advance online registration",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": false,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Runs on selected dates only, and the article does not say which dates apply at each library, so check with NLB before going. #ReadSG Challenge booth at Woodlands on 14 Nov and Punggol on 21 Nov. Finish the activity map and borrow four books that day to claim a gift while stocks last.",
+      "id": "ev_a337f00927e0",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "The Enchanted Nutcracker at West Mall",
+      "summary": "West Mall goes Nutcracker-themed for Christmas, with festive decor, free weekend Santa meet-and-greets, balloon giveaways by ballerinas and toy soldiers, a children's pop choir, a marching band parade and a December market.",
+      "category": "festival",
+      "venue": {
+        "name": "West Mall",
+        "address": "1 Bukit Batok Central Link, Singapore 658713",
+        "region": "west",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-13",
+        "end": "2026-12-31",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Weekend activities start 21 Nov: Santa 21 Nov, 5 and 19 Dec (5pm); balloon giveaways same dates (2pm); ballerinas 28 Nov and 12 Dec (5pm); TAS Children's Pop Choir 22 Nov, 6 and 20 Dec (5pm); marching band parade 29 Nov and 13 Dec (5pm). Christmas Market at the Level 1 Atrium 14 to 27 Dec.",
+      "id": "ev_b39bd5a73501",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Body Defenders: Shoo Flu!",
+      "summary": "A limited-run, movement-based team game in KidsSTOP where every move helps a virtual patient called Our Human recover from the flu, with high scores to chase and different endings to unlock.",
+      "category": "play",
+      "venue": {
+        "name": "The Black Box, KidsSTOP, Science Centre Singapore",
+        "address": "21 Jurong Town Hall Road, Singapore 609433",
+        "region": "west",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-14",
+        "end": "2027-06-28",
+        "times": "10.30am - 1pm (last entry 12.30pm), 2.30pm - 5pm (last entry 4.30pm)",
+        "days": []
+      },
+      "audience": {
+        "age_min": 4,
+        "age_max": 6,
+        "toddler_ok": "no"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Free with KidsSTOP admission",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Recommended for ages 4 to 6. Included with KidsSTOP admission, whose price the article does not state.",
+      "id": "ev_bf292e86bbc1",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/latest-exhibitions-and-events-at-science-centre-singapore",
+          "article_title": "2026 Happenings At Science Centre Singapore",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "A Sweet Christmas at Downtown East",
+      "summary": "Downtown East goes candy-themed for Christmas, with giant sweet-treat photo spots, a weekend market, bubble shows, acoustic sets, a Sunday pinata smash for kids and festive carolling.",
+      "category": "festival",
+      "venue": {
+        "name": "Downtown East",
+        "address": "1 Pasir Ris Close, Singapore 519599",
+        "region": "east",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-16",
+        "end": "2026-12-31",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free entry to Downtown East",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "unclear",
+      "notes": "Event Square market Fri to Sun, 12pm to 8pm, and weekend bubble shows until 20 Dec; acoustic sets Sat 12pm (21 Nov to 19 Dec); pinata smash Sun 2pm for under-12s, first come first served; carolling at 6.30pm and 7.30pm on December weekends, 24 and 25 Dec.",
+      "id": "ev_dbf2d783f107",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Our Climate-Ready Home",
+      "summary": "Free travelling exhibition where children learn how Singapore is preparing for hotter days, heavier rain and rising seas through hands-on displays, games and storytelling, and can meet mascots such as Water Wally, Water Sally and Captain Green.",
+      "category": "exhibition",
+      "venue": {
+        "name": "Kampung Admiralty",
+        "address": null,
+        "region": "north",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-18",
+        "end": "2026-11-22",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "unclear",
+      "notes": "Follows the Westgate run (31 Oct to 4 Nov). Billed as family-friendly; no ages given.",
+      "id": "ev_784426dcebb4",
+      "sources": [
+        {
+          "source_id": "sassymama",
+          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
+          "article_title": "11 Things To Do This Weekend In Singapore With Kids (6 - 8 Nov 2026)",
+          "published": "2026-11-01"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Built to Chill: LEGO Pop-up at KidsSTOP",
+      "summary": "A free LEGO pop-up where young children build and test ideas for cooler, greener cities while picking up simple lessons about climate change and urban heat.",
+      "category": "play",
+      "venue": {
+        "name": "KidsSTOP Lobby, Science Centre Singapore",
+        "address": "21 Jurong Town Hall Road, Singapore 609433",
+        "region": "west",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-21",
+        "end": "2027-01-03",
+        "times": "10am - 5pm",
+        "days": []
+      },
+      "audience": {
+        "age_min": 1.5,
+        "age_max": 8,
+        "toddler_ok": "yes"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Recommended for 18 months to 8 years.",
+      "id": "ev_2a3d1e73f19d",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/latest-exhibitions-and-events-at-science-centre-singapore",
+          "article_title": "2026 Happenings At Science Centre Singapore",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "The Nutcracker by the State Ballet of Georgia",
+      "summary": "The State Ballet of Georgia stages the Christmas classic in which Clara's toys come alive, the Nutcracker Prince fights the Mouse King, and the journey passes through a snowy winter realm and the Kingdom of Sweets.",
+      "category": "performance",
+      "venue": {
+        "name": "Sands Theatre, Marina Bay Sands",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-26",
+        "end": "2026-11-29",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "$78 to $752",
+        "min_sgd": 78
+      },
+      "booking": {
+        "required": true,
+        "url": "https://www.klook.com/en-SG/activity/201213?aid=2884",
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Tickets are on sale now. Show times and age guidance are not stated in the article.",
+      "id": "ev_19e3f3b3552d",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "A Universal Christmas at Universal Studios Singapore",
+      "summary": "Universal Studios Singapore's Christmas season adds a candy-themed Hollywood Boulevard with a 10-metre confectionery tree, meet-and-greets with Santa, Hello Kitty and Kuromi, sing-along Jingle Jam shows and snowfall moments.",
+      "category": "festival",
+      "venue": {
+        "name": "Universal Studios Singapore, Resorts World Sentosa",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-27",
+        "end": "2027-01-03",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Universal Studios Singapore admission applies",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "unclear",
+      "notes": "Jingle Jam shows feature Poppy from Trolls, Sesame Street friends and the Minions; The North Pole Jingle Jam plays in the New York zone. Show times are not stated.",
+      "id": "ev_da515bce8487",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Christmas Together 2026: A Singaporean Christmas Village",
+      "summary": "A weekend-only indoor Christmas village with Singapore-themed interactive stops, Santa's Post Office, a 7-metre slide, carnival rides, cupcake decorating, a kids' trading market and over 150 stalls, raising funds for the Red Cross.",
+      "category": "festival",
+      "venue": {
+        "name": "Hall F, Sands Expo & Convention Centre, Marina Bay Sands",
+        "address": "10 Bayfront Ave, Singapore 018956",
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-27",
+        "end": "2026-11-29",
+        "times": "10am - 9pm",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free with advance registration; workshops and selected activities priced separately",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": true,
+        "url": "https://app.meuraki.com/christmas/welcome",
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Online registration is required before you go. Popular workshops and trade-up activities have limited slots, so book those early. Proceeds support the Singapore Red Cross Young Hearts initiative.",
+      "id": "ev_22e25c73df41",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Glowcean Wonderland at Singapore Oceanarium",
+      "summary": "Singapore Oceanarium's glowing festive makeover: kids follow Manja the manta ray on a stamp-collecting clue trail past jellies, corals and sea stars to a glowing Christmas tree, with a Santa dive and themed feeds too.",
+      "category": "exhibition",
+      "venue": {
+        "name": "Singapore Oceanarium, Resorts World Sentosa",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-27",
+        "end": "2027-01-03",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "S$110",
+        "min_sgd": 110
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "The article's venue line says WEAVE, but its description places this at Singapore Oceanarium. It states a single price of S$110 without saying what it covers. A K-pop Silent Disco runs on selected nights and needs a separate ticket.",
+      "id": "ev_67c3bfb2114d",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Season of Joy at WEAVE: Colours of our Wishes",
+      "summary": "Resorts World Sentosa's Season of Joy brings an eight-metre tree, pop and jazz sets, carols and balloon sculpting to WEAVE, where families can write a wish on a ribbon and add it to a festive installation.",
+      "category": "festival",
+      "venue": {
+        "name": "WEAVE, Resorts World Sentosa",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-27",
+        "end": "2027-01-03",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": null,
+        "price_text": null,
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "unclear",
+      "notes": "The article gives no admission price; spending at least S$88 earns a festive Gori-knot keychain. Jazz sets are on weekends; other show times are not stated.",
+      "id": "ev_bbc1171ee1e4",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "Kampong Kakee Carnival at One Punggol",
+      "summary": "A two-day kampong-style carnival with game booths, sports challenges, a Kiztopia inflatable zone, a colouring contest, old-school snacks, outdoor stage shows and family movie screenings.",
+      "category": "festival",
+      "venue": {
+        "name": "One Punggol",
+        "address": "1 Punggol Drive, Singapore 828629",
+        "region": "north_east",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-28",
+        "end": "2026-11-29",
+        "times": "11am - 9pm",
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free entry; wrist tag for game booths and treats via Kakee app Koins or S$10 onsite (PayNow)",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "outdoor",
+      "notes": "A wrist tag is needed to play the game booths and redeem treats. Hong Kong singer-actress Adia Chan appears on the Sunday (29 Nov). Six passport stamps earn a limited-edition tote bag.",
+      "id": "ev_8a930ef0a71b",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "More than Human: Making With the Living World",
+      "summary": "An Asia-debut design exhibition of more than 140 works and immersive installations, including a digital wetland and beaver-gnawed sculptures, on how people can live more sustainably alongside plants, animals and ecosystems.",
+      "category": "exhibition",
+      "venue": {
+        "name": "ArtScience Museum, Marina Bay Sands",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-11-28",
+        "end": "2027-05-16",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "no"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Standard museum admission charges apply",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "The article does not name the venue; ArtScience Museum at Marina Bay Sands is inferred from its exhibition link (marinabaysands.com/museum). It recommends the show for older children and teens and suggests allowing 1.5 to 2 hours.",
+      "id": "ev_b1f7dc3b8620",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "DINO-A-LIVE: Dinosaur Odyssey",
+      "summary": "A 70-minute wordless indoor show in which 15 life-size dinosaurs, from a T. rex to raptors, walk right among the audience. It is the Japanese production's first staging outside Japan.",
+      "category": "performance",
+      "venue": {
+        "name": "Resorts World Sentosa",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-12-03",
+        "end": "2026-12-06",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "yes"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "From $58",
+        "min_sgd": 58
+      },
+      "booking": {
+        "required": true,
+        "url": "https://www.klook.com/en-SG/event-detail/102001062-dino2026/?aid=2884",
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Article says the non-verbal show suits children of all ages, but the dinosaurs come close and roar loudly; it suggests Category 3 or 4 seats further back for noise-sensitive toddlers. Tickets also sold on SISTIC. Show times and the hall within RWS are not stated.",
+      "id": "ev_249dc7fc45ea",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "TOTally Science: Santa's Glowing Christmas Rescue",
+      "summary": "A festive 90-minute session for two- and three-year-olds, who walk a glow trail, make their own glowing lantern and race to deliver presents in time to save Christmas.",
+      "category": "workshop",
+      "venue": {
+        "name": "KidsSTOP, Science Centre Singapore",
+        "address": "21 Jurong Town Hall Road, Singapore 609433",
+        "region": "west",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-12-05",
+        "end": "2026-12-05",
+        "times": "10am - 11.30am",
+        "days": []
+      },
+      "audience": {
+        "age_min": 2,
+        "age_max": 3,
+        "toddler_ok": "yes"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "Members $60, non-members $65",
+        "min_sgd": 60
+      },
+      "booking": {
+        "required": true,
+        "url": "https://programmes.tickets.science.edu.sg/attraction/totally-science-workshops-58840",
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Recommended for ages 2 to 3. The article does not say whether the fee covers an accompanying adult.",
+      "id": "ev_102f65f4c059",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/latest-exhibitions-and-events-at-science-centre-singapore",
+          "article_title": "2026 Happenings At Science Centre Singapore",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "A Christmas Story by World Christmas Market",
+      "summary": "A free European-style Christmas market across Fort Canning Park and METT Hotel, built around a 38-foot real tree with giant nutcrackers and reindeer, plus gift stalls, craft workshops, live music and a food market.",
+      "category": "market",
+      "venue": {
+        "name": "Fort Canning Park & METT Hotel Singapore",
+        "address": "11 Canning Rise, Singapore 179881",
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-12-10",
+        "end": "2027-01-03",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "yes"
+      },
+      "cost": {
+        "is_free": true,
+        "price_text": "Free admission",
+        "min_sgd": null
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "outdoor",
+      "notes": "The workshops are billed for all ages. A 42-piece orchestra plays on opening weekend, with other live music on scheduled dates. Pet-friendly; the article suggests going early in the day with young children as weekend evenings get busy.",
+      "id": "ev_c41ae4ea2a5b",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "SSO Christmas Concert",
+      "summary": "The Singapore Symphony Orchestra and its choruses pair Tchaikovsky's Nutcracker with Rutter's Gloria in their yearly festive concert, alongside their traditional Christmas medley sing-alongs.",
+      "category": "performance",
+      "venue": {
+        "name": "Esplanade Concert Hall",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-12-11",
+        "end": "2026-12-12",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "$48 - $228",
+        "min_sgd": 48
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Described as an evening concert, conducted by Associate Conductor Nathanaël Iselin. Exact times and age guidance are not stated.",
+      "id": "ev_5a40c44ea467",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    },
+    {
+      "title": "On My Own: Nathania Ong with the Singapore Symphony",
+      "summary": "West End singer Nathania Ong, joined by Preston Lim and Vanessa Kee and backed by the SSO, sings musical theatre, Broadway and Disney favourites, including songs from Frozen, Wicked and Les Misérables.",
+      "category": "performance",
+      "venue": {
+        "name": "Esplanade Concert Hall",
+        "address": null,
+        "region": "central",
+        "lat": null,
+        "lng": null
+      },
+      "dates": {
+        "start": "2026-12-17",
+        "end": "2026-12-18",
+        "times": null,
+        "days": []
+      },
+      "audience": {
+        "age_min": null,
+        "age_max": null,
+        "toddler_ok": "unclear"
+      },
+      "cost": {
+        "is_free": false,
+        "price_text": "$28 - $148",
+        "min_sgd": 28
+      },
+      "booking": {
+        "required": null,
+        "url": null,
+        "opens": null
+      },
+      "setting": "indoor",
+      "notes": "Described as an evening concert; exact times and age guidance are not stated.",
+      "id": "ev_fc77cd451ee8",
+      "sources": [
+        {
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        }
+      ],
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-03"
+    }
+  ]
 }
