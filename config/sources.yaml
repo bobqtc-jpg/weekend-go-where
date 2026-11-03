@@ -23,6 +23,8 @@ sources:
       - type: index
         url: https://www.sassymamasg.com/category/whats-on/things-to-do-with-kids/
         link_pattern: "^https://www\\.sassymamasg\\.com/[a-z0-9-]+/$"
+        # Travel guides and the teaser-only events calendar carry no usable dates.
+        exclude_link_pattern: "/(travel-[a-z0-9-]*|event)/$"
         max_items: 4
 
   - id: bykido

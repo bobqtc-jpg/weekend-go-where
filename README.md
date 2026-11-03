@@ -11,7 +11,8 @@ distance from Marine Parade.
 |---|---|
 | Event and place formats (`schema/`) | Done |
 | Merge and validation (`refresh/merge.py`, `refresh/validate.py`) | Done; tested offline |
-| Fetchers for six sources (`refresh/fetch.py`, `config/sources.yaml`) | Written; untested because the cloud environment blocks the sites |
+| Fetchers for six sources (`refresh/fetch.py`, `config/sources.yaml`) | Sassy Mama and ByKido tested live on 3 Nov 2026; the other four not yet |
+| Weekend preview (`refresh/preview.py`) | Done |
 | Weekly refresh on the Max plan ([REFRESH.md](REFRESH.md)) | Runbook written; scheduled task not created yet |
 | Places directory | Not started |
 | Web app | Not started; waits on a successful test pull |
@@ -44,6 +45,7 @@ pytest -q
 python -m refresh.fetch      # needs network access to the source sites
 python -m refresh.merge
 python -m refresh.validate
+python -m refresh.preview    # the coming weekend's events, toddler-friendly first
 ```
 
 ## Network access

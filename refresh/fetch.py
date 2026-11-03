@@ -94,13 +94,13 @@ class Fetcher:
         self._unreachable: dict[str, str] = {}
         self._last = 0.0
 
-    def _throttle(self) -> None:
-        wait = self.delay_s - (time.monotonic() - self._last)
+    def _throttle(self, delay_s: float | None = None) -> None:
+        wait = (self.delay_s if delay_s is None else delay_s) - (time.monotonic() - self._last)
         if wait > 0:
             time.sleep(wait)
         self._last = time.monotonic()
 
-    def _check_robots(self, url: str) -> None:
+    def _check_robots(self, url: str) -> robotparser.RobotFileParser:
         parts = urlparse(url)
         origin = f"{parts.scheme}://{parts.netloc}"
         if origin not in self._robots and origin not in self._unreachable:
@@ -113,12 +113,15 @@ class Fetcher:
                 self._robots[origin] = robots_from_response(resp.status_code, resp.text)
         if origin in self._unreachable:
             raise ConnectionError(f"cannot reach {origin} ({self._unreachable[origin]})")
-        if not self._robots[origin].can_fetch(USER_AGENT, url):
+        rp = self._robots[origin]
+        if not rp.can_fetch(USER_AGENT, url):
             raise PermissionError(f"robots.txt disallows {url}")
+        return rp
 
     def get(self, url: str) -> requests.Response:
-        self._check_robots(url)
-        self._throttle()
+        rp = self._check_robots(url)
+        # Honour the site's Crawl-delay when it asks for more than our default.
+        self._throttle(max(self.delay_s, float(rp.crawl_delay(USER_AGENT) or 0)))
         resp = self.session.get(url, timeout=TIMEOUT_S)
         resp.raise_for_status()
         return resp
@@ -151,16 +154,19 @@ def html_to_article(
     return Article(source_id, url, (title or url).strip(), published, text.strip())
 
 
-def index_links(html: str, base_url: str, pattern: str) -> list[str]:
-    """Links on an index page that match `pattern`, absolute, de-duplicated, in page order."""
+def index_links(html: str, base_url: str, pattern: str, exclude: str | None = None) -> list[str]:
+    """Links on an index page that match `pattern` (and not `exclude`), absolute, de-duplicated, in page order."""
     doc = lxml.html.document_fromstring(html)
     doc.make_links_absolute(base_url)
     rx = re.compile(pattern)
+    rx_exclude = re.compile(exclude) if exclude else None
     links: list[str] = []
     for element, attribute, link, _pos in doc.iterlinks():
         if element.tag != "a" or attribute != "href":
             continue
         link = link.split("#", 1)[0]
+        if rx_exclude and rx_exclude.search(link):
+            continue
         if link != base_url and rx.search(link) and link not in links:
             links.append(link)
     return links
@@ -244,7 +250,9 @@ def from_wordpress(fetcher: Fetcher, source_id: str, strategy: dict, ctx: Contex
 def from_index(fetcher: Fetcher, source_id: str, strategy: dict, ctx: Context) -> Iterator[Article]:
     index_url = strategy["url"]
     max_items = strategy.get("max_items", ctx.max_items)
-    links = index_links(fetcher.get(index_url).text, index_url, strategy["link_pattern"])
+    links = index_links(
+        fetcher.get(index_url).text, index_url, strategy["link_pattern"], strategy.get("exclude_link_pattern")
+    )
     taken = 0
     for link in links[: max_items * 3]:  # cap requests when the title filter rejects many
         if taken >= max_items:

@@ -24,6 +24,7 @@ the session reads the articles itself and writes the structured events.
 
 - **One candidate per event:** a listing that covers several venues with their own dates becomes several candidates.
 - **Dated happenings only:** include events that end on or after today. Skip permanent attractions, playgrounds, restaurants, deals, giveaways and term-long classes.
+- **For families, in Singapore:** skip items aimed only at adults (dining promotions, buffets, school open houses, parenting talks) and anything outside Singapore.
 - **Stated facts only:** use `null` (or `"unclear"`) instead of guessing.
 - **Dates:** `YYYY-MM-DD`; a one-day event has `start` equal to `end`. When the article only says "this weekend", take the dates from its dated title, such as "(7 to 8 Nov 2026)", and say so in `notes`.
 - **`days`:** the days the event runs within its date range; leave it empty when it runs every day or the article does not say.

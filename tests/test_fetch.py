@@ -46,10 +46,21 @@ def test_index_links_filters_and_dedupes():
     assert links == ["https://news.example.com/p/one"]
 
 
+def test_index_links_can_exclude_sections():
+    html = '<html><body><a href="/play-guide/">a</a><a href="/travel-jb/">b</a><a href="/event/">c</a></body></html>'
+    links = index_links(html, "https://site.example/", r"^https://site\.example/[a-z-]+/$", r"/(travel-[a-z-]*|event)/$")
+    assert links == ["https://site.example/play-guide/"]
+
+
 def test_robots_rules_are_respected():
     rp = robots_from_response(200, "User-agent: *\nDisallow: /private/\n")
     assert rp.can_fetch(USER_AGENT, "https://example.com/events/")
     assert not rp.can_fetch(USER_AGENT, "https://example.com/private/page")
+
+
+def test_crawl_delay_is_read_for_our_agent():
+    rp = robots_from_response(200, "User-agent: *\nDisallow: /admin/\n\ncrawl-delay: 5\n")
+    assert rp.crawl_delay(USER_AGENT) == 5
 
 
 def test_missing_robots_file_allows_everything():
