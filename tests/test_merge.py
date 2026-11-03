@@ -114,5 +114,21 @@ def test_missing_extraction_is_reported(validator):
     assert report.missing == ["a__one"]
 
 
+def test_digest_items_link_to_their_own_page(validator):
+    item = candidate()
+    item["source_url"] = "https://example.com/p/abc"
+    item["booking"] = {"required": True, "status": "fully_booked", "url": None, "opens": None}
+    events, report = run({"muse__digest": [item]}, validator)
+    assert report.errors == []
+    (event,) = events
+    assert event["sources"][0] == {
+        "source_id": "muse",
+        "url": "https://example.com/p/abc",
+        "article_title": "Article muse__digest",
+        "published": "2026-11-05",
+    }
+    assert "source_url" not in event and event["booking"]["status"] == "fully_booked"
+
+
 def test_similarity_ignores_case_and_punctuation():
     assert similarity("Test Bubble Show!", "test bubble show") == 1.0

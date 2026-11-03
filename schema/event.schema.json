@@ -96,6 +96,10 @@
       "additionalProperties": false,
       "properties": {
         "required": { "type": ["boolean", "null"] },
+        "status": {
+          "enum": ["open", "registration_required", "fully_booked", null],
+          "description": "As stated by the source: open, registration needed with spaces left, or fully booked."
+        },
         "url": { "type": ["string", "null"] },
         "opens": { "oneOf": [{ "$ref": "#/$defs/date" }, { "type": "null" }] }
       }

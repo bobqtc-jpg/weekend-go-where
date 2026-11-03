@@ -61,3 +61,12 @@ sources:
       - type: page
         urls:
           - https://www.timeout.com/singapore/kids/the-best-things-to-do-with-kids-in-singapore-this-month
+
+  # Weekly Instagram digest that Muse emails every Wednesday evening. fetch.py
+  # skips it: the refresh session reads it through the Gmail connector and adds
+  # it with refresh.add_article (see REFRESH.md).
+  - id: muse
+    name: Muse Instagram digest (email)
+    strategies:
+      - type: gmail
+        query: 'from:me subject:"Singapore toddler happenings" -subject:SAMPLE newer_than:3d'

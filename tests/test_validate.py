@@ -58,6 +58,11 @@ def test_booking_opening_after_end_fails(validator):
     assert any("opens after" in e for e in errors)
 
 
+def test_unknown_booking_status_fails(validator):
+    booking = {"required": True, "status": "almost full", "url": None, "opens": None}
+    assert any("status" in e for e in event_errors(make_event(booking=booking), validator, TODAY))
+
+
 def test_long_running_attraction_is_rejected(validator):
     errors = event_errors(make_event(dates={"start": "2026-01-01", "end": "2027-06-30"}), validator, TODAY)
     assert any("treat it as a place" in e for e in errors)

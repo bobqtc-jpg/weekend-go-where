@@ -72,7 +72,9 @@ def same_event(a: dict, b: dict) -> bool:
 
 
 def build_event(candidate: dict, article: dict, today: date) -> dict:
-    event = {k: copy.deepcopy(v) for k, v in candidate.items() if k not in SYSTEM_FIELDS}
+    """Turn a candidate into an event. A digest that links each item (such as an email) may give
+    the item's own page as `source_url`, which then replaces the article URL as its source link."""
+    event = {k: copy.deepcopy(v) for k, v in candidate.items() if k not in SYSTEM_FIELDS + ("source_url",)}
     event["id"] = stable_id(
         "ev",
         candidate.get("title"),
@@ -82,7 +84,7 @@ def build_event(candidate: dict, article: dict, today: date) -> dict:
     event["sources"] = [
         {
             "source_id": article["source_id"],
-            "url": article["url"],
+            "url": candidate.get("source_url") or article["url"],
             "article_title": article.get("title"),
             "published": article.get("published"),
         }

@@ -287,8 +287,13 @@ def run(source_ids: list[str] | None = None, force: bool = False) -> int:
 
     fetcher = Fetcher()
     manifest: dict[str, dict] = {}
-    failed = 0
+    failed = attempted = 0
     for source in sources:
+        if not any(s["type"] in STRATEGIES for s in source["strategies"]):
+            # e.g. type "gmail": the refresh session reads these itself (see REFRESH.md)
+            print(f"{source['id']:<14} skipped  read by the refresh session, not by this script")
+            continue
+        attempted += 1
         ctx = Context(
             since=sg_today() - timedelta(days=source.get("lookback_days", defaults.get("lookback_days", 10))),
             max_items=source.get("max_items", defaults.get("max_items", 6)),
@@ -297,6 +302,8 @@ def run(source_ids: list[str] | None = None, force: bool = False) -> int:
         new = unchanged = 0
         errors: list[str] = []
         for strategy in source["strategies"]:
+            if strategy["type"] not in STRATEGIES:
+                continue
             try:
                 for article in STRATEGIES[strategy["type"]](fetcher, source["id"], strategy, ctx):
                     digest = content_hash(article.text)
@@ -326,7 +333,7 @@ def run(source_ids: list[str] | None = None, force: bool = False) -> int:
 
     write_json(MANIFEST_FILE, manifest)
     print(f"\n{len(manifest)} article(s) to extract; list in {MANIFEST_FILE.relative_to(ROOT)}")
-    if sources and failed == len(sources):
+    if attempted and failed == attempted:
         print("Every source failed; check network access before going further.", file=sys.stderr)
         return 1
     return 0

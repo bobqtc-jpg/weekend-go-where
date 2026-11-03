@@ -73,6 +73,9 @@ def render(events: list[dict], saturday: date, sunday: date) -> str:
         when = f"{on}{span}" + (f"; {e['dates']['times']}" if e["dates"].get("times") else "")
         cost = e["cost"]
         price = "Free" if cost.get("is_free") is True else (cost.get("price_text") or "Not stated")
+        status = (e.get("booking") or {}).get("status")
+        if status in ("fully_booked", "registration_required"):
+            price += "; " + status.replace("_", " ")
         sources = ", ".join(sorted({s["source_id"] for s in e["sources"]}))
         lines.append(
             f"| {_cell(e['title'])} | {_cell(when)} | {_cell(e['venue']['name'])} | {_cell(price)} "
