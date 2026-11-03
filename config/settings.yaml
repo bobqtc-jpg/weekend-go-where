@@ -16,6 +16,11 @@ planning:
   plan_day: thursday
   weekend_days: [saturday, sunday]
   include_public_holidays: true
+  # Grouping of the weekend view: runs this short count as limited time;
+  # longer runs count as limited ("last chance") when they end within
+  # last_chance_days of the Saturday; the rest are ongoing.
+  limited_max_days: 42
+  last_chance_days: 14
 
 filters:
   dietary: [] # no dietary filter

@@ -15,6 +15,7 @@
       "dates": {
         "start": "2026-05-30",
         "end": "2026-11-16",
+        "pattern": "fixed",
         "times": "3pm",
         "days": [
           "sat",
@@ -64,6 +65,7 @@
       "dates": {
         "start": "2026-05-30",
         "end": "2027-01-03",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -110,6 +112,7 @@
       "dates": {
         "start": "2026-06-06",
         "end": "2026-11-11",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -156,6 +159,7 @@
       "dates": {
         "start": "2026-06-08",
         "end": "2027-03-14",
+        "pattern": "fixed",
         "times": "10am - 9pm",
         "days": []
       },
@@ -208,6 +212,7 @@
       "dates": {
         "start": "2026-08-01",
         "end": "2026-11-22",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -254,6 +259,7 @@
       "dates": {
         "start": "2026-10-01",
         "end": "2027-03-31",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -300,6 +306,7 @@
       "dates": {
         "start": "2026-10-09",
         "end": "2026-11-09",
+        "pattern": "fixed",
         "times": "9am - 9pm",
         "days": []
       },
@@ -352,6 +359,7 @@
       "dates": {
         "start": "2026-10-17",
         "end": "2026-11-08",
+        "pattern": "fixed",
         "times": "10am - 6pm; until 8pm on Saturdays",
         "days": [
           "sat",
@@ -401,6 +409,7 @@
       "dates": {
         "start": "2026-10-24",
         "end": "2027-01-31",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -453,6 +462,7 @@
       "dates": {
         "start": "2026-10-27",
         "end": "2027-09-19",
+        "pattern": "fixed",
         "times": "10am - 10pm daily",
         "days": []
       },
@@ -511,6 +521,7 @@
       "dates": {
         "start": "2026-10-29",
         "end": "2026-11-22",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -557,6 +568,7 @@
       "dates": {
         "start": "2026-10-31",
         "end": "2026-11-04",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -603,6 +615,7 @@
       "dates": {
         "start": "2026-10-31",
         "end": "2027-03-31",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -649,6 +662,7 @@
       "dates": {
         "start": "2026-11-01",
         "end": "2026-11-30",
+        "pattern": "recurring",
         "times": "10am or 11am",
         "days": [
           "sat",
@@ -698,6 +712,7 @@
       "dates": {
         "start": "2026-11-01",
         "end": "2026-12-31",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -744,6 +759,7 @@
       "dates": {
         "start": "2026-11-02",
         "end": "2027-03-31",
+        "pattern": "fixed",
         "times": "9.15am - 6pm daily; sessions last 1 hr 15 min",
         "days": []
       },
@@ -790,6 +806,7 @@
       "dates": {
         "start": "2026-11-03",
         "end": "2026-11-08",
+        "pattern": "open_ended",
         "times": "10am - 5pm; closed Mondays except public holidays and school holidays",
         "days": [
           "tue",
@@ -849,6 +866,7 @@
       "dates": {
         "start": "2026-11-06",
         "end": "2026-11-30",
+        "pattern": "fixed",
         "times": "Timeslots from 10am to 5pm",
         "days": []
       },
@@ -895,6 +913,7 @@
       "dates": {
         "start": "2026-11-06",
         "end": "2026-11-15",
+        "pattern": "fixed",
         "times": null,
         "days": [
           "fri",
@@ -951,6 +970,7 @@
       "dates": {
         "start": "2026-11-06",
         "end": "2026-11-21",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -997,6 +1017,7 @@
       "dates": {
         "start": "2026-11-06",
         "end": "2026-12-31",
+        "pattern": "fixed",
         "times": "12.30pm - 8pm",
         "days": []
       },
@@ -1043,6 +1064,7 @@
       "dates": {
         "start": "2026-11-06",
         "end": "2026-11-11",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1089,6 +1111,7 @@
       "dates": {
         "start": "2026-11-07",
         "end": "2027-01-03",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1135,6 +1158,7 @@
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-08",
+        "pattern": "recurring",
         "times": "9pm - 9.30pm (also Mondays 8pm - 8.30pm)",
         "days": []
       },
@@ -1181,6 +1205,7 @@
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-07",
+        "pattern": "recurring",
         "times": "9am - 9.50am or 10am - 10.50am",
         "days": []
       },
@@ -1227,6 +1252,7 @@
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-08",
+        "pattern": "recurring",
         "times": "7pm",
         "days": []
       },
@@ -1273,6 +1299,7 @@
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-08",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1325,6 +1352,7 @@
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-08",
+        "pattern": "fixed",
         "times": "10am - 8pm",
         "days": []
       },
@@ -1377,6 +1405,7 @@
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-09",
+        "pattern": "fixed",
         "times": "11am, 2pm and 4pm",
         "days": []
       },
@@ -1429,6 +1458,7 @@
       "dates": {
         "start": "2026-11-07",
         "end": "2027-01-03",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1475,6 +1505,7 @@
       "dates": {
         "start": "2026-11-12",
         "end": "2026-11-29",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1521,6 +1552,7 @@
       "dates": {
         "start": "2026-11-12",
         "end": "2026-12-27",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1567,6 +1599,7 @@
       "dates": {
         "start": "2026-11-13",
         "end": "2027-03-20",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1613,6 +1646,7 @@
       "dates": {
         "start": "2026-11-13",
         "end": "2026-12-31",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1659,6 +1693,7 @@
       "dates": {
         "start": "2026-11-14",
         "end": "2027-06-28",
+        "pattern": "fixed",
         "times": "10.30am - 1pm (last entry 12.30pm), 2.30pm - 5pm (last entry 4.30pm)",
         "days": []
       },
@@ -1705,6 +1740,7 @@
       "dates": {
         "start": "2026-11-16",
         "end": "2026-12-31",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1751,6 +1787,7 @@
       "dates": {
         "start": "2026-11-18",
         "end": "2026-11-22",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1797,6 +1834,7 @@
       "dates": {
         "start": "2026-11-21",
         "end": "2027-01-03",
+        "pattern": "fixed",
         "times": "10am - 5pm",
         "days": []
       },
@@ -1843,6 +1881,7 @@
       "dates": {
         "start": "2026-11-26",
         "end": "2026-11-29",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1889,6 +1928,7 @@
       "dates": {
         "start": "2026-11-27",
         "end": "2027-01-03",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -1935,6 +1975,7 @@
       "dates": {
         "start": "2026-11-27",
         "end": "2026-11-29",
+        "pattern": "fixed",
         "times": "10am - 9pm",
         "days": []
       },
@@ -1981,6 +2022,7 @@
       "dates": {
         "start": "2026-11-27",
         "end": "2027-01-03",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -2027,6 +2069,7 @@
       "dates": {
         "start": "2026-11-27",
         "end": "2027-01-03",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -2073,6 +2116,7 @@
       "dates": {
         "start": "2026-11-28",
         "end": "2026-11-29",
+        "pattern": "fixed",
         "times": "11am - 9pm",
         "days": []
       },
@@ -2119,6 +2163,7 @@
       "dates": {
         "start": "2026-11-28",
         "end": "2027-05-16",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -2165,6 +2210,7 @@
       "dates": {
         "start": "2026-12-03",
         "end": "2026-12-06",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -2211,6 +2257,7 @@
       "dates": {
         "start": "2026-12-05",
         "end": "2026-12-05",
+        "pattern": "fixed",
         "times": "10am - 11.30am",
         "days": []
       },
@@ -2257,6 +2304,7 @@
       "dates": {
         "start": "2026-12-10",
         "end": "2027-01-03",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -2303,6 +2351,7 @@
       "dates": {
         "start": "2026-12-11",
         "end": "2026-12-12",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },
@@ -2349,6 +2398,7 @@
       "dates": {
         "start": "2026-12-17",
         "end": "2026-12-18",
+        "pattern": "fixed",
         "times": null,
         "days": []
       },

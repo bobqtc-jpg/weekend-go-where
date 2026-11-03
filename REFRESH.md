@@ -37,6 +37,8 @@ the session reads the articles itself and writes the structured events.
   - **Months only ("October to March"):** the first day of the first month to the last day of the last month.
   - **Recurring with no end ("every Saturday"):** one candidate for the period the article covers, with `days` set.
   - **No usable date at all:** skip it.
+- **`dates.pattern`:** `recurring` for things that repeat on a schedule with no near end (weekly fire station visits, nightly light shows, monthly storytelling), `open_ended` when no end date is stated (so `end` is the placeholder from the rule above), otherwise `fixed`. This is what lets the app separate limited-time happenings from evergreen ones.
+- **Permanent venues are places, not events:** skip indoor playgrounds, permanent museum galleries and parks in this step, even when an article lists them; the places directory covers them.
 - **`days`:** the days the event runs within its date range; leave it empty when it runs every day or the article does not say.
 - **`summary`:** one or two sentences in your own words, at most 280 characters. Never copy sentences from the article.
 - **`audience.toddler_ok`:** `yes` when the stated ages include 2, or the event is billed for toddlers or all ages; `no` when the minimum age is 4 or more, or it is clearly for older children; otherwise `unclear`.
@@ -55,7 +57,7 @@ the session reads the articles itself and writes the structured events.
   "summary": "string, own words, at most 280 characters",
   "category": "performance | workshop | festival | exhibition | play | nature | sport | market | holiday_programme | storytelling | other",
   "venue": {"name": "string", "address": "string or null", "region": "central | east | north | north_east | west | null", "lat": null, "lng": null},
-  "dates": {"start": "YYYY-MM-DD", "end": "YYYY-MM-DD", "times": "string or null", "days": ["sat", "sun"]},
+  "dates": {"start": "YYYY-MM-DD", "end": "YYYY-MM-DD", "pattern": "fixed | recurring | open_ended", "times": "string or null", "days": ["sat", "sun"]},
   "audience": {"age_min": "number or null", "age_max": "number or null", "toddler_ok": "yes | no | unclear"},
   "cost": {"is_free": "true, false or null", "price_text": "string or null", "min_sgd": "number or null"},
   "booking": {"required": "true, false or null", "status": "open | registration_required | fully_booked | null", "url": "string or null", "opens": "YYYY-MM-DD or null"},

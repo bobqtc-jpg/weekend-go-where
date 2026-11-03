@@ -40,6 +40,12 @@ from .validate import event_errors, load_validator
 
 SYSTEM_FIELDS = ("id", "sources", "first_seen", "last_seen")
 UNKNOWN = (None, "unclear", "", [])
+# When sources disagree: a repeat schedule is the most informative, a placeholder end the least.
+PATTERN_PRECEDENCE = ["recurring", "fixed", "open_ended"]
+
+
+def _pattern(event: dict) -> str:
+    return event["dates"].get("pattern") or "fixed"
 
 
 @dataclass
@@ -113,12 +119,21 @@ def fold_in(existing: dict, new: dict, today: date) -> None:
     known_urls = {s["url"] for s in existing["sources"]}
     existing["sources"].extend(s for s in new["sources"] if s["url"] not in known_urls)
     existing["last_seen"] = today.isoformat()
+    old_pattern, new_pattern = _pattern(existing), _pattern(new)
+    has_pattern = "pattern" in existing["dates"] or "pattern" in new["dates"]
     _fill_gaps(existing, new)
+    if has_pattern:
+        existing["dates"]["pattern"] = min(old_pattern, new_pattern, key=PATTERN_PRECEDENCE.index)
     old_range = (existing["dates"]["start"], existing["dates"]["end"])
     new_range = (new["dates"]["start"], new["dates"]["end"])
     if old_range != new_range:
         existing["dates"]["start"] = min(old_range[0], new_range[0])
-        existing["dates"]["end"] = max(old_range[1], new_range[1])
+        if old_pattern == "open_ended" and new_pattern != "open_ended":
+            existing["dates"]["end"] = new_range[1]  # a stated end beats a placeholder
+        elif new_pattern == "open_ended" and old_pattern != "open_ended":
+            existing["dates"]["end"] = old_range[1]
+        else:
+            existing["dates"]["end"] = max(old_range[1], new_range[1])
         note = f"Sources differ on dates: {old_range[0]} to {old_range[1]} vs {new_range[0]} to {new_range[1]}."
         notes = existing.get("notes") or ""
         if note not in notes:

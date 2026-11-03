@@ -37,6 +37,18 @@ distance from Marine Parade.
 2. The session follows [REFRESH.md](REFRESH.md): fetch, extract the events itself, merge, validate, push `data/`.
 3. The web app reads `data/events.json` and `data/places.json`.
 
+## How the weekend view is grouped
+
+| Group | What goes in it |
+|---|---|
+| Limited time | One-offs and runs of up to 6 weeks, plus longer runs in their last two weekends ("last chance"); soonest ending first |
+| Every week | Things that repeat with no near end, such as fire station visits and beach movies |
+| Ongoing | Runs longer than 6 weeks, and anything with no stated end |
+| Places (directory) | Permanent venues: playgrounds, indoor playgrounds, restaurants; not events at all |
+
+The thresholds live in `config/settings.yaml` (`limited_max_days`, `last_chance_days`); the
+grouping reads each event's `dates.pattern` (`fixed`, `recurring` or `open_ended`).
+
 ## Development
 
 ```bash

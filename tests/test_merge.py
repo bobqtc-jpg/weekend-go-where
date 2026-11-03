@@ -78,6 +78,25 @@ def test_conflicting_dates_are_widened_and_flagged(validator):
     assert "Sources differ on dates" in event["notes"]
 
 
+def test_stated_end_replaces_open_ended_placeholder(validator):
+    opening = candidate(start="2026-11-03", end="2026-11-08")
+    opening["dates"]["pattern"] = "open_ended"
+    full_run = candidate(start="2026-11-03", end="2027-03-31")
+    full_run["dates"]["pattern"] = "fixed"
+    events, _ = run({"a__one": [opening], "b__two": [full_run]}, validator)
+    (event,) = events
+    assert (event["dates"]["end"], event["dates"]["pattern"]) == ("2027-03-31", "fixed")
+
+
+def test_recurring_beats_fixed_when_sources_disagree(validator):
+    weekly = candidate()
+    weekly["dates"]["pattern"] = "recurring"
+    one_off = candidate()
+    one_off["dates"]["pattern"] = "fixed"
+    events, _ = run({"a__one": [one_off], "b__two": [weekly]}, validator)
+    assert events[0]["dates"]["pattern"] == "recurring"
+
+
 def test_rerunning_the_same_article_does_not_duplicate_sources(validator):
     events, _ = run({"a__one": [candidate()]}, validator)
     events, report = run({"a__one": [candidate()]}, validator, existing=events)

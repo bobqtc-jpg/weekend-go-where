@@ -62,6 +62,10 @@
       "properties": {
         "start": { "$ref": "#/$defs/date" },
         "end": { "$ref": "#/$defs/date" },
+        "pattern": {
+          "enum": ["fixed", "recurring", "open_ended"],
+          "description": "fixed: stated start and end (one-off or a run); recurring: repeats on a schedule with no near end, dated only for the period the article covers; open_ended: no end stated, so end is a placeholder. Missing means fixed."
+        },
         "times": { "type": ["string", "null"], "maxLength": 120 },
         "days": {
           "type": "array",
