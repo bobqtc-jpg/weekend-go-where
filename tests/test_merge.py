@@ -68,14 +68,46 @@ def test_same_title_on_other_dates_stays_separate(validator):
     assert len(events) == 2
 
 
-def test_conflicting_dates_are_widened_and_flagged(validator):
+def test_inferred_start_is_widened_without_a_note(validator):
     # One source says "now till 30 Nov" (start inferred), another gives the full run.
     inferred_start = candidate(start="2026-11-07", end="2026-11-30")
     explicit = candidate(start="2026-10-27", end="2026-11-30")
     events, _ = run({"a__one": [inferred_start], "b__two": [explicit]}, validator)
     (event,) = events
     assert (event["dates"]["start"], event["dates"]["end"]) == ("2026-10-27", "2026-11-30")
-    assert "Sources differ on dates" in event["notes"]
+    assert event["notes"] is None
+
+
+def test_clashing_end_dates_are_widened_and_noted(validator):
+    events, _ = run({"a__one": [candidate(end="2026-11-15")], "b__two": [candidate(end="2026-11-22")]}, validator)
+    (event,) = events
+    assert event["dates"]["end"] == "2026-11-22"
+    assert event["notes"] == "Sources differ on the end date: 2026-11-15 vs 2026-11-22."
+
+
+def test_placeholder_ends_add_no_notes(validator):
+    # An event with no stated end gets a different placeholder end every week.
+    weeks = []
+    for i, end in enumerate(["2026-11-08", "2026-11-09", "2026-11-10"]):
+        c = candidate(start="2026-11-03", end=end)
+        c["dates"]["pattern"] = "open_ended"
+        weeks.append((f"w{i}__glow", c))
+    events, _ = run({key: [c] for key, c in weeks}, validator)
+    (event,) = events
+    assert event["notes"] is None
+
+
+def test_notes_never_exceed_the_schema_limit(validator):
+    long_notes = candidate(end="2026-11-15")
+    long_notes["notes"] = "x" * 390
+    events, report = run(
+        {"a__one": [long_notes], "b__two": [candidate(end="2026-11-22")], "c__three": [candidate(end="2026-11-29")]},
+        validator,
+    )
+    (event,) = events
+    assert report.errors == []
+    assert len(event["notes"]) <= 400
+    assert event["notes"].endswith("Sources differ on the end date: 2026-11-22 vs 2026-11-29.")
 
 
 def test_stated_end_replaces_open_ended_placeholder(validator):

@@ -63,6 +63,12 @@ def test_crawl_delay_is_read_for_our_agent():
     assert rp.crawl_delay(USER_AGENT) == 5
 
 
+def test_groups_still_split_on_user_agent_lines():
+    rp = robots_from_response(200, "User-agent: BadBot\nDisallow: /\n\nUser-agent: *\nDisallow: /private/\n")
+    assert rp.can_fetch(USER_AGENT, "https://example.com/events/")
+    assert not rp.can_fetch("BadBot/1.0", "https://example.com/events/")
+
+
 def test_missing_robots_file_allows_everything():
     assert robots_from_response(404, "").can_fetch(USER_AGENT, "https://example.com/anything")
 

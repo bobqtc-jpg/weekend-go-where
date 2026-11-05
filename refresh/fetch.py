@@ -75,7 +75,9 @@ def robots_from_response(status: int | None, text: str) -> robotparser.RobotFile
     """Robots rules per RFC 9309: a 4xx means no rules; a 5xx means stay out."""
     rp = robotparser.RobotFileParser()
     if status is not None and 200 <= status < 300:
-        rp.parse(text.splitlines())
+        # RFC 9309 groups rules by user-agent lines, not blank lines; Python versions differ on
+        # blank lines inside a group, so drop them for the same result everywhere.
+        rp.parse([line for line in text.splitlines() if line.strip()])
     elif status is not None and 400 <= status < 500:
         rp.allow_all = True
     else:

@@ -6,7 +6,7 @@ the session reads the articles itself and writes the structured events.
 
 ## Steps
 
-1. Set up: `python -m venv .venv && . .venv/bin/activate && pip install -e '.[dev]'`
+1. Set up: `python3 -m venv .venv && . .venv/bin/activate && pip install -e '.[dev]'`
 2. Fetch: `python -m refresh.fetch`
    - Changed articles go to `inbox/articles/` and are listed in `inbox/manifest.json`.
    - If every source fails, stop and report the errors. Do not touch `data/`.
@@ -19,7 +19,9 @@ the session reads the articles itself and writes the structured events.
    follow the rules below. Write `[]` for an article with no qualifying events.
 4. Merge: `python -m refresh.merge`. If it reports invalid candidates, fix those
    files and rerun until it passes. Use `--skip-invalid` only for a candidate that
-   cannot be fixed from the article, and say so in the report.
+   cannot be fixed from the article, and say so in the report. If it reports a
+   problem with a merged event rather than a candidate, that is a code bug: report
+   it and stop, without editing `data/` by hand.
 5. Check: `python -m refresh.validate` and `pytest -q` must both pass.
 6. Commit only `data/`, with the message `Weekly refresh YYYY-MM-DD`, and push.
 7. Report: new, updated and expired counts, sources that failed, and anything you were unsure about.

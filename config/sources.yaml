@@ -36,9 +36,9 @@ sources:
   - id: littledayout
     name: Little Day Out
     strategies:
-      - type: wordpress
-        base: https://www.littledayout.com
-        search: ["things to do", "weekend"]
+      # Its WordPress API answers 401; the RSS feed is open and lists the weekly guides.
+      - type: feed
+        url: https://www.littledayout.com/feed/
 
   - id: honeykids
     name: Honeykids Asia
@@ -55,12 +55,8 @@ sources:
         link_pattern: "^https://sunnycitykids\\.beehiiv\\.com/p/[a-z0-9-]+$"
         max_items: 2
 
-  - id: timeout
-    name: Time Out Singapore (kids)
-    strategies:
-      - type: page
-        urls:
-          - https://www.timeout.com/singapore/kids/the-best-things-to-do-with-kids-in-singapore-this-month
+  # Time Out Singapore was dropped on 5 Nov 2026: it moved to timeout.sg, which answers
+  # automated readers with 403, and its monthly list mostly repeats the sources above.
 
   # Weekly Instagram digest that Muse emails every Wednesday evening. fetch.py
   # skips it: the refresh session reads it through the Gmail connector and adds

@@ -42,6 +42,7 @@ SYSTEM_FIELDS = ("id", "sources", "first_seen", "last_seen")
 UNKNOWN = (None, "unclear", "", [])
 # When sources disagree: a repeat schedule is the most informative, a placeholder end the least.
 PATTERN_PRECEDENCE = ["recurring", "fixed", "open_ended"]
+NOTES_MAX = 400  # schema/event.schema.json: notes maxLength
 
 
 def _pattern(event: dict) -> str:
@@ -110,11 +111,25 @@ def _fill_gaps(dst: dict, src: dict) -> None:
             dst[key] = copy.deepcopy(value)
 
 
-def fold_in(existing: dict, new: dict, today: date) -> None:
-    """Merge `new` into `existing`: add its sources, fill unknown fields, widen and flag date conflicts.
+def append_note(event: dict, note: str, limit: int = NOTES_MAX) -> None:
+    """Add a sentence to the event's notes once, keeping the notes within the schema's limit.
+    When space runs out, the older text is shortened so the newest note still fits."""
+    notes = (event.get("notes") or "").strip()
+    if note in notes:
+        return
+    combined = f"{notes} {note}".strip()
+    if len(combined) > limit:
+        keep = max(0, limit - len(note) - 2)
+        combined = (f"{notes[:keep].rstrip()}… {note}" if keep else note)[:limit]
+    event["notes"] = combined
 
-    Sources often differ because one only says "now till X" (start inferred) or gives no
-    end date (end inferred), so the merged event takes the widest range and notes the conflict.
+
+def fold_in(existing: dict, new: dict, today: date) -> None:
+    """Merge `new` into `existing`: add its sources, fill unknown fields, widen the dates.
+
+    Sources often differ only because one says "now till X" (start inferred) or gives no end
+    (end is a placeholder), so the merged event takes the widest range. Only a clash between
+    two stated end dates is worth a note.
     """
     known_urls = {s["url"] for s in existing["sources"]}
     existing["sources"].extend(s for s in new["sources"] if s["url"] not in known_urls)
@@ -124,20 +139,18 @@ def fold_in(existing: dict, new: dict, today: date) -> None:
     _fill_gaps(existing, new)
     if has_pattern:
         existing["dates"]["pattern"] = min(old_pattern, new_pattern, key=PATTERN_PRECEDENCE.index)
-    old_range = (existing["dates"]["start"], existing["dates"]["end"])
-    new_range = (new["dates"]["start"], new["dates"]["end"])
-    if old_range != new_range:
-        existing["dates"]["start"] = min(old_range[0], new_range[0])
+    old_start, old_end = existing["dates"]["start"], existing["dates"]["end"]
+    new_start, new_end = new["dates"]["start"], new["dates"]["end"]
+    existing["dates"]["start"] = min(old_start, new_start)
+    if old_end != new_end:
         if old_pattern == "open_ended" and new_pattern != "open_ended":
-            existing["dates"]["end"] = new_range[1]  # a stated end beats a placeholder
+            existing["dates"]["end"] = new_end  # a stated end beats a placeholder
         elif new_pattern == "open_ended" and old_pattern != "open_ended":
-            existing["dates"]["end"] = old_range[1]
+            existing["dates"]["end"] = old_end
         else:
-            existing["dates"]["end"] = max(old_range[1], new_range[1])
-        note = f"Sources differ on dates: {old_range[0]} to {old_range[1]} vs {new_range[0]} to {new_range[1]}."
-        notes = existing.get("notes") or ""
-        if note not in notes:
-            existing["notes"] = f"{notes} {note}".strip()
+            existing["dates"]["end"] = max(old_end, new_end)
+        if old_pattern == new_pattern == "fixed":
+            append_note(existing, f"Sources differ on the end date: {old_end} vs {new_end}.")
 
 
 def merge(
@@ -204,8 +217,11 @@ def main(argv: list[str] | None = None) -> int:
     store = load_json(EVENTS_FILE, {"updated": None, "events": []})
     today = sg_today()
 
-    events, report = merge(
-        store["events"], manifest, extracted, today, keep_days, load_validator("event.schema.json")
+    validator = load_validator("event.schema.json")
+    events, report = merge(store["events"], manifest, extracted, today, keep_days, validator)
+    # Never write data that refresh.validate would reject.
+    report.errors.extend(
+        f"merged event '{e['title']}': {p}" for e in events for p in event_errors(e, validator, today)
     )
     print(
         f"new={report.new} updated={report.updated} expired={report.expired} "
