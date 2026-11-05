@@ -14,10 +14,9 @@ distance from Marine Parade.
 | Fetchers for five sources (`refresh/fetch.py`, `config/sources.yaml`) | All five work as of 5 Nov 2026; Little Day Out now reads its RSS feed |
 | Weekly Thursday run (scheduled task "Weekend events refresh") | First run on 5 Nov 2026 stopped before saving because of a merge bug, since fixed |
 | Weekend preview (`refresh/preview.py`) | Done |
-| Muse's weekly Instagram digest by email (`refresh/add_article.py`) | Intake built from the sample's format; first real email due Wed 4 Nov 2026 |
-| Weekly refresh on the Max plan ([REFRESH.md](REFRESH.md)) | Runbook written; scheduled task not created yet |
+| Muse's weekly Instagram digest by email (`refresh/add_article.py`) | Works; the 5 Nov run read the 4 Nov email through Gmail (read-only tools) |
 | Places directory | Not started |
-| Web app | Not started; waits on a successful test pull |
+| Web page (`site/`) | First version built 5 Nov 2026; private claude.ai preview; hosting not set up |
 
 ## Decisions
 
@@ -49,6 +48,21 @@ distance from Marine Parade.
 
 The thresholds live in `config/settings.yaml` (`limited_max_days`, `last_chance_days`); the
 grouping reads each event's `dates.pattern` (`fixed`, `recurring` or `open_ended`).
+
+## The web page
+
+`python site/build.py` turns `site/template.html` and the data into one self-contained page:
+
+- `dist/index.html`: the full page, for hosting.
+- `dist/artifact.html`: the same page without the document wrapper, for a private claude.ai preview.
+
+The events are embedded in the page, so it needs no server. It shows this weekend, next weekend
+and the coming four weeks, with filters for toddler-confirmed, free, indoor and east-side events.
+A Friday or Monday listed under `public_holidays` in `config/settings.yaml` joins the weekend.
+
+Hosting is not set up yet. On Cloudflare Pages: connect this repo, build command
+`pip install pyyaml && python3 site/build.py`, output directory `dist`. Every Thursday push of
+`data/` then rebuilds the page. Cloudflare Access can limit it to two email addresses.
 
 ## Development
 

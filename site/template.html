@@ -1,0 +1,484 @@
+<title>Weekend Go Where</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;600;700&display=swap">
+<style>
+/* Layout: one narrow column. The weekend's days sit up top as tiles; every event row
+   repeats those days as dots, so you can see at a glance which days it runs. */
+:root {
+  --bg: #EDF2F0;
+  --surface: #FFFFFF;
+  --ink: #15272B;
+  --muted: #55686C;
+  --line: #D3DEDB;
+  --sun: #F5B800;
+  --sun-ink: #382A00;
+  --teal: #0C6868;
+  --good: #1D7439;
+  --warn: #9C5600;
+  --bad: #B0261D;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E191B; --surface: #162326; --ink: #E3ECEA; --muted: #98ACAE; --line: #2A3B3E;
+    --sun: #F5B800; --sun-ink: #2A1F00; --teal: #5EC4BF; --good: #6FCB8C; --warn: #F0AA58; --bad: #F28A80;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E191B; --surface: #162326; --ink: #E3ECEA; --muted: #98ACAE; --line: #2A3B3E;
+  --sun: #F5B800; --sun-ink: #2A1F00; --teal: #5EC4BF; --good: #6FCB8C; --warn: #F0AA58; --bad: #F28A80;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 56px;
+}
+a { color: var(--teal); }
+:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.wrap { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
+
+/* Header */
+.brand {
+  font-family: var(--display); font-weight: 800; font-size: 13px;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); margin: 0;
+}
+h1 {
+  font-family: var(--display); font-weight: 800; font-size: clamp(32px, 9vw, 46px);
+  line-height: 1.02; margin: 2px 0 0; text-wrap: balance; letter-spacing: -0.01em;
+}
+.strip { display: flex; gap: 8px; flex-wrap: wrap; }
+.tile {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: 6px 12px 8px; min-width: 64px; display: flex; flex-direction: column;
+}
+.tile small { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+.tile b { font-family: var(--display); font-weight: 800; font-size: 24px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.tile em { font-style: normal; font-size: 12px; }
+.tile.holiday { background: var(--sun); border-color: var(--sun); color: var(--sun-ink); }
+.tile.holiday small { color: var(--sun-ink); }
+.updated { margin: 0; color: var(--muted); font-size: 14px; }
+
+/* Controls */
+.tabs {
+  display: flex; gap: 4px; padding: 4px; border-radius: 999px;
+  background: var(--surface); border: 1px solid var(--line);
+}
+.tabs button {
+  flex: 1; min-width: 0; border: 0; background: transparent; color: var(--ink);
+  font: inherit; font-weight: 700; font-size: 14px; padding: 8px 4px; border-radius: 999px; cursor: pointer;
+}
+.tabs button[aria-selected="true"] { background: var(--ink); color: var(--bg); }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip {
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  font: inherit; font-size: 14px; padding: 6px 12px; border-radius: 999px; cursor: pointer;
+}
+.chip[aria-pressed="true"] { background: var(--teal); border-color: var(--teal); color: var(--surface); }
+
+/* Groups */
+.group { display: flex; flex-direction: column; gap: 8px; }
+.group h2 {
+  font-family: var(--display); font-weight: 800; font-size: 21px; margin: 6px 0 0;
+  display: flex; gap: 8px; align-items: baseline;
+}
+.group h2 .n { font-family: var(--body); font-weight: 400; font-size: 14px; color: var(--muted); }
+.lede { margin: 0; color: var(--muted); font-size: 14px; }
+details.fold > summary { list-style: none; cursor: pointer; display: flex; flex-direction: column; gap: 2px; }
+details.fold > summary::-webkit-details-marker { display: none; }
+details.fold > summary h2::after { content: "Show"; font-family: var(--body); font-weight: 700; font-size: 13px; color: var(--teal); margin-left: auto; }
+details.fold[open] > summary h2::after { content: "Hide"; }
+details.fold > .list { margin-top: 8px; }
+
+.list { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.empty { margin: 0; padding: 14px; color: var(--muted); font-size: 14px; }
+details.ev + details.ev { border-top: 1px solid var(--line); }
+details.ev > summary {
+  list-style: none; cursor: pointer; padding: 12px 14px;
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: start;
+}
+details.ev > summary::-webkit-details-marker { display: none; }
+details.ev[open] > summary { padding-bottom: 8px; }
+.dots { display: flex; gap: 3px; padding-top: 2px; }
+.dot {
+  width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--line);
+  display: grid; place-items: center; font-size: 11px; font-variant-numeric: tabular-nums; font-weight: 700; color: var(--muted);
+}
+.dot.on { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.datebox { width: 44px; text-align: center; line-height: 1.1; padding-top: 2px; }
+.datebox b { display: block; font-family: var(--display); font-weight: 800; font-size: 20px; font-variant-numeric: tabular-nums; }
+.datebox small { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.ev h3 { margin: 0; font-size: 16px; line-height: 1.3; font-weight: 700; }
+.meta { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+.pills { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.pill {
+  font-size: 12px; line-height: 1.5; padding: 0 8px; border-radius: 999px; white-space: nowrap;
+  border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+}
+.pill.sun { background: var(--sun); border-color: var(--sun); color: var(--sun-ink); font-weight: 700; }
+.pill.good { background: transparent; border-color: currentColor; color: var(--good); }
+.pill.warn { background: transparent; border-color: currentColor; color: var(--warn); }
+.pill.bad { background: transparent; border-color: currentColor; color: var(--bad); }
+.price { font-weight: 700; font-size: 14px; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; padding-top: 1px; }
+.price.free { color: var(--good); }
+.more { padding: 0 14px 14px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; }
+.more p { margin: 0; max-width: 62ch; }
+.more .note { color: var(--muted); font-size: 14px; }
+.links { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
+
+footer { display: flex; flex-direction: column; gap: 10px; color: var(--muted); font-size: 14px; }
+footer p { margin: 0; max-width: 62ch; }
+.linkbtn { border: 0; background: none; padding: 0; font: inherit; color: var(--teal); text-decoration: underline; cursor: pointer; }
+</style>
+<!--BODY-->
+<div class="wrap">
+  <header>
+    <p class="brand">Weekend Go Where</p>
+    <h1 id="headline">This weekend</h1>
+  </header>
+  <div class="strip" id="strip"></div>
+  <p class="updated" id="updated"></p>
+  <div class="tabs" role="tablist" aria-label="Which weekend">
+    <button id="tab-0" role="tab" aria-selected="true" data-view="0">This weekend</button>
+    <button id="tab-1" role="tab" aria-selected="false" data-view="1">Next weekend</button>
+    <button id="tab-soon" role="tab" aria-selected="false" data-view="soon">Coming up</button>
+  </div>
+  <div class="chips" role="group" aria-label="Filters">
+    <button class="chip" id="f-toddler" data-filter="toddler" aria-pressed="false">Toddler confirmed</button>
+    <button class="chip" id="f-free" data-filter="free" aria-pressed="false">Free</button>
+    <button class="chip" id="f-indoor" data-filter="indoor" aria-pressed="false">Indoor (rain plan)</button>
+    <button class="chip" id="f-east" data-filter="east" aria-pressed="false">East side</button>
+  </div>
+  <main id="groups"></main>
+  <footer>
+    <p id="older"></p>
+    <p id="sources"></p>
+    <p>Dates and prices come from the sources and can change. Check the source link before you go.</p>
+  </footer>
+</div>
+<script>
+const WGW_DATA = /*__DATA__*/null;
+(function () {
+  "use strict";
+  const DATA = WGW_DATA || { events: [], updated: null, settings: {} };
+  const S = Object.assign({ limited_max_days: 42, last_chance_days: 14, public_holidays: {} }, DATA.settings || {});
+  const HOLIDAYS = S.public_holidays || {};
+  const CODES = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+  const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const SOURCE_NAMES = {
+    sassymama: "Sassy Mama", bykido: "ByKido", littledayout: "Little Day Out", honeykids: "Honeykids",
+    sunnycitykids: "Sunny City Kids", timeout: "Time Out", muse: "Muse (Instagram)"
+  };
+  const REGIONS = { central: "Central", east: "East", north: "North", north_east: "North-east", west: "West" };
+  const TODDLER_RANK = { yes: 0, unclear: 1, no: 2 };
+
+  // Dates are ISO strings (YYYY-MM-DD); arithmetic runs in UTC so time zones never shift a day.
+  const toDate = (s) => new Date(s + "T00:00:00Z");
+  const iso = (d) => d.toISOString().slice(0, 10);
+  const addDays = (s, n) => { const d = toDate(s); d.setUTCDate(d.getUTCDate() + n); return iso(d); };
+  const dow = (s) => toDate(s).getUTCDay();
+  const spanDays = (a, b) => Math.round((toDate(b) - toDate(a)) / 86400000) + 1;
+  function sgToday() {
+    return new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Singapore", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+  }
+  function fmt(s, refYear) {
+    const d = toDate(s);
+    const base = d.getUTCDate() + " " + MONTHS[d.getUTCMonth()];
+    return d.getUTCFullYear() === refYear ? base : base + " " + d.getUTCFullYear();
+  }
+
+  const TODAY = window.WGW_TODAY || sgToday();
+
+  // The weekend of the current week (on a Sunday, the one in progress), plus a Friday or
+  // Monday public holiday next to it. On a holiday Monday, that long weekend is still current.
+  function weekend(offset) {
+    const w = dow(TODAY);
+    let sat;
+    if (w === 0) sat = addDays(TODAY, -1);
+    else if (w === 1 && HOLIDAYS[TODAY]) sat = addDays(TODAY, -2);
+    else sat = addDays(TODAY, 6 - w);
+    sat = addDays(sat, 7 * offset);
+    const days = [sat, addDays(sat, 1)];
+    if (HOLIDAYS[addDays(sat, -1)]) days.unshift(addDays(sat, -1));
+    if (HOLIDAYS[addDays(sat, 2)]) days.push(addDays(sat, 2));
+    return { sat, days, first: days[0], last: days[days.length - 1] };
+  }
+
+  function runsOn(e, day) {
+    if (day < e.dates.start || day > e.dates.end) return false;
+    const days = e.dates.days || [];
+    return !days.length || days.includes(CODES[dow(day)]);
+  }
+
+  // Same rules as refresh/preview.py, so the page and the Thursday report agree.
+  function classify(e, sat) {
+    const pattern = e.dates.pattern || "fixed";
+    if (pattern === "recurring") return "weekly";
+    if (pattern === "open_ended") return "ongoing";
+    if (spanDays(e.dates.start, e.dates.end) <= S.limited_max_days) return "limited";
+    if (e.dates.end < addDays(sat, S.last_chance_days)) return "last_chance";
+    return "ongoing";
+  }
+
+  const state = { view: "0", toddler: false, free: false, indoor: false, east: false, older: false };
+  try {
+    const saved = JSON.parse(localStorage.getItem("wgw-filters") || "{}");
+    for (const k of ["toddler", "free", "indoor", "east"]) if (typeof saved[k] === "boolean") state[k] = saved[k];
+  } catch (err) { /* storage unavailable: use defaults */ }
+  function save() {
+    try {
+      localStorage.setItem("wgw-filters", JSON.stringify({ toddler: state.toddler, free: state.free, indoor: state.indoor, east: state.east }));
+    } catch (err) { /* ignore */ }
+  }
+
+  function passes(e, ignoreAge) {
+    const t = e.audience.toddler_ok;
+    if (!ignoreAge && !state.older && t === "no") return false;
+    if (state.toddler && t !== "yes") return false;
+    if (state.free && e.cost.is_free !== true) return false;
+    if (state.indoor && e.setting !== "indoor" && e.setting !== "mixed") return false;
+    if (state.east && e.venue.region !== "east") return false;
+    return true;
+  }
+
+  const byToddlerFreeTitle = (a, b) =>
+    (TODDLER_RANK[a.audience.toddler_ok] - TODDLER_RANK[b.audience.toddler_ok]) ||
+    ((a.cost.is_free === true ? 0 : 1) - (b.cost.is_free === true ? 0 : 1)) ||
+    a.title.localeCompare(b.title);
+
+  // DOM helpers: every value from the data goes in as text, never as HTML.
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function safeUrl(u) { return typeof u === "string" && /^https?:\/\//i.test(u) ? u : null; }
+  function link(href, text) {
+    const a = el("a", null, text);
+    a.href = href; a.target = "_blank"; a.rel = "noopener noreferrer";
+    return a;
+  }
+
+  function priceLabel(e) {
+    const c = e.cost;
+    if (c.is_free === true) return { text: "Free", cls: "price free" };
+    if (typeof c.min_sgd === "number") return { text: "From $" + (Number.isInteger(c.min_sgd) ? c.min_sgd : c.min_sgd.toFixed(2)), cls: "price" };
+    if (c.price_text) return { text: "Paid", cls: "price" };
+    return { text: "Check price", cls: "price" };
+  }
+
+  function agePill(e) {
+    const a = e.audience;
+    if (a.toddler_ok === "yes") return ["Toddler OK", "good"];
+    if (a.age_min != null && a.age_max != null) return ["Ages " + a.age_min + "–" + a.age_max, a.toddler_ok === "no" ? "bad" : ""];
+    if (a.age_min != null) return ["Ages " + a.age_min + "+", a.toddler_ok === "no" ? "bad" : ""];
+    if (a.toddler_ok === "no") return ["Older kids", "bad"];
+    return ["Ages not stated", ""];
+  }
+
+  function timingPill(kind, e, wk) {
+    const y = toDate(wk.sat).getUTCFullYear();
+    if (kind === "weekly") return ["Every week", ""];
+    if (kind === "last_chance") return ["Last chance · ends " + fmt(e.dates.end, y), "sun"];
+    if (kind === "limited") {
+      if (e.dates.start === e.dates.end) return [DAY_NAMES[dow(e.dates.end)] + " only", "sun"];
+      if (e.dates.end <= wk.last) return ["Ends " + DAY_NAMES[dow(e.dates.end)], "sun"];
+      return ["Until " + fmt(e.dates.end, y), ""];
+    }
+    if (kind === "soon") {
+      return [e.dates.start === e.dates.end ? DAY_NAMES[dow(e.dates.start)] + " only" : "Until " + fmt(e.dates.end, y), ""];
+    }
+    if ((e.dates.pattern || "fixed") === "open_ended") return ["End date not stated", ""];
+    return ["Until " + fmt(e.dates.end, y), ""];
+  }
+
+  function row(e, kind, wk) {
+    const d = el("details", "ev");
+    const sum = el("summary");
+    if (kind === "soon") {
+      const box = el("div", "datebox");
+      const s = toDate(e.dates.start);
+      box.append(el("b", null, String(s.getUTCDate())), el("small", null, MONTHS[s.getUTCMonth()]));
+      sum.append(box);
+    } else {
+      const dots = el("div", "dots");
+      for (const day of wk.days) {
+        const dot = el("span", "dot" + (runsOn(e, day) ? " on" : ""), String(toDate(day).getUTCDate()));
+        dot.title = DAY_NAMES[dow(day)] + (runsOn(e, day) ? ": on" : ": not on");
+        dots.append(dot);
+      }
+      sum.append(dots);
+    }
+    const main = el("div");
+    main.style.minWidth = "0";
+    main.append(el("h3", null, e.title));
+    const bits = [];
+    if (e.dates.times) bits.push(e.dates.times);
+    bits.push(e.venue.name);
+    main.append(el("p", "meta", bits.join(" · ")));
+    const pills = el("div", "pills");
+    const add = ([text, cls]) => { if (text) pills.append(el("span", "pill" + (cls ? " " + cls : ""), text)); };
+    add(timingPill(kind, e, wk));
+    const status = (e.booking || {}).status;
+    if (status === "fully_booked") add(["Fully booked", "bad"]);
+    else if (status === "registration_required") add(["Register first", "warn"]);
+    add(agePill(e));
+    if (e.setting === "indoor") add(["Indoor", ""]);
+    else if (e.setting === "outdoor") add(["Outdoor", ""]);
+    else if (e.setting === "mixed") add(["Indoor and outdoor", ""]);
+    if (REGIONS[e.venue.region]) add([REGIONS[e.venue.region], ""]);
+    main.append(pills);
+    sum.append(main);
+    const p = priceLabel(e);
+    sum.append(el("div", p.cls, p.text));
+    d.append(sum);
+
+    const more = el("div", "more");
+    more.append(el("p", null, e.summary));
+    const y = toDate(wk.sat).getUTCFullYear();
+    const range = e.dates.start === e.dates.end ? fmt(e.dates.start, y) : fmt(e.dates.start, y) + " to " + fmt(e.dates.end, y);
+    more.append(el("p", null, "Dates: " + range + (e.dates.days && e.dates.days.length ? " (" + e.dates.days.map((c) => DAY_NAMES[CODES.indexOf(c)]).join(", ") + ")" : "")));
+    if (e.cost.price_text) more.append(el("p", null, "Price: " + e.cost.price_text));
+    if (e.venue.address) more.append(el("p", null, "Address: " + e.venue.address));
+    if (e.notes) more.append(el("p", "note", e.notes));
+    const links = el("div", "links");
+    const book = safeUrl((e.booking || {}).url);
+    if (book) links.append(link(book, "Book or register"));
+    for (const s of e.sources) {
+      const u = safeUrl(s.url);
+      if (u) links.append(link(u, "From " + (SOURCE_NAMES[s.source_id] || s.source_id)));
+    }
+    more.append(links);
+    d.append(more);
+    return d;
+  }
+
+  function group(title, lede, items, kindOf, wk, folded) {
+    const sec = el("section", "group");
+    const h = el("h2", null, title + " ");
+    h.append(el("span", "n", String(items.length)));
+    const list = el("div", "list");
+    if (!items.length) list.append(el("p", "empty", "Nothing here with these filters."));
+    for (const e of items) list.append(row(e, kindOf(e), wk));
+    if (folded) {
+      const det = el("details", "fold");
+      const sum = el("summary");
+      sum.append(h, el("p", "lede", lede));
+      det.append(sum, list);
+      sec.append(det);
+    } else {
+      sec.append(h, el("p", "lede", lede), list);
+    }
+    return sec;
+  }
+
+  function renderHeader(wk, label) {
+    const y = toDate(wk.sat).getUTCFullYear();
+    const first = toDate(wk.first), last = toDate(wk.last);
+    const sameMonth = first.getUTCMonth() === last.getUTCMonth();
+    document.getElementById("headline").textContent = label + ", " +
+      (sameMonth ? first.getUTCDate() + "–" + fmt(wk.last, y) : fmt(wk.first, y) + " – " + fmt(wk.last, y));
+    const strip = document.getElementById("strip");
+    strip.replaceChildren();
+    for (const day of wk.days) {
+      const t = el("div", "tile" + (HOLIDAYS[day] ? " holiday" : ""));
+      t.append(el("small", null, DAY_NAMES[dow(day)]), el("b", null, String(toDate(day).getUTCDate())));
+      if (HOLIDAYS[day]) t.append(el("em", null, HOLIDAYS[day]));
+      strip.append(t);
+    }
+  }
+
+  function render() {
+    const main = document.getElementById("groups");
+    main.replaceChildren();
+    for (const b of document.querySelectorAll(".tabs button")) b.setAttribute("aria-selected", String(b.dataset.view === state.view));
+    for (const c of document.querySelectorAll(".chip")) c.setAttribute("aria-pressed", String(state[c.dataset.filter]));
+    const events = DATA.events.filter((e) => e.dates.end >= TODAY);
+    const olderNote = document.getElementById("older");
+
+    if (state.view === "soon") {
+      const wk = weekend(0);
+      renderHeader(weekend(0), "After this weekend");
+      document.getElementById("headline").textContent = "Coming up in the next four weeks";
+      document.getElementById("strip").replaceChildren();
+      const until = addDays(wk.last, 28);
+      const pool = events.filter((e) => e.dates.start > wk.last && e.dates.start <= until &&
+        (e.dates.pattern || "fixed") === "fixed" && spanDays(e.dates.start, e.dates.end) <= S.limited_max_days);
+      const shown = pool.filter((e) => passes(e)).sort((a, b) => a.dates.start.localeCompare(b.dates.start) || byToddlerFreeTitle(a, b));
+      main.append(group("Starting soon", "Limited-time events that start after this weekend. Good for booking ahead.", shown, () => "soon", wk, false));
+      setOlder(pool, shown, olderNote);
+      return;
+    }
+
+    const wk = weekend(Number(state.view));
+    renderHeader(wk, state.view === "0" ? "This weekend" : "Next weekend");
+    const on = events.filter((e) => wk.days.some((d) => runsOn(e, d)));
+    const shown = on.filter((e) => passes(e)).sort(byToddlerFreeTitle);
+    const kinds = new Map(shown.map((e) => [e, classify(e, wk.sat)]));
+    const limited = shown.filter((e) => ["limited", "last_chance"].includes(kinds.get(e)))
+      .sort((a, b) => a.dates.end.localeCompare(b.dates.end));
+    const weekly = shown.filter((e) => kinds.get(e) === "weekly");
+    const ongoing = shown.filter((e) => kinds.get(e) === "ongoing");
+    const kindOf = (e) => kinds.get(e);
+    main.append(
+      group("Limited time", "One-offs and short runs, plus longer runs in their last two weeks. Soonest ending first.", limited, kindOf, wk, false),
+      group("Every week", "Repeats every weekend, so you can go any time.", weekly, kindOf, wk, false),
+      group("Ongoing", "Longer runs you can catch on a later weekend.", ongoing, kindOf, wk, true)
+    );
+    setOlder(on, shown, olderNote);
+  }
+
+  function setOlder(pool, shown, node) {
+    node.replaceChildren();
+    const older = pool.filter((e) => e.audience.toddler_ok === "no" && passes(e, true));
+    if (!older.length) return;
+    const btn = el("button", "linkbtn", state.older ? "Hide them" : "Show them");
+    btn.type = "button";
+    btn.id = "toggle-older";
+    btn.addEventListener("click", () => { state.older = !state.older; render(); });
+    node.append(
+      document.createTextNode(state.older
+        ? older.length + " event" + (older.length > 1 ? "s" : "") + " for older children are included. "
+        : older.length + " event" + (older.length > 1 ? "s are" : " is") + " left out because the source says it is not for toddlers. "),
+      btn
+    );
+  }
+
+  function renderStatic() {
+    const upd = document.getElementById("updated");
+    if (DATA.updated) {
+      const u = DATA.updated;
+      upd.textContent = "Updated " + DAY_NAMES[dow(u)] + " " + fmt(u, toDate(TODAY).getUTCFullYear()) + " · " +
+        DATA.events.filter((e) => e.dates.end >= TODAY).length + " upcoming events";
+    } else {
+      upd.textContent = "No events loaded yet.";
+    }
+    const ids = new Set();
+    for (const e of DATA.events) for (const s of e.sources) ids.add(s.source_id);
+    const names = [...ids].map((id) => SOURCE_NAMES[id] || id).sort();
+    document.getElementById("sources").textContent = names.length ? "Sources: " + names.join(", ") + "." : "";
+  }
+
+  for (const b of document.querySelectorAll(".tabs button")) {
+    b.addEventListener("click", () => { state.view = b.dataset.view; render(); });
+  }
+  for (const c of document.querySelectorAll(".chip")) {
+    c.addEventListener("click", () => { state[c.dataset.filter] = !state[c.dataset.filter]; save(); render(); });
+  }
+  renderStatic();
+  render();
+})();
+</script>

@@ -21,6 +21,12 @@ planning:
   # last_chance_days of the Saturday; the rest are ongoing.
   limited_max_days: 42
   last_chance_days: 14
+  # Public holidays on a Friday or Monday make a long weekend; the web page adds
+  # that day to the weekend. Add 2027 from the Ministry of Manpower's list.
+  public_holidays:
+    2026-11-09: Deepavali (observed)
+    2026-12-25: Christmas Day
+    2027-01-01: New Year's Day
 
 filters:
   dietary: [] # no dietary filter
