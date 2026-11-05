@@ -19,6 +19,7 @@ def candidate(title="Test Bubble Show", venue="Test Mall Atrium", start="2026-11
     return {
         "title": title,
         "summary": "A made-up bubble show used to test merging.",
+        "fit": "great",
         "category": "performance",
         "venue": {"name": venue, "address": None, "region": None, "lat": None, "lng": None},
         "dates": {"start": start, "end": end, "times": None, "days": []},
@@ -179,6 +180,27 @@ def test_digest_items_link_to_their_own_page(validator):
         "published": "2026-11-05",
     }
     assert "source_url" not in event and event["booking"]["status"] == "fully_booked"
+
+
+def test_same_event_named_differently_is_folded(validator):
+    short = candidate(title="A Test Christmas", venue="Test Studios")
+    long = candidate(title="A Test Christmas at Test Studios Funland", venue="Test Studios, Test Resort")
+    events, report = run({"a__one": [short], "b__two": [long]}, validator)
+    assert (report.new, report.updated, len(events)) == (1, 1, 1)
+
+
+def test_long_run_and_short_programme_at_one_venue_stay_apart(validator):
+    library = candidate(title="Test Pop-Up Library", venue="Test Mall", start="2026-10-27", end="2027-09-19")
+    greet = candidate(title="Test Pop-Up Library meet-and-greet", venue="Test Mall, Level 3", start="2026-11-07", end="2026-11-09")
+    events, _ = run({"a__one": [library], "b__two": [greet]}, validator)
+    assert len(events) == 2
+
+
+def test_one_shared_word_is_not_enough(validator):
+    a = candidate(title="Christmas Wonderland", venue="Test Gardens", start="2026-11-20", end="2026-11-30")
+    b = candidate(title="Christmas Train Show", venue="Dome, Test Gardens", start="2026-11-20", end="2026-11-30")
+    events, _ = run({"a__one": [a], "b__two": [b]}, validator)
+    assert len(events) == 2
 
 
 def test_similarity_ignores_case_and_punctuation():

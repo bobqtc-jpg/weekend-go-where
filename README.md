@@ -12,11 +12,13 @@ distance from Marine Parade.
 | Event and place formats (`schema/`) | Done |
 | Merge and validation (`refresh/merge.py`, `refresh/validate.py`) | Done; tested offline |
 | Fetchers for five sources (`refresh/fetch.py`, `config/sources.yaml`) | All five work as of 5 Nov 2026; Little Day Out now reads its RSS feed |
-| Weekly Thursday run (scheduled task "Weekend events refresh") | First run on 5 Nov 2026 stopped before saving because of a merge bug, since fixed |
+| Weekly Thursday run (scheduled task "Weekend events refresh") | Works; the 5 Nov 2026 rerun saved 143 events, cut to 125 after merging duplicates |
+| Fit for a toddler (`fit` on every event) | Judged at extraction: great, ok or low; low is hidden by default (64 of 125 on 5 Nov) |
+| Map positions (`refresh/geocode.py`, `data/geocode.json`) | OneMap search, cached; 116 of 125 events placed on 5 Nov |
 | Weekend preview (`refresh/preview.py`) | Done |
 | Muse's weekly Instagram digest by email (`refresh/add_article.py`) | Works; the 5 Nov run read the 4 Nov email through Gmail (read-only tools) |
 | Places directory | Not started |
-| Web page (`site/`) | First version built 5 Nov 2026; private claude.ai preview; hosting not set up |
+| Web page (`site/`) | Second version 5 Nov 2026: picks, map, weather, filters; private claude.ai preview; hosting not set up |
 
 ## Decisions
 
@@ -56,9 +58,19 @@ grouping reads each event's `dates.pattern` (`fixed`, `recurring` or `open_ended
 - `dist/index.html`: the full page, for hosting.
 - `dist/artifact.html`: the same page without the document wrapper, for a private claude.ai preview.
 
-The events are embedded in the page, so it needs no server. It shows this weekend, next weekend
-and the coming four weeks, with filters for toddler-confirmed, free, indoor and east-side events.
-A Friday or Monday listed under `public_holidays` in `config/settings.yaml` joins the weekend.
+Everything is embedded in the page, so it needs no server and makes no requests. For the chosen
+weekend (this one, or up to three ahead) it shows:
+
+- **The days**, with NEA's forecast as it stood at build time. A Friday or Monday listed under
+  `public_holidays` in `config/settings.yaml` joins the weekend.
+- **Picks:** up to six `great` events, at most one per place, never fully booked. Ones that end
+  this weekend, are near home, are free or say they suit toddlers rank higher.
+- **A map** of Singapore (`site/singapore.json`, from geoBoundaries) with home, 5 km and 10 km
+  rings, the numbered picks and the other events.
+- **Also this weekend:** the rest of the `great` and `ok` events, nearest first, with filters for
+  day, time of day, indoor, free and within 10 km. `low` events are behind a link.
+- **Book ahead:** sessions and shows in the next six weeks that need booking online.
+- **The weekends after:** the top three for each of the next three weekends.
 
 Hosting is not set up yet. On Cloudflare Pages: connect this repo, build command
 `pip install pyyaml && python3 site/build.py`, output directory `dist`. Every Thursday push of
@@ -71,9 +83,12 @@ python -m venv .venv && . .venv/bin/activate
 pip install -e '.[dev]'
 pytest -q
 python -m refresh.fetch      # needs network access to the source sites
+python -m refresh.titles     # saved events, so extraction can reuse their titles
 python -m refresh.merge
+python -m refresh.geocode    # map positions for new venues, from OneMap
 python -m refresh.validate
-python -m refresh.preview    # the coming weekend's events, toddler-friendly first
+python -m refresh.preview    # the coming weekend's events, best fit first
+python site/build.py         # the web page, into dist/
 ```
 
 ## Network access

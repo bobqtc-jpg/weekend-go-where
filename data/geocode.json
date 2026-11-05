@@ -1,0 +1,706 @@
+{
+  "16 participating public libraries and online|": {
+    "lat": null,
+    "lng": null,
+    "reason": "names several places"
+  },
+  "42 waterloo street blackbox|": {
+    "lat": 1.298397,
+    "lng": 103.850923,
+    "match": "42 WATERLOO STREET SINGAPORE 187951",
+    "query": "42 Waterloo Street"
+  },
+  "adventure cove waterpark|": {
+    "lat": 1.254989,
+    "lng": 103.820285,
+    "match": "ADVENTURE COVE WATERPARK SINGAPORE",
+    "query": "Adventure Cove Waterpark"
+  },
+  "aperia mall l1 atrium|12 kallang ave singapore 339511": {
+    "lat": 1.309711,
+    "lng": 103.864326,
+    "match": "APERIA",
+    "query": "339511"
+  },
+  "arch square|": {
+    "lat": null,
+    "lng": null,
+    "reason": "no matching place found"
+  },
+  "arch square|51 waterloo street singapore 187969": {
+    "lat": 1.298079,
+    "lng": 103.851456,
+    "match": "51 WATERLOO STREET SINGAPORE 187969",
+    "query": "187969"
+  },
+  "artscience museum marina bay sands|": {
+    "lat": 1.286224,
+    "lng": 103.859271,
+    "match": "MARINA BAY SANDS (ARTSCIENCE MUSEUM)",
+    "query": "ArtScience Museum, Marina Bay Sands"
+  },
+  "artscience museum|6 bayfront ave singapore 018974": {
+    "lat": 1.286224,
+    "lng": 103.859271,
+    "match": "MARINA BAY SANDS (ARTSCIENCE MUSEUM)",
+    "query": "018974"
+  },
+  "asian civilisations museum discovery room|": {
+    "lat": 1.287441,
+    "lng": 103.851375,
+    "match": "ASIAN CIVILISATIONS MUSEUM",
+    "query": "Asian Civilisations Museum"
+  },
+  "australian international school or stamford american international school|": {
+    "lat": 1.347707,
+    "lng": 103.859409,
+    "match": "AUSTRALIAN INTERNATIONAL SCHOOL",
+    "query": "Australian International School"
+  },
+  "british council toa payoh or napier road|": {
+    "lat": 1.30507,
+    "lng": 103.821463,
+    "match": "BRITISH COUNCIL (NAPIER ROAD CENTRE)",
+    "query": "British Council"
+  },
+  "changi airport terminal 3 departure hall near check in row 11|": {
+    "lat": 1.361291,
+    "lng": 103.990606,
+    "match": "CHANGI AIRPORT BUS TERMINAL 1",
+    "query": "Changi Airport Terminal"
+  },
+  "changi airport terminal 3 departure hall|": {
+    "lat": 1.361291,
+    "lng": 103.990606,
+    "match": "CHANGI AIRPORT BUS TERMINAL 1",
+    "query": "Changi Airport Terminal"
+  },
+  "children s museum singapore discovery room|": {
+    "lat": 1.292845,
+    "lng": 103.848705,
+    "match": "CHILDREN'S MUSEUM SINGAPORE",
+    "query": "Children's Museum Singapore"
+  },
+  "clarke quay|": {
+    "lat": 1.291878,
+    "lng": 103.844228,
+    "match": "CLARKE QUAY",
+    "query": "Clarke Quay"
+  },
+  "community clubs and hubs public libraries palawan beach sentosa and serangoon garden country club|": {
+    "lat": null,
+    "lng": null,
+    "reason": "names several places"
+  },
+  "cosford container park|30 cosford rd singapore 499550": {
+    "lat": 1.365318,
+    "lng": 103.981193,
+    "match": "30 COSFORD ROAD SINGAPORE 499550",
+    "query": "499550"
+  },
+  "dopamine land the coliseum weave resorts world sentosa|level 2 02 204 205 s098269": {
+    "lat": 1.255006,
+    "lng": 103.820259,
+    "match": "HOTEL MICHAEL",
+    "query": "098269"
+  },
+  "downtown east|1 pasir ris close singapore 519599": {
+    "lat": 1.379127,
+    "lng": 103.955445,
+    "match": "COSTA SANDS RESORT (DOWNTOWN EAST)",
+    "query": "519599"
+  },
+  "drama centre theatre national library|100 victoria street national library building 03 01 singapore 188064": {
+    "lat": 1.297568,
+    "lng": 103.854254,
+    "match": "NATIONAL LIBRARY BUILDING",
+    "query": "188064"
+  },
+  "enabling village and redhill|": {
+    "lat": 1.286956,
+    "lng": 103.814778,
+    "match": "ENABLING VILLAGE",
+    "query": "Enabling Village"
+  },
+  "esplanade and the star theatre|": {
+    "lat": 1.290205,
+    "lng": 103.855567,
+    "match": "ESPLANADE - THEATRES ON THE BAY",
+    "query": "Esplanade"
+  },
+  "esplanade concert hall|": {
+    "lat": 1.289544,
+    "lng": 103.855171,
+    "match": "ESPLANADE CONCERT HALL",
+    "query": "Esplanade Concert Hall"
+  },
+  "f1 pit building|1 republic boulevard singapore 038975": {
+    "lat": 1.291372,
+    "lng": 103.863902,
+    "match": "THE PIT BUILDING",
+    "query": "038975"
+  },
+  "far east flora centre|": {
+    "lat": 1.32788,
+    "lng": 103.775991,
+    "match": "FAR EAST FLORA CENTRE",
+    "query": "Far East Flora Centre"
+  },
+  "floral fantasy gardens by the bay|": {
+    "lat": 1.284589,
+    "lng": 103.864657,
+    "match": "GARDENS BY THE BAY",
+    "query": "Gardens by the Bay"
+  },
+  "flower dome gardens by the bay|": {
+    "lat": 1.28462,
+    "lng": 103.864735,
+    "match": "GARDENS BY THE BAY (FLOWER DOME)",
+    "query": "Flower Dome, Gardens by the Bay"
+  },
+  "fort canning park mett hotel singapore|11 canning rise singapore 179881": {
+    "lat": 1.292516,
+    "lng": 103.847682,
+    "match": "FORT CANNING PARK",
+    "query": "Fort Canning Park"
+  },
+  "gallery 4 level 4 national gallery singapore|1 st andrew s road singapore 178957": {
+    "lat": 1.290655,
+    "lng": 103.851708,
+    "match": "NATIONAL GALLERY SINGAPORE",
+    "query": "1 St Andrew's Road, Singapore 178957"
+  },
+  "gardens by the bay|": {
+    "lat": 1.284589,
+    "lng": 103.864657,
+    "match": "GARDENS BY THE BAY",
+    "query": "Gardens by the Bay"
+  },
+  "gateway dance studio gateway theatre|": {
+    "lat": 1.283975,
+    "lng": 103.816599,
+    "match": "GATEWAY THEATRE",
+    "query": "Gateway Theatre"
+  },
+  "gateway theatre black box|": {
+    "lat": 1.283975,
+    "lng": 103.816599,
+    "match": "GATEWAY THEATRE",
+    "query": "Gateway Theatre"
+  },
+  "geneo singapore science park|": {
+    "lat": 1.287959,
+    "lng": 103.781514,
+    "match": "SINGAPORE SCIENCE PARK II",
+    "query": "Singapore Science Park"
+  },
+  "geneo singapore science park|the canopy at geneo and 7 science park drive": {
+    "lat": 1.287959,
+    "lng": 103.781514,
+    "match": "SINGAPORE SCIENCE PARK II",
+    "query": "Singapore Science Park"
+  },
+  "geylang serai heritage gallery wisma geylang serai|": {
+    "lat": 1.316494,
+    "lng": 103.896788,
+    "match": "WISMA GEYLANG SERAI",
+    "query": "Wisma Geylang Serai"
+  },
+  "goodman arts centre the artground white box|": {
+    "lat": 1.304135,
+    "lng": 103.885272,
+    "match": "GOODMAN ARTS CENTRE",
+    "query": "Goodman Arts Centre"
+  },
+  "groundseesaw parkview square|3f parkview square 600 north bridge road singapore 188778": {
+    "lat": 1.300216,
+    "lng": 103.857595,
+    "match": "PARKVIEW SQUARE",
+    "query": "188778"
+  },
+  "hall f sands expo convention centre marina bay sands|10 bayfront ave singapore 018956": {
+    "lat": 1.282397,
+    "lng": 103.858405,
+    "match": "SANDS EXPO AND CONVENTION CENTRE",
+    "query": "018956"
+  },
+  "indian heritage centre|5 campbell lane": {
+    "lat": 1.305681,
+    "lng": 103.852252,
+    "match": "INDIAN HERITAGE CENTRE",
+    "query": "5 Campbell Lane"
+  },
+  "indian heritage centre|5 campbell lane little india": {
+    "lat": 1.305681,
+    "lng": 103.852252,
+    "match": "INDIAN HERITAGE CENTRE",
+    "query": "Indian Heritage Centre"
+  },
+  "jewel changi airport and changi airport terminal 3|": {
+    "lat": 1.360341,
+    "lng": 103.989078,
+    "match": "JEWEL CHANGI AIRPORT",
+    "query": "Jewel Changi Airport"
+  },
+  "jewel changi airport changi airport terminal 3|": {
+    "lat": 1.360341,
+    "lng": 103.989078,
+    "match": "JEWEL CHANGI AIRPORT",
+    "query": "Jewel Changi Airport"
+  },
+  "jewel changi airport forest valley|": {
+    "lat": null,
+    "lng": null,
+    "reason": "no matching place found"
+  },
+  "joo chiat community centre library room ground floor|": {
+    "lat": 1.30742,
+    "lng": 103.904218,
+    "match": "JOO CHIAT COMMUNITY CLUB",
+    "query": "Joo Chiat Community Centre"
+  },
+  "junction 8 level 2 atrium|": {
+    "lat": 1.350481,
+    "lng": 103.84876,
+    "match": "JUNCTION 8",
+    "query": "Junction 8"
+  },
+  "kampung admiralty|": {
+    "lat": 1.439578,
+    "lng": 103.801145,
+    "match": "AQUA PETZ KULTURE KAMPUNG ADMIRALTY",
+    "query": "Kampung Admiralty"
+  },
+  "kampung kampus|11 chencharu close singapore 769287": {
+    "lat": 1.415391,
+    "lng": 103.829828,
+    "match": "11 CHENCHARU CLOSE SINGAPORE 769287",
+    "query": "769287"
+  },
+  "katong joo chiat participating heritage businesses and joo chiat community club|": {
+    "lat": null,
+    "lng": null,
+    "reason": "names several places"
+  },
+  "kidsstop lobby science centre singapore|21 jurong town hall road singapore 609433": {
+    "lat": 1.335116,
+    "lng": 103.735117,
+    "match": "21 JURONG TOWN HALL ROAD SINGAPORE 609433",
+    "query": "609433"
+  },
+  "kidsstop science centre singapore|21 jurong town hall road singapore 609433": {
+    "lat": 1.335116,
+    "lng": 103.735117,
+    "match": "21 JURONG TOWN HALL ROAD SINGAPORE 609433",
+    "query": "609433"
+  },
+  "koon seng road peranakan houses meeting point|": {
+    "lat": 1.310902,
+    "lng": 103.903384,
+    "match": "KOON SENG ROAD",
+    "query": "Koon Seng Road"
+  },
+  "level 2 central atrium marina square|6 raffles boulevard singapore 039594": {
+    "lat": 1.291855,
+    "lng": 103.858578,
+    "match": "MARINA SQUARE",
+    "query": "039594"
+  },
+  "lewin terrace meet at children s museum singapore lobby|": {
+    "lat": 1.293227,
+    "lng": 103.847905,
+    "match": "LEWIN TERRACE",
+    "query": "Lewin Terrace"
+  },
+  "malay heritage centre auditorium|": {
+    "lat": 1.302881,
+    "lng": 103.859868,
+    "match": "MALAY HERITAGE CENTRE",
+    "query": "Malay Heritage Centre (set by hand)"
+  },
+  "malay heritage centre kampong gelam precinct|85 sultan gate kampong gelam": {
+    "lat": 1.302881,
+    "lng": 103.859868,
+    "match": "MALAY HERITAGE CENTRE",
+    "query": "Malay Heritage Centre"
+  },
+  "marina bay sands convention centre level 1 hall c|": {
+    "lat": 1.283994,
+    "lng": 103.859451,
+    "match": "MARINA BAY SANDS",
+    "query": "Marina Bay Sands"
+  },
+  "marina bay sands exhibition hall d e|": {
+    "lat": 1.283994,
+    "lng": 103.859451,
+    "match": "MARINA BAY SANDS",
+    "query": "Marina Bay Sands"
+  },
+  "marina bay sands|": {
+    "lat": 1.283994,
+    "lng": 103.859451,
+    "match": "MARINA BAY SANDS",
+    "query": "Marina Bay Sands"
+  },
+  "marina square|level 3 marina square": {
+    "lat": 1.291855,
+    "lng": 103.858578,
+    "match": "MARINA SQUARE",
+    "query": "Marina Square"
+  },
+  "myvillage|": {
+    "lat": 1.365115,
+    "lng": 103.86516,
+    "match": "MYVILLAGE AT SERANGOON GARDEN",
+    "query": "myVillage"
+  },
+  "national gallery singapore keppel centre for art education|": {
+    "lat": 1.290655,
+    "lng": 103.851708,
+    "match": "NATIONAL GALLERY SINGAPORE",
+    "query": "National Gallery Singapore"
+  },
+  "national gallery singapore|": {
+    "lat": 1.290655,
+    "lng": 103.851708,
+    "match": "NATIONAL GALLERY SINGAPORE",
+    "query": "National Gallery Singapore"
+  },
+  "national gallery singapore|level 3 city hall wing and other spaces": {
+    "lat": 1.290655,
+    "lng": 103.851708,
+    "match": "NATIONAL GALLERY SINGAPORE",
+    "query": "National Gallery Singapore"
+  },
+  "national museum of singapore|": {
+    "lat": 1.29672,
+    "lng": 103.848511,
+    "match": "NATIONAL MUSEUM OF SINGAPORE",
+    "query": "National Museum of Singapore"
+  },
+  "national stadium singapore|": {
+    "lat": 1.304698,
+    "lng": 103.873563,
+    "match": "NATIONAL STADIUM",
+    "query": "National Stadium Singapore"
+  },
+  "nlb snoopy pop up library plaza singapura|level 3 68 orchard road singapore 238839": {
+    "lat": 1.300748,
+    "lng": 103.845048,
+    "match": "PLAZA SINGAPURA",
+    "query": "238839"
+  },
+  "one punggol celebration square and the plaza|": {
+    "lat": 1.408804,
+    "lng": 103.905156,
+    "match": "NKF DIALYSIS CENTRE ONE PUNGGOL",
+    "query": "One Punggol"
+  },
+  "one punggol|1 punggol drive singapore 828629": {
+    "lat": 1.408728,
+    "lng": 103.905155,
+    "match": "ONE PUNGGOL",
+    "query": "828629"
+  },
+  "orchard road|": {
+    "lat": 1.303228,
+    "lng": 103.83668,
+    "match": "HOLIDAY INN EXPRESS SINGAPORE ORCHARD ROAD",
+    "query": "Orchard Road"
+  },
+  "palawan beach sentosa|": {
+    "lat": 1.247775,
+    "lng": 103.821712,
+    "match": "SENTOSA-SOUTHERNMOST POINT OF CONTINENTAL ASIA",
+    "query": "Palawan Beach, Sentosa"
+  },
+  "palawan kidz city roof garden sentosa|": {
+    "lat": 1.247775,
+    "lng": 103.821712,
+    "match": "SENTOSA-SOUTHERNMOST POINT OF CONTINENTAL ASIA",
+    "query": "Palawan Beach (set by hand)"
+  },
+  "peranakan museum|": {
+    "lat": 1.294287,
+    "lng": 103.849041,
+    "match": "PERANAKAN MUSEUM",
+    "query": "Peranakan Museum"
+  },
+  "plaza singapura|level 3 plaza singapura": {
+    "lat": 1.300748,
+    "lng": 103.845048,
+    "match": "PLAZA SINGAPURA",
+    "query": "Plaza Singapura"
+  },
+  "rainforest wild adventure east west mandai wildlife reserve|": {
+    "lat": 1.406421,
+    "lng": 103.789653,
+    "match": "GLAMPING IN THE WILD, MANDAI WILDLIFE RESERVE",
+    "query": "Mandai Wildlife Reserve"
+  },
+  "resorts world sentosa|": {
+    "lat": 1.25629,
+    "lng": 103.819935,
+    "match": "RESORTS WORLD SENTOSA",
+    "query": "Resorts World Sentosa"
+  },
+  "safra punggol|": {
+    "lat": 1.410195,
+    "lng": 103.906072,
+    "match": "SAFRA CLUBHOUSE (PUNGGOL)",
+    "query": "SAFRA Punggol"
+  },
+  "sands theatre marina bay sands|": {
+    "lat": 1.28523,
+    "lng": 103.860023,
+    "match": "MARINA BAY SANDS (MASTERCARD THEATRES)",
+    "query": "Sands Theatre, Marina Bay Sands"
+  },
+  "scape|": {
+    "lat": 1.301011,
+    "lng": 103.835724,
+    "match": "SCAPE",
+    "query": "*SCAPE"
+  },
+  "science centre singapore|15 science centre road": {
+    "lat": 1.333227,
+    "lng": 103.73566,
+    "match": "SCIENCE CENTRE BOARD (SCB)",
+    "query": "15 Science Centre Road"
+  },
+  "science centre singapore|15 science centre road singapore 609081": {
+    "lat": 1.332839,
+    "lng": 103.735821,
+    "match": "SCIENCE CENTRE SINGAPORE",
+    "query": "609081"
+  },
+  "selected frasers property singapore malls|": {
+    "lat": null,
+    "lng": null,
+    "reason": "names several places"
+  },
+  "selected scdf fire stations|": {
+    "lat": null,
+    "lng": null,
+    "reason": "names several places"
+  },
+  "singapore discovery centre singapore navy museum and singapore air force museum|": {
+    "lat": 1.332594,
+    "lng": 103.678953,
+    "match": "SINGAPORE DISCOVERY CENTRE",
+    "query": "Singapore Discovery Centre"
+  },
+  "singapore expo hall 6|1 expo dr singapore 486150": {
+    "lat": 1.334402,
+    "lng": 103.96036,
+    "match": "SINGAPORE EXPO",
+    "query": "1 Expo Dr, Singapore 486150"
+  },
+  "singapore expo hall 6|1 expo drive singapore 486150": {
+    "lat": 1.334402,
+    "lng": 103.96036,
+    "match": "SINGAPORE EXPO",
+    "query": "486150"
+  },
+  "singapore expo|": {
+    "lat": 1.334402,
+    "lng": 103.96036,
+    "match": "SINGAPORE EXPO",
+    "query": "Singapore EXPO"
+  },
+  "singapore oceanarium resorts world sentosa|": {
+    "lat": 1.25629,
+    "lng": 103.819935,
+    "match": "RESORTS WORLD SENTOSA",
+    "query": "Resorts World Sentosa"
+  },
+  "singapore oceanarium|": {
+    "lat": 1.25836,
+    "lng": 103.820507,
+    "match": "SINGAPORE OCEANARIUM",
+    "query": "Singapore Oceanarium"
+  },
+  "stadium roar the kallang|": {
+    "lat": 1.303093,
+    "lng": 103.875088,
+    "match": "THE KALLANG",
+    "query": "The Kallang"
+  },
+  "suntec city atrium tower 1 2 and suntec plaza|3 temasek boulevard singapore 038983": {
+    "lat": 1.295932,
+    "lng": 103.859014,
+    "match": "SUNTEC CITY MALL",
+    "query": "038983"
+  },
+  "suntec city convention hall 401 and 402|": {
+    "lat": 1.29486,
+    "lng": 103.860334,
+    "match": "GOLDEN VILLAGE (GV SUNTEC CITY)",
+    "query": "Suntec City"
+  },
+  "suntec convention centre|level 3 concourse level 4 hall 401 406": {
+    "lat": 1.293504,
+    "lng": 103.857195,
+    "match": "SUNTEC SINGAPORE CONVENTION & EXHIBITION CENTRE",
+    "query": "Suntec Convention Centre"
+  },
+  "suntec singapore hall 401 406|": {
+    "lat": 1.295932,
+    "lng": 103.859014,
+    "match": "SUNTEC CITY MALL",
+    "query": "Suntec Singapore Hall"
+  },
+  "supertree grove gardens by the bay|": {
+    "lat": 1.281883,
+    "lng": 103.863928,
+    "match": "GARDENS BY THE BAY (SUPERTREE GROVE)",
+    "query": "Supertree Grove, Gardens by the Bay"
+  },
+  "tanglin mall|": {
+    "lat": 1.304843,
+    "lng": 103.823853,
+    "match": "TANGLIN MALL",
+    "query": "Tanglin Mall"
+  },
+  "tanglin mall|163 tanglin road singapore 247933": {
+    "lat": 1.304843,
+    "lng": 103.823853,
+    "match": "TANGLIN MALL",
+    "query": "247933"
+  },
+  "telok blangah mall|": {
+    "lat": null,
+    "lng": null,
+    "reason": "no matching place found"
+  },
+  "the artground one holland village|7 holland village way 01 20 one holland village singapore 275748": {
+    "lat": 1.311049,
+    "lng": 103.794146,
+    "match": "ONE HOLLAND VILLAGE",
+    "query": "275748"
+  },
+  "the black box kidsstop science centre singapore|21 jurong town hall road singapore 609433": {
+    "lat": 1.335116,
+    "lng": 103.735117,
+    "match": "21 JURONG TOWN HALL ROAD SINGAPORE 609433",
+    "query": "609433"
+  },
+  "the colonnade gardens by the bay|": {
+    "lat": 1.284589,
+    "lng": 103.864657,
+    "match": "GARDENS BY THE BAY",
+    "query": "Gardens by the Bay"
+  },
+  "tiong bahru community centre culinary studio level 1|": {
+    "lat": 1.283049,
+    "lng": 103.832197,
+    "match": "TIONG BAHRU COMMUNITY CENTRE",
+    "query": "Tiong Bahru Community Centre (set by hand)"
+  },
+  "trifecta|10a exeter road 01 01 singapore 239958": {
+    "lat": 1.299865,
+    "lng": 103.839174,
+    "match": "TRIFECTA",
+    "query": "239958"
+  },
+  "universal studios singapore resorts world sentosa|": {
+    "lat": 1.25629,
+    "lng": 103.819935,
+    "match": "RESORTS WORLD SENTOSA",
+    "query": "Resorts World Sentosa"
+  },
+  "universal studios singapore|": {
+    "lat": 1.256121,
+    "lng": 103.822537,
+    "match": "UNIVERSAL STUDIOS SINGAPORE",
+    "query": "Universal Studios Singapore"
+  },
+  "uob ability hub enabling village|": {
+    "lat": 1.286956,
+    "lng": 103.814778,
+    "match": "ENABLING VILLAGE",
+    "query": "Enabling Village"
+  },
+  "various locations|": {
+    "lat": null,
+    "lng": null,
+    "reason": "names several places"
+  },
+  "victoria theatre|": {
+    "lat": 1.288379,
+    "lng": 103.851649,
+    "match": "VICTORIA THEATRE",
+    "query": "Victoria Theatre"
+  },
+  "vivocity central atrium|1 harbourfront walk": {
+    "lat": 1.264314,
+    "lng": 103.822073,
+    "match": "GOLDEN VILLAGE (GV VIVOCITY)",
+    "query": "1 HarbourFront Walk"
+  },
+  "weave resorts world sentosa|": {
+    "lat": 1.25629,
+    "lng": 103.819935,
+    "match": "RESORTS WORLD SENTOSA",
+    "query": "Resorts World Sentosa"
+  },
+  "west lawn gardens by the bay|": {
+    "lat": 1.284589,
+    "lng": 103.864657,
+    "match": "GARDENS BY THE BAY",
+    "query": "Gardens by the Bay"
+  },
+  "west mall|1 bukit batok central link singapore 658713": {
+    "lat": 1.350021,
+    "lng": 103.749216,
+    "match": "WEST MALL",
+    "query": "658713"
+  },
+  "westgate|": {
+    "lat": 1.334158,
+    "lng": 103.742766,
+    "match": "WESTGATE",
+    "query": "Westgate"
+  },
+  "wild rice at funan|": {
+    "lat": 1.291348,
+    "lng": 103.84999,
+    "match": "FUNAN",
+    "query": "Funan (set by hand)"
+  },
+  "wild wild wet|1 pasir ris close singapore 519599": {
+    "lat": 1.379127,
+    "lng": 103.955445,
+    "match": "COSTA SANDS RESORT (DOWNTOWN EAST)",
+    "query": "519599"
+  },
+  "wonder lab theatre hall f science centre singapore|15 science centre road singapore 609081": {
+    "lat": 1.332839,
+    "lng": 103.735821,
+    "match": "SCIENCE CENTRE SINGAPORE",
+    "query": "15 Science Centre Road, Singapore 609081"
+  },
+  "woodlands library|": {
+    "lat": 1.434966,
+    "lng": 103.786857,
+    "match": "WOODLANDS REGIONAL LIBRARY",
+    "query": "Woodlands Library"
+  },
+  "woodlands regional library punggol regional library central public library and jurong regional library|": {
+    "lat": null,
+    "lng": null,
+    "reason": "names several places (set by hand)"
+  },
+  "ywca fort canning start and finish|": {
+    "lat": 1.297499,
+    "lng": 103.845001,
+    "match": "YWCA FORT CANNING",
+    "query": "YWCA @ Fort Canning"
+  },
+  "zoolympix village east lawn mandai wildlife reserve|": {
+    "lat": 1.406421,
+    "lng": 103.789653,
+    "match": "GLAMPING IN THE WILD, MANDAI WILDLIFE RESERVE",
+    "query": "Mandai Wildlife Reserve"
+  }
+}

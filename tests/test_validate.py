@@ -18,6 +18,7 @@ def make_event(**overrides):
         "id": "ev_0123456789ab",
         "title": "Test Puppet Show",
         "summary": "A short puppet show that exists only in tests.",
+        "fit": "great",
         "category": "performance",
         "venue": {"name": "Test Venue", "address": None, "region": "east", "lat": None, "lng": None},
         "dates": {"start": "2026-11-07", "end": "2026-11-08", "times": "10am", "days": ["sat", "sun"]},
@@ -56,6 +57,18 @@ def test_booking_opening_after_end_fails(validator):
     booking = {"required": True, "url": "https://example.com/book", "opens": "2026-12-01"}
     errors = event_errors(make_event(booking=booking), validator, TODAY)
     assert any("opens after" in e for e in errors)
+
+
+def test_missing_fit_fails(validator):
+    event = make_event()
+    del event["fit"]
+    assert any("fit" in e for e in event_errors(event, validator, TODAY))
+
+
+def test_unknown_fit_and_slot_fail(validator):
+    assert event_errors(make_event(fit="maybe"), validator, TODAY)
+    dates = {"start": "2026-11-07", "end": "2026-11-08", "slots": ["night"]}
+    assert any("slots" in e for e in event_errors(make_event(dates=dates), validator, TODAY))
 
 
 def test_unknown_date_pattern_fails(validator):

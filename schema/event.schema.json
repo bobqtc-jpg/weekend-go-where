@@ -9,6 +9,7 @@
     "id",
     "title",
     "summary",
+    "fit",
     "category",
     "venue",
     "dates",
@@ -27,6 +28,10 @@
       "minLength": 10,
       "maxLength": 280,
       "description": "One or two sentences in our own words, never copied from the source."
+    },
+    "fit": {
+      "enum": ["great", "ok", "low"],
+      "description": "How well it suits this household (a child of about 2½ and two parents): great = made for young children or something a toddler enjoys for its own sake; ok = a toddler can come along and there is something for them; low = not a toddler outing. Judged at extraction; low events are hidden by default."
     },
     "category": {
       "enum": [
@@ -67,6 +72,12 @@
           "description": "fixed: stated start and end (one-off or a run); recurring: repeats on a schedule with no near end, dated only for the period the article covers; open_ended: no end stated, so end is a placeholder. Missing means fixed."
         },
         "times": { "type": ["string", "null"], "maxLength": 120 },
+        "slots": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["morning", "afternoon", "evening"] },
+          "description": "Parts of the day it runs: morning before 12pm, afternoon 12pm to 6pm, evening from 6pm. Empty when the times are not stated."
+        },
         "days": {
           "type": "array",
           "uniqueItems": true,

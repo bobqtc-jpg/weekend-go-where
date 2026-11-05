@@ -50,6 +50,18 @@ def test_weekend_events_filters_and_orders():
     assert "Teen Workshop" in [e["title"] for e in everything]
 
 
+def test_low_fit_is_hidden_and_great_comes_first():
+    ok = event("Ok Festival", "2026-11-07", "2026-11-07")
+    ok["fit"] = "ok"
+    great = event("Great Bubbles", "2026-11-07", "2026-11-07")
+    great["fit"] = "great"
+    low = event("Adult Workshop", "2026-11-07", "2026-11-07")
+    low["fit"] = "low"
+    picked = weekend_events([ok, great, low], SAT, SUN)
+    assert [e["title"] for e in picked] == ["Great Bubbles", "Ok Festival"]
+    assert len(weekend_events([ok, great, low], SAT, SUN, all_ages=True)) == 3
+
+
 def test_classify_limited_last_chance_weekly_and_ongoing():
     assert classify(event("Two-day Fair", "2026-11-07", "2026-11-08"), SAT) == "limited"
     assert classify(event("Month-long Pop-up", "2026-10-09", "2026-11-09"), SAT) == "limited"

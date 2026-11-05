@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import copy
+import re
 import sys
 from dataclasses import dataclass, field
 from datetime import date, timedelta
@@ -66,16 +67,47 @@ def similarity(a: str | None, b: str | None) -> float:
     return SequenceMatcher(None, a, b).ratio()
 
 
+STOPWORDS = {"the", "a", "an", "at", "of", "and", "in", "on", "for", "with", "by", "to", "singapore", "2026", "2027"}
+
+
+def _words(text: str | None) -> set[str]:
+    """Distinct words, ignoring anything in brackets and very common words."""
+    return {w for w in normalize(re.sub(r"\([^)]*\)", " ", text or "")).split() if w not in STOPWORDS}
+
+
+def _contained(a: set[str], b: set[str]) -> tuple[int, float]:
+    """How many words the smaller set shares with the larger, and what share of it that is."""
+    if not a or not b:
+        return 0, 0.0
+    small, big = (a, b) if len(a) <= len(b) else (b, a)
+    shared = len(small & big)
+    return shared, shared / len(small)
+
+
+def _days_apart(d1: str, d2: str) -> int:
+    return abs((date.fromisoformat(d1) - date.fromisoformat(d2)).days)
+
+
 def same_event(a: dict, b: dict) -> bool:
-    """Same id, or overlapping dates with a near-identical title (or similar title at the same venue)."""
+    """Same id, or overlapping dates with a near-identical title (or similar title at the same venue).
+
+    Sources also name one event differently ("A Universal Christmas" and "A Universal Christmas at
+    Universal Studios Singapore"), so two events also match when they are at the same place, run
+    over nearly the same dates, and the shorter title's words mostly appear in the longer one.
+    """
     if a["id"] == b["id"]:
         return True
-    overlap = a["dates"]["start"] <= b["dates"]["end"] and b["dates"]["start"] <= a["dates"]["end"]
-    if not overlap:
+    da, db = a["dates"], b["dates"]
+    if not (da["start"] <= db["end"] and db["start"] <= da["end"]):
         return False
     title = similarity(a["title"], b["title"])
     venue = similarity(a["venue"]["name"], b["venue"]["name"])
-    return title >= 0.85 or (title >= 0.6 and venue >= 0.8)
+    if title >= 0.85 or (title >= 0.6 and venue >= 0.8):
+        return True
+    shared, share = _contained(_words(a["title"]), _words(b["title"]))
+    _, venue_share = _contained(_words(a["venue"]["name"]), _words(b["venue"]["name"]))
+    same_run = _days_apart(da["start"], db["start"]) <= 7 and _days_apart(da["end"], db["end"]) <= 7
+    return shared >= 2 and share >= 0.5 and venue_share >= 0.6 and same_run
 
 
 def build_event(candidate: dict, article: dict, today: date) -> dict:

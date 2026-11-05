@@ -3,7 +3,7 @@
 Usage:
     python -m refresh.preview                    # the coming Saturday and Sunday
     python -m refresh.preview --date 2026-11-14  # the weekend on or after a date
-    python -m refresh.preview --all-ages         # include events marked unsuitable for a toddler
+    python -m refresh.preview --all-ages         # include events judged not a toddler outing
 
 Groups:
     Limited time  one-offs and runs of up to `limited_max_days`, plus longer runs that end
@@ -21,6 +21,7 @@ from .common import CONFIG_DIR, EVENTS_FILE, load_json, load_yaml, sg_today
 
 DAY_CODES = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
 TODDLER_RANK = {"yes": 0, "unclear": 1, "no": 2}
+FIT_RANK = {"great": 0, "ok": 1, "low": 2}
 GROUPS = [("limited", "Limited time"), ("weekly", "Every week"), ("ongoing", "Ongoing")]
 DEFAULT_LIMITED_MAX_DAYS = 42
 DEFAULT_LAST_CHANCE_DAYS = 14
@@ -67,10 +68,11 @@ def weekend_events(events: list[dict], saturday: date, sunday: date, all_ages: b
         e
         for e in events
         if (runs_on(e, saturday) or runs_on(e, sunday))
-        and (all_ages or e["audience"]["toddler_ok"] != "no")
+        and (all_ages or (e["audience"]["toddler_ok"] != "no" and e.get("fit", "ok") != "low"))
     ]
     picked.sort(
         key=lambda e: (
+            FIT_RANK[e.get("fit", "ok")],
             TODDLER_RANK[e["audience"]["toddler_ok"]],
             e["cost"].get("is_free") is not True,
             e["title"].lower(),
@@ -119,7 +121,7 @@ def _row(kind: str, e: dict, saturday: date, sunday: date) -> str:
     sources = ", ".join(sorted({s["source_id"] for s in e["sources"]}))
     return (
         f"| {_cell(e['title'])} | {_cell(when)} | {_cell(e['venue']['name'])} | {_cell(price)} "
-        f"| {e['audience']['toddler_ok']} | {e['setting']} | {sources} |"
+        f"| {e.get('fit', 'ok')} | {e['setting']} | {sources} |"
     )
 
 
@@ -132,7 +134,7 @@ def render(events: list[dict], saturday: date, sunday: date, limited_max_days: i
             lines.append("None.")
             continue
         lines += [
-            "| Event | When | Where | Price | Toddler | Setting | Sources |",
+            "| Event | When | Where | Price | Fit | Setting | Sources |",
             "|---|---|---|---|---|---|---|",
         ]
         lines += [_row(kind, e, saturday, sunday) for kind, e in groups[key]]
@@ -142,7 +144,7 @@ def render(events: list[dict], saturday: date, sunday: date, limited_max_days: i
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Show the coming weekend's events.")
     parser.add_argument("--date", type=date.fromisoformat, help="use the weekend on or after this date")
-    parser.add_argument("--all-ages", action="store_true", help="include events marked unsuitable for a toddler")
+    parser.add_argument("--all-ages", action="store_true", help="include events judged not a toddler outing")
     args = parser.parse_args(argv)
     planning = load_yaml(CONFIG_DIR / "settings.yaml").get("planning", {})
     saturday, sunday = next_weekend(args.date or sg_today())

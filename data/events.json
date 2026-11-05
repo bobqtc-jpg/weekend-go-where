@@ -17,7 +17,8 @@
         "end": "2026-12-31",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -47,7 +48,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Curio: The Outbreak Protocol",
@@ -57,8 +59,8 @@
         "name": "Wonder Lab Theatre, Hall F, Science Centre Singapore",
         "address": "15 Science Centre Road, Singapore 609081",
         "region": "west",
-        "lat": null,
-        "lng": null
+        "lat": 1.332839,
+        "lng": 103.735821
       },
       "dates": {
         "start": "2026-05-30",
@@ -68,6 +70,9 @@
         "days": [
           "sat",
           "sun"
+        ],
+        "slots": [
+          "afternoon"
         ]
       },
       "audience": {
@@ -97,7 +102,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-03"
+      "last_seen": "2026-11-03",
+      "fit": "low"
     },
     {
       "title": "ONE Ocean: Every Action Ripples",
@@ -107,15 +113,19 @@
         "name": "Science Centre Singapore",
         "address": "15 Science Centre Road, Singapore 609081",
         "region": "west",
-        "lat": null,
-        "lng": null
+        "lat": 1.332839,
+        "lng": 103.735821
       },
       "dates": {
         "start": "2026-05-30",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": "Tue-Sun 10am-5pm (last entry 4.15pm); closed Mon except PH and school holidays",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": 5,
@@ -150,7 +160,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Into the Ocean: Journey Beneath",
@@ -160,15 +171,16 @@
         "name": "ArtScience Museum",
         "address": "6 Bayfront Ave, Singapore 018974",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.286224,
+        "lng": 103.859271
       },
       "dates": {
         "start": "2026-06-06",
         "end": "2026-11-11",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -197,7 +209,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-03"
+      "last_seen": "2026-11-03",
+      "fit": "ok"
     },
     {
       "title": "Disney Garden of Wonder",
@@ -207,15 +220,20 @@
         "name": "Floral Fantasy, Gardens by the Bay",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.284589,
+        "lng": 103.864657
       },
       "dates": {
         "start": "2026-06-08",
         "end": "2027-03-14",
         "pattern": "fixed",
         "times": "10am - 9pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -256,7 +274,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "REINVENTION: ALLPLAY 2026",
@@ -266,15 +285,16 @@
         "name": "Geneo, Singapore Science Park",
         "address": "The Canopy at Geneo and 7 Science Park Drive",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.287959,
+        "lng": 103.781514
       },
       "dates": {
         "start": "2026-08-01",
         "end": "2026-11-22",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -309,7 +329,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "A S.U.R.E. Mystery",
@@ -327,7 +348,8 @@
         "end": "2027-03-31",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -362,7 +384,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Horizon of Khufu",
@@ -372,15 +395,19 @@
         "name": "GROUNDSEESAW, Parkview Square",
         "address": "3F Parkview Square, 600 North Bridge Road, Singapore 188778",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.300216,
+        "lng": 103.857595
       },
       "dates": {
         "start": "2026-10-02",
         "end": "2026-11-30",
         "pattern": "fixed",
         "times": "Timeslots from 10am to 5pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": 8,
@@ -415,7 +442,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Sunflower Surprise at Flower Dome",
@@ -425,15 +453,20 @@
         "name": "Flower Dome, Gardens by the Bay",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.28462,
+        "lng": 103.864735
       },
       "dates": {
         "start": "2026-10-09",
         "end": "2026-11-09",
         "pattern": "fixed",
         "times": "9am - 9pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -486,7 +519,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Deepavali Open House",
@@ -496,8 +530,8 @@
         "name": "Indian Heritage Centre",
         "address": "5 Campbell Lane, Little India",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.305681,
+        "lng": 103.852252
       },
       "dates": {
         "start": "2026-10-17",
@@ -507,6 +541,11 @@
         "days": [
           "sat",
           "sun"
+        ],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
         ]
       },
       "audience": {
@@ -554,7 +593,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Junior and the Holiday Magic",
@@ -564,8 +604,8 @@
         "name": "Drama Centre Theatre, National Library",
         "address": "100 Victoria Street, National Library Building #03-01, Singapore 188064",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.297568,
+        "lng": 103.854254
       },
       "dates": {
         "start": "2026-10-21",
@@ -574,6 +614,10 @@
         "times": "Weekdays 9.30am and 11.30am; weekends and PH 11am and 2pm",
         "days": [
           "sun"
+        ],
+        "slots": [
+          "morning",
+          "afternoon"
         ]
       },
       "audience": {
@@ -609,7 +653,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Singapore Cat Festival 2026",
@@ -619,15 +664,20 @@
         "name": "Singapore EXPO Hall 6",
         "address": "1 Expo Drive, Singapore 486150",
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.334402,
+        "lng": 103.96036
       },
       "dates": {
-        "start": "2026-10-23",
+        "start": "2026-11-07",
         "end": "2026-11-08",
         "pattern": "fixed",
         "times": "10am - 8pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -646,7 +696,7 @@
         "status": "open"
       },
       "setting": "indoor",
-      "notes": "Toddler rating rests on free entry for children aged 12 and below; no other age guidance is given. Includes the CFA Cat Show and a marketplace. Pet cats must be kept in a secure carrier or a properly fitted harness.",
+      "notes": "Toddler rating rests on free entry for children aged 12 and below; no other age guidance is given. Includes the CFA Cat Show and a marketplace. Pet cats must be kept in a secure carrier or a properly fitted harness. Runs 7-8 Nov; tickets are sold online only. Muse's check of the ticket page on 4 Nov did not confirm free entry for children 12 and under.",
       "id": "ev_a96783785f78",
       "sources": [
         {
@@ -693,7 +743,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "HIIT THE BEACH",
@@ -703,15 +754,16 @@
         "name": "Palawan Beach, Sentosa",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.247775,
+        "lng": 103.821712
       },
       "dates": {
         "start": "2026-10-24",
         "end": "2027-01-31",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -752,7 +804,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "NLB Snoopy Pop-Up Library",
@@ -762,15 +815,20 @@
         "name": "Plaza Singapura",
         "address": "Level 3, Plaza Singapura",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.300748,
+        "lng": 103.845048
       },
       "dates": {
         "start": "2026-10-27",
         "end": "2027-09-19",
         "pattern": "fixed",
         "times": "10am - 10pm daily",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -835,7 +893,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "CATS The Musical",
@@ -845,15 +904,16 @@
         "name": "Sands Theatre, Marina Bay Sands",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.28523,
+        "lng": 103.860023
       },
       "dates": {
         "start": "2026-10-29",
         "end": "2026-11-22",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": 7,
@@ -888,7 +948,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Exceptional/Everyday: New Acquisitions, New Perspectives",
@@ -898,15 +959,16 @@
         "name": "Peranakan Museum",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.294287,
+        "lng": 103.849041
       },
       "dates": {
         "start": "2026-10-30",
         "end": "2026-11-30",
         "pattern": "open_ended",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -942,7 +1004,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Our Climate-Ready Home",
@@ -952,15 +1015,16 @@
         "name": "Westgate",
         "address": null,
         "region": "west",
-        "lat": null,
-        "lng": null
+        "lat": 1.334158,
+        "lng": 103.742766
       },
       "dates": {
         "start": "2026-10-31",
         "end": "2026-11-04",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -989,7 +1053,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-03"
+      "last_seen": "2026-11-03",
+      "fit": "ok"
     },
     {
       "title": "SHIPPED! Vessels of Taste",
@@ -999,15 +1064,16 @@
         "name": "ArCH Square",
         "address": "51 Waterloo Street, Singapore 187969",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.298079,
+        "lng": 103.851456
       },
       "dates": {
         "start": "2026-10-31",
         "end": "2027-03-31",
         "pattern": "fixed",
         "times": "Opening hours",
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -1048,7 +1114,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Festive Sweet Floats at Wild Wild Wet",
@@ -1058,15 +1125,16 @@
         "name": "Wild Wild Wet",
         "address": "1 Pasir Ris Close, Singapore 519599",
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.379127,
+        "lng": 103.955445
       },
       "dates": {
         "start": "2026-11-01",
         "end": "2026-12-31",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -1095,8 +1163,9 @@
           "published": "2026-11-02"
         }
       ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Gateway Kids Club storytelling",
@@ -1106,8 +1175,8 @@
         "name": "Gateway Dance Studio, Gateway Theatre",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.283975,
+        "lng": 103.816599
       },
       "dates": {
         "start": "2026-11-01",
@@ -1117,6 +1186,9 @@
         "days": [
           "sat",
           "sun"
+        ],
+        "slots": [
+          "morning"
         ]
       },
       "audience": {
@@ -1146,54 +1218,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-03"
-    },
-    {
-      "title": "Wild Wild Wet Festive Floats",
-      "summary": "As part of Downtown East's Sweet Christmas, giant gummy bear, macaron and popsicle floats drift along the waterpark's Shiok River and Tsunami Pool, and a new Lickers ice-cream outlet opens inside.",
-      "category": "play",
-      "venue": {
-        "name": "Wild Wild Wet",
-        "address": "1 Pasir Ris Close, Singapore 519599",
-        "region": "east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-01",
-        "end": "2026-12-31",
-        "pattern": "fixed",
-        "times": null,
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": false,
-        "price_text": "Wild Wild Wet admission from $21 (Child Off-Peak Day Pass)",
-        "min_sgd": 21
-      },
-      "booking": {
-        "required": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "outdoor",
-      "notes": "Day Passes used between 1 Nov and 31 Dec include a free scoop of Lickers ice cream. Kids born in December get free entry during their birthday month (T&Cs apply).",
-      "id": "ev_9d2e0f5f0a6c",
-      "sources": [
-        {
-          "source_id": "bykido",
-          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
-          "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
-          "published": "2026-11-02"
-        }
-      ],
-      "first_seen": "2026-11-03",
-      "last_seen": "2026-11-03"
+      "last_seen": "2026-11-03",
+      "fit": "ok"
     },
     {
       "title": "Singapore Book Street",
@@ -1203,15 +1229,20 @@
         "name": "VivoCity Central Atrium",
         "address": "1 HarbourFront Walk",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.264314,
+        "lng": 103.822073
       },
       "dates": {
         "start": "2026-11-02",
         "end": "2026-11-08",
         "pattern": "fixed",
         "times": "10am - 10pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -1259,7 +1290,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "WonderGround: A Journey Beneath Your Feet",
@@ -1269,15 +1301,19 @@
         "name": "The Artground, One Holland Village",
         "address": "7 Holland Village Way #01-20 One Holland Village, Singapore 275748",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.311049,
+        "lng": 103.794146
       },
       "dates": {
         "start": "2026-11-02",
         "end": "2027-03-31",
         "pattern": "fixed",
         "times": "9.15am - 6pm daily; sessions last 1 hr 15 min",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -1306,7 +1342,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-03"
+      "last_seen": "2026-11-03",
+      "fit": "great"
     },
     {
       "title": "Glowing Oceans",
@@ -1316,8 +1353,8 @@
         "name": "Science Centre Singapore",
         "address": "15 Science Centre Road",
         "region": "west",
-        "lat": null,
-        "lng": null
+        "lat": 1.333227,
+        "lng": 103.73566
       },
       "dates": {
         "start": "2026-11-03",
@@ -1331,6 +1368,10 @@
           "fri",
           "sat",
           "sun"
+        ],
+        "slots": [
+          "morning",
+          "afternoon"
         ]
       },
       "audience": {
@@ -1396,61 +1437,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Pokémon 30th Anniversary at Changi Airport and Jewel",
-      "summary": "Changi Airport and Jewel mark 30 years of Pokémon with activities, photo spots and new merchandise.",
-      "category": "festival",
-      "venue": {
-        "name": "Changi Airport and Jewel Changi Airport",
-        "address": null,
-        "region": "east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-03",
-        "end": "2027-01-03",
-        "pattern": "fixed",
-        "times": null,
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": null,
-        "price_text": null,
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": null,
-      "id": "ev_6aa906001eac",
-      "sources": [
-        {
-          "source_id": "littledayout",
-          "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
-          "article_title": "27 Year-End School Holidays 2026 Things To Do: Kid-Friendly Activities For The Family",
-          "published": "2026-11-05"
-        },
-        {
-          "source_id": "littledayout",
-          "url": "https://www.littledayout.com/new-family-kid-friendly-things-to-do-in-november-singapore/",
-          "article_title": "47 New Family-Friendly Things To Do In November 2026 With Kids In Singapore",
-          "published": "2026-11-04"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "PokéXciting! Pokémon 30th Anniversary Celebration at Jewel & Changi Airport",
@@ -1460,15 +1448,16 @@
         "name": "Jewel Changi Airport & Changi Airport Terminal 3",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.360341,
+        "lng": 103.989078
       },
       "dates": {
         "start": "2026-11-03",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -1495,10 +1484,23 @@
           "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
           "article_title": "28 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
           "published": "2026-11-02"
+        },
+        {
+          "source_id": "littledayout",
+          "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
+          "article_title": "27 Year-End School Holidays 2026 Things To Do: Kid-Friendly Activities For The Family",
+          "published": "2026-11-05"
+        },
+        {
+          "source_id": "littledayout",
+          "url": "https://www.littledayout.com/new-family-kid-friendly-things-to-do-in-november-singapore/",
+          "article_title": "47 New Family-Friendly Things To Do In November 2026 With Kids In Singapore",
+          "published": "2026-11-04"
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Emma Memma & The Wishing Tree",
@@ -1508,15 +1510,19 @@
         "name": "Victoria Theatre",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.288379,
+        "lng": 103.851649
       },
       "dates": {
         "start": "2026-11-04",
         "end": "2026-11-06",
         "pattern": "fixed",
         "times": "11am, 2pm & 4.30pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -1582,7 +1588,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Pokémon Experience Lounge",
@@ -1592,15 +1599,19 @@
         "name": "Changi Airport Terminal 3 Departure Hall (near Check-in Row 11)",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.361291,
+        "lng": 103.990606
       },
       "dates": {
         "start": "2026-11-04",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": "12pm-9pm daily",
-        "days": []
+        "days": [],
+        "slots": [
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -1630,7 +1641,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Flavours of Tomorrow: The Future Food Lab Edition",
@@ -1640,15 +1652,16 @@
         "name": "Geneo, Singapore Science Park",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.287959,
+        "lng": 103.781514
       },
       "dates": {
         "start": "2026-11-05",
         "end": "2026-11-07",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -1678,7 +1691,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Let's Imagine the World Together: Art in Southeast Asia",
@@ -1688,15 +1702,19 @@
         "name": "Gallery 4, Level 4, National Gallery Singapore",
         "address": "1 St Andrew's Road, Singapore 178957",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.290655,
+        "lng": 103.851708
       },
       "dates": {
         "start": "2026-11-05",
         "end": "2027-09-26",
         "pattern": "fixed",
         "times": "10am - 7pm daily",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -1732,7 +1750,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Sesame Street Magical Art World Chapter 2",
@@ -1742,15 +1761,19 @@
         "name": "Marina Square",
         "address": "Level 3, Marina Square",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.291855,
+        "lng": 103.858578
       },
       "dates": {
         "start": "2026-11-05",
         "end": "2026-12-31",
         "pattern": "fixed",
         "times": "12.30pm - 8pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -1785,7 +1808,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Borealis at Supertree Grove",
@@ -1795,8 +1819,8 @@
         "name": "Supertree Grove, Gardens by the Bay",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.281883,
+        "lng": 103.863928
       },
       "dates": {
         "start": "2026-11-06",
@@ -1806,6 +1830,9 @@
         "days": [
           "sat",
           "sun"
+        ],
+        "slots": [
+          "evening"
         ]
       },
       "audience": {
@@ -1835,7 +1862,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Brunch at the Bowl at Trifecta",
@@ -1845,8 +1873,8 @@
         "name": "Trifecta",
         "address": "10A Exeter Road, #01-01, Singapore 239958",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.299865,
+        "lng": 103.839174
       },
       "dates": {
         "start": "2026-11-06",
@@ -1855,6 +1883,10 @@
         "times": "11am-3pm",
         "days": [
           "sat"
+        ],
+        "slots": [
+          "morning",
+          "afternoon"
         ]
       },
       "audience": {
@@ -1885,7 +1917,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Cosford Container Park WKND MRKT",
@@ -1895,8 +1928,8 @@
         "name": "Cosford Container Park",
         "address": "30 Cosford Rd, Singapore 499550",
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.365318,
+        "lng": 103.981193
       },
       "dates": {
         "start": "2026-11-06",
@@ -1906,7 +1939,8 @@
         "days": [
           "sun",
           "mon"
-        ]
+        ],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -1936,7 +1970,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Dopamine Land",
@@ -1946,8 +1981,8 @@
         "name": "Dopamine Land, The Coliseum, WEAVE @ Resorts World Sentosa",
         "address": "Level 2, 02-204-205, S098269",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.255006,
+        "lng": 103.820259
       },
       "dates": {
         "start": "2026-11-06",
@@ -1961,6 +1996,11 @@
           "fri",
           "sat",
           "sun"
+        ],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
         ]
       },
       "audience": {
@@ -1991,7 +2031,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Fire Station Open House",
@@ -2011,6 +2052,9 @@
         "times": "9am - 9.50am or 10am - 10.50am",
         "days": [
           "sat"
+        ],
+        "slots": [
+          "morning"
         ]
       },
       "audience": {
@@ -2040,7 +2084,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "How To Be A Kid",
@@ -2050,8 +2095,8 @@
         "name": "Gateway Theatre Black Box",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.283975,
+        "lng": 103.816599
       },
       "dates": {
         "start": "2026-11-06",
@@ -2062,6 +2107,9 @@
           "fri",
           "sat",
           "sun"
+        ],
+        "slots": [
+          "morning"
         ]
       },
       "audience": {
@@ -2115,7 +2163,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Learn & Grow Family Fair",
@@ -2125,15 +2174,19 @@
         "name": "SAFRA Punggol",
         "address": null,
         "region": "north_east",
-        "lat": null,
-        "lng": null
+        "lat": 1.410195,
+        "lng": 103.906072
       },
       "dates": {
         "start": "2026-11-06",
         "end": "2026-11-08",
         "pattern": "fixed",
         "times": "10am - 6pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -2163,7 +2216,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Movies by the Beach",
@@ -2173,8 +2227,8 @@
         "name": "Palawan Kidz City Roof Garden, Sentosa",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.247775,
+        "lng": 103.821712
       },
       "dates": {
         "start": "2026-11-06",
@@ -2184,6 +2238,9 @@
         "days": [
           "sat",
           "sun"
+        ],
+        "slots": [
+          "evening"
         ]
       },
       "audience": {
@@ -2213,7 +2270,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Singtel Expressions Through Art 2026",
@@ -2223,15 +2281,16 @@
         "name": "The Colonnade, Gardens by the Bay",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.284589,
+        "lng": 103.864657
       },
       "dates": {
         "start": "2026-11-06",
         "end": "2026-11-22",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -2261,7 +2320,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Teroka Nusantara Festival",
@@ -2271,15 +2331,20 @@
         "name": "Malay Heritage Centre, Kampong Gelam Precinct",
         "address": "85 Sultan Gate, Kampong Gelam",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.302881,
+        "lng": 103.859868
       },
       "dates": {
         "start": "2026-11-06",
         "end": "2026-11-08",
         "pattern": "fixed",
         "times": "10am to 10pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -2321,7 +2386,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Toy Story | PEACEMINUSONE: THE FIRST FAN pop-up",
@@ -2331,15 +2397,16 @@
         "name": "Clarke Quay",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.291878,
+        "lng": 103.844228
       },
       "dates": {
         "start": "2026-11-06",
         "end": "2026-11-11",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -2368,7 +2435,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "AIA Merry-thon 2026",
@@ -2378,15 +2446,16 @@
         "name": "Rainforest Wild Adventure East & West, Mandai Wildlife Reserve",
         "address": null,
         "region": "north",
-        "lat": null,
-        "lng": null
+        "lat": 1.406421,
+        "lng": 103.789653
       },
       "dates": {
         "start": "2026-11-07",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -2415,7 +2484,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Common Touch Craft Festival",
@@ -2425,15 +2495,16 @@
         "name": "Suntec City Convention Hall 401 and 402",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.29486,
+        "lng": 103.860334
       },
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-08",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -2469,7 +2540,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "GalleryToddlers!",
@@ -2479,15 +2551,18 @@
         "name": "National Gallery Singapore",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.290655,
+        "lng": 103.851708
       },
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-07",
         "pattern": "fixed",
         "times": "10.30am & 11.30am",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning"
+        ]
       },
       "audience": {
         "age_min": 2,
@@ -2517,7 +2592,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Geylang Serai Heritage Gallery Open House",
@@ -2527,8 +2603,8 @@
         "name": "Geylang Serai Heritage Gallery, Wisma Geylang Serai",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.316494,
+        "lng": 103.896788
       },
       "dates": {
         "start": "2026-11-07",
@@ -2537,6 +2613,11 @@
         "times": "Drop-ins mostly 2pm to 8pm; some programmes from 9am",
         "days": [
           "sat"
+        ],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
         ]
       },
       "audience": {
@@ -2567,55 +2648,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Grand Pokémon Parade at Jewel",
-      "summary": "Asia's first PokéXciting! parade, with all 27 first partner Pokémon and two Pikachu marching through Jewel's Forest Valley.",
-      "category": "performance",
-      "venue": {
-        "name": "Forest Valley, Jewel Changi Airport",
-        "address": null,
-        "region": "east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-07",
-        "end": "2026-11-08",
-        "pattern": "fixed",
-        "times": null,
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "yes"
-      },
-      "cost": {
-        "is_free": true,
-        "price_text": "Free admission",
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": "Part of the PokéXciting! celebration (3 Nov 2026 to 3 Jan 2027). Parade times are not given.",
-      "id": "ev_ca0609b72a47",
-      "sources": [
-        {
-          "source_id": "bykido",
-          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
-          "article_title": "28 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
-          "published": "2026-11-02"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Katong-Joo Chiat Stamp Rally: Flavourful Traditions Edition",
@@ -2633,7 +2667,8 @@
         "end": "2026-12-06",
         "pattern": "fixed",
         "times": "Self-guided; reward redemption at Joo Chiat CC 10am to 9.30pm",
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -2663,7 +2698,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Little Farms Taste of Italy Farmers' Market (myVillage)",
@@ -2673,15 +2709,19 @@
         "name": "myVillage",
         "address": null,
         "region": "north_east",
-        "lat": null,
-        "lng": null
+        "lat": 1.365115,
+        "lng": 103.86516
       },
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-07",
         "pattern": "fixed",
         "times": "10am - 3pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -2711,7 +2751,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Lost, Found, and Everything In-Between: Katong-Joo Chiat Photo-Walk and Zine-Making Workshop",
@@ -2721,8 +2762,8 @@
         "name": "Joo Chiat Community Centre, Library Room (Ground Floor)",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.30742,
+        "lng": 103.904218
       },
       "dates": {
         "start": "2026-11-07",
@@ -2731,6 +2772,10 @@
         "times": "4.30pm to 7pm",
         "days": [
           "sat"
+        ],
+        "slots": [
+          "afternoon",
+          "evening"
         ]
       },
       "audience": {
@@ -2761,205 +2806,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Pokémon 30th Anniversary: Pikachu Dance Show",
-      "summary": "Pikachu headlines a dance show at Changi Airport as part of the PokéXciting! celebrations for 30 years of Pokémon.",
-      "category": "performance",
-      "venue": {
-        "name": "Changi Airport Terminal 3 Departure Hall",
-        "address": null,
-        "region": "east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-07",
-        "end": "2026-11-08",
-        "pattern": "fixed",
-        "times": "1pm",
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": true,
-        "price_text": "Free",
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": null,
-      "id": "ev_ca86ee1914fb",
-      "sources": [
-        {
-          "source_id": "honeykids",
-          "url": "https://honeykidsasia.com/things-to-do-with-kids-this-weekend-singapore/",
-          "article_title": "ALL the fun things to do with kids this LONG weekend in Singapore: 6 - 9 November 2026",
-          "published": "2026-11-04"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Pokémon 30th Anniversary: Pokémon Parade at Jewel",
-      "summary": "A parade of 29 Pokémon characters winds through Jewel's Forest Valley as part of the PokéXciting! 30th anniversary festivities.",
-      "category": "performance",
-      "venue": {
-        "name": "Jewel Changi Airport Forest Valley",
-        "address": null,
-        "region": "east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-07",
-        "end": "2026-11-08",
-        "pattern": "fixed",
-        "times": "3pm and 6pm",
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": true,
-        "price_text": "Free",
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": null,
-      "id": "ev_00780c16a783",
-      "sources": [
-        {
-          "source_id": "honeykids",
-          "url": "https://honeykidsasia.com/things-to-do-with-kids-this-weekend-singapore/",
-          "article_title": "ALL the fun things to do with kids this LONG weekend in Singapore: 6 - 9 November 2026",
-          "published": "2026-11-04"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Pokémon Meet & Greets at Changi Airport T3",
-      "summary": "Young fans can meet Pokémon characters up close at Terminal 3 during the PokéXciting! 30th anniversary programme.",
-      "category": "other",
-      "venue": {
-        "name": "Changi Airport Terminal 3 Departure Hall",
-        "address": null,
-        "region": "east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-07",
-        "end": "2026-11-08",
-        "pattern": "fixed",
-        "times": "12pm, 2pm, 8.30pm and 9.30pm",
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": true,
-        "price_text": "Free",
-        "min_sgd": null
-      },
-      "booking": {
-        "required": true,
-        "status": "registration_required",
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": "Meet & greets run on six weekends (7-8, 14-15, 21-22 Nov; 5-6, 12-13, 19-20 Dec 2026); one candidate per weekend.",
-      "id": "ev_8943a09bcfe0",
-      "sources": [
-        {
-          "source_id": "honeykids",
-          "url": "https://honeykidsasia.com/things-to-do-with-kids-this-weekend-singapore/",
-          "article_title": "ALL the fun things to do with kids this LONG weekend in Singapore: 6 - 9 November 2026",
-          "published": "2026-11-04"
-        },
-        {
-          "source_id": "sunnycitykids",
-          "url": "https://sunnycitykids.beehiiv.com/p/weekly-things-to-do-6-8-nov-2026",
-          "article_title": "Weekly things to do 6-8 Nov 2026",
-          "published": "2026-11-05"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Pokémon Parade at Jewel Forest Valley",
-      "summary": "A parade of 27 first-partner Pokémon plus two Pikachu through Jewel for the PokéXciting! 30th anniversary.",
-      "category": "performance",
-      "venue": {
-        "name": "Jewel Changi Airport Forest Valley, Level 1",
-        "address": null,
-        "region": "east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-07",
-        "end": "2026-11-08",
-        "pattern": "fixed",
-        "times": "3pm and 6pm",
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": true,
-        "price_text": "Free admission; onsite registration, first-come first-served",
-        "min_sgd": null
-      },
-      "booking": {
-        "required": true,
-        "status": "registration_required",
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": null,
-      "id": "ev_d015ad2c9267",
-      "sources": [
-        {
-          "source_id": "sunnycitykids",
-          "url": "https://sunnycitykids.beehiiv.com/p/weekly-things-to-do-6-8-nov-2026",
-          "article_title": "Weekly things to do 6-8 Nov 2026",
-          "published": "2026-11-05"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Pokémon RUN 30 Singapore Edition",
@@ -2969,15 +2817,19 @@
         "name": "Stadium Roar, The Kallang",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.303093,
+        "lng": 103.875088
       },
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-08",
         "pattern": "fixed",
         "times": "7am to 2pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -3007,7 +2859,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "PokéXciting!",
@@ -3017,15 +2870,22 @@
         "name": "Jewel Changi Airport and Changi Airport Terminal 3",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.360341,
+        "lng": 103.989078
       },
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-08",
         "pattern": "fixed",
         "times": "Parade 3pm & 6pm (Jewel Forest Valley); Pikachu Dance Show 1pm; Special Night Show 4.30pm & 7.30pm (T3 Departure Hall)",
-        "days": []
+        "days": [
+          "sat",
+          "sun"
+        ],
+        "slots": [
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -3040,10 +2900,11 @@
       "booking": {
         "required": true,
         "url": null,
-        "opens": null
+        "opens": null,
+        "status": "registration_required"
       },
       "setting": "indoor",
-      "notes": "Parade at Jewel Forest Valley; stage shows at Changi Airport Terminal 3. Includes the Singapore debut of an exclusive PokéXciting! Pikachu. Show times are not given in the article.",
+      "notes": "Parade at Jewel Forest Valley; stage shows at Changi Airport Terminal 3. Includes the Singapore debut of an exclusive PokéXciting! Pikachu. Show times are not given in the article. Pokémon meet-and-greets at Terminal 3 at 12pm, 2pm, 8.30pm and 9.30pm.",
       "id": "ev_6f5dc2317a73",
       "sources": [
         {
@@ -3069,148 +2930,13 @@
           "url": "https://www.bykido.com/blogs/events-and-activities/pokexciting-at-changi-airport-jewel-2026",
           "article_title": "Singapore toddler happenings - week of 2026-11-04 (reformatted)",
           "published": "2026-11-04"
-        }
-      ],
-      "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "PokéXciting! in Singapore Parade Weekend",
-      "summary": "A Pokémon 30th anniversary weekend with parades of 27 first partner Pokémon and an EDM dance party led by a DJ Pikachu at Terminal 3.",
-      "category": "festival",
-      "venue": {
-        "name": "Changi Airport and Jewel",
-        "address": null,
-        "region": "east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-07",
-        "end": "2026-11-08",
-        "pattern": "fixed",
-        "times": null,
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": null,
-        "price_text": null,
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": "The article gives no times or prices.",
-      "id": "ev_b20fcee8dd31",
-      "sources": [
+        },
         {
-          "source_id": "littledayout",
-          "url": "https://www.littledayout.com/things-to-do-this-weekend-in-singapore/",
-          "article_title": "Things To Do This Weekend In Singapore: 6 To 9 November 2026 – Deepavali Long Weekend",
-          "published": "2026-11-04"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "PokéXciting! Pokémon Meet & Greet",
-      "summary": "Meet Pokémon characters in person at Changi Airport Terminal 3 over several weekends from November into December, as part of the 30th anniversary celebrations.",
-      "category": "other",
-      "venue": {
-        "name": "Changi Airport Terminal 3 Departure Hall",
-        "address": null,
-        "region": "east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-07",
-        "end": "2026-12-20",
-        "pattern": "fixed",
-        "times": "7-8 Nov: 12pm, 2pm, 8.30pm, 9.30pm; later dates: 2pm, 3pm, 6.40pm",
-        "days": [
-          "sat",
-          "sun"
-        ]
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": true,
-        "price_text": "Free; onsite registration required",
-        "min_sgd": null
-      },
-      "booking": {
-        "required": true,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": "Runs only on 7, 8, 14, 15, 21, 22 Nov and 5, 6, 12, 13, 19, 20 Dec 2026. No age guidance given.",
-      "id": "ev_0ba170b8cfa4",
-      "sources": [
-        {
-          "source_id": "sassymama",
-          "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
-          "article_title": "17 Things To Do This Weekend In Singapore (6 - 8 Nov 2026)",
-          "published": "2026-11-05"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "PokéXciting! Special Night Show",
-      "summary": "An evening Pokémon show at Changi Airport's Terminal 3 marking the franchise's 30th anniversary.",
-      "category": "performance",
-      "venue": {
-        "name": "Changi Airport Terminal 3 Departure Hall",
-        "address": null,
-        "region": "east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-07",
-        "end": "2026-11-08",
-        "pattern": "fixed",
-        "times": "4.30pm and 7.30pm",
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": true,
-        "price_text": "Free",
-        "min_sgd": null
-      },
-      "booking": {
-        "required": true,
-        "status": "registration_required",
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": null,
-      "id": "ev_53b54b0215dd",
-      "sources": [
+          "source_id": "bykido",
+          "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
+          "article_title": "28 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
+          "published": "2026-11-02"
+        },
         {
           "source_id": "honeykids",
           "url": "https://honeykidsasia.com/things-to-do-with-kids-this-weekend-singapore/",
@@ -3222,10 +2948,17 @@
           "url": "https://sunnycitykids.beehiiv.com/p/weekly-things-to-do-6-8-nov-2026",
           "article_title": "Weekly things to do 6-8 Nov 2026",
           "published": "2026-11-05"
+        },
+        {
+          "source_id": "littledayout",
+          "url": "https://www.littledayout.com/things-to-do-this-weekend-in-singapore/",
+          "article_title": "Things To Do This Weekend In Singapore: 6 To 9 November 2026 – Deepavali Long Weekend",
+          "published": "2026-11-04"
         }
       ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Rumah Orang Kita: Nusantara Arts Showcase",
@@ -3235,8 +2968,8 @@
         "name": "Malay Heritage Centre, Auditorium",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.302881,
+        "lng": 103.859868
       },
       "dates": {
         "start": "2026-11-07",
@@ -3246,6 +2979,10 @@
         "days": [
           "sat",
           "sun"
+        ],
+        "slots": [
+          "afternoon",
+          "evening"
         ]
       },
       "audience": {
@@ -3276,7 +3013,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Snoopy, Charlie Brown and Lucy Meet-and-Greet",
@@ -3286,20 +3024,24 @@
         "name": "NLB Snoopy Pop-Up Library, Plaza Singapura",
         "address": "Level 3, 68 Orchard Road, Singapore 238839",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.300748,
+        "lng": 103.845048
       },
       "dates": {
         "start": "2026-11-07",
         "end": "2026-11-09",
         "pattern": "fixed",
         "times": "11am, 2pm and 4pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": null,
         "age_max": null,
-        "toddler_ok": "unclear"
+        "toddler_ok": "yes"
       },
       "cost": {
         "is_free": true,
@@ -3326,64 +3068,17 @@
           "url": "https://www.bykido.com/blogs/events-and-activities/the-best-things-to-do-with-kids-in-singapore-this-week-2-to-8-nov-2026",
           "article_title": "The Best Things To Do With Kids In Singapore This Week (2 to 8 Nov 2026)",
           "published": "2026-11-02"
-        }
-      ],
-      "first_seen": "2026-11-03",
-      "last_seen": "2026-11-03"
-    },
-    {
-      "title": "Snoopy Pop-Up Library meet-and-greet",
-      "summary": "Snoopy, Charlie Brown and Lucy appear for meet-and-greet sessions at the Peanuts-themed pop-up library over the long weekend.",
-      "category": "other",
-      "venue": {
-        "name": "Plaza Singapura, Level 3",
-        "address": null,
-        "region": "central",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-07",
-        "end": "2026-11-09",
-        "pattern": "fixed",
-        "times": "11am, 2pm & 4pm",
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "yes"
-      },
-      "cost": {
-        "is_free": true,
-        "price_text": "Free",
-        "min_sgd": null
-      },
-      "booking": {
-        "required": false,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": "Part of the Snoopy Pop-Up Library listing. No age guidance given.",
-      "id": "ev_742a007747f0",
-      "sources": [
+        },
         {
           "source_id": "sassymama",
           "url": "https://www.sassymamasg.com/play-weekend-planner-fun-activities-events-kids/",
           "article_title": "17 Things To Do This Weekend In Singapore (6 - 8 Nov 2026)",
           "published": "2026-11-05"
-        },
-        {
-          "source_id": "muse",
-          "url": "https://www.bykido.com/blogs/events-and-activities/top-things-to-do-and-places-to-go-with-kids-this-weekend-in-singapore",
-          "article_title": "Singapore toddler happenings - week of 2026-11-04 (reformatted)",
-          "published": "2026-11-04"
         }
       ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Zoolympix: Stars of Mandai Festive Challenge",
@@ -3393,15 +3088,16 @@
         "name": "Zoolympix Village, East Lawn, Mandai Wildlife Reserve",
         "address": null,
         "region": "north",
-        "lat": null,
-        "lng": null
+        "lat": 1.406421,
+        "lng": 103.789653
       },
       "dates": {
         "start": "2026-11-07",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": 3,
@@ -3442,7 +3138,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Little Farms Taste of Italy Farmers' Market (Tanglin Mall)",
@@ -3452,15 +3149,19 @@
         "name": "Tanglin Mall",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.304843,
+        "lng": 103.823853
       },
       "dates": {
         "start": "2026-11-08",
         "end": "2026-11-08",
         "pattern": "fixed",
         "times": "10am - 3pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -3490,7 +3191,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "The Luggage Market",
@@ -3500,15 +3202,19 @@
         "name": "Aperia Mall, L1 Atrium",
         "address": "12 Kallang Ave, Singapore 339511",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.309711,
+        "lng": 103.864326
       },
       "dates": {
         "start": "2026-11-08",
         "end": "2026-11-08",
         "pattern": "fixed",
         "times": "11am-6pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -3538,7 +3244,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Messy Morning for the Little Ones",
@@ -3548,15 +3255,18 @@
         "name": "National Gallery Singapore",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.290655,
+        "lng": 103.851708
       },
       "dates": {
         "start": "2026-11-09",
         "end": "2026-11-09",
         "pattern": "fixed",
         "times": "10.30am - 11.30am",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -3586,7 +3296,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Christmas Atelier",
@@ -3596,15 +3307,16 @@
         "name": "Marina Bay Sands Convention Centre, Level 1, Hall C",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.283994,
+        "lng": 103.859451
       },
       "dates": {
         "start": "2026-11-12",
         "end": "2026-11-14",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -3634,7 +3346,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Energy Arcade",
@@ -3644,15 +3357,20 @@
         "name": "Junction 8, Level 2 Atrium",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.350481,
+        "lng": 103.84876
       },
       "dates": {
         "start": "2026-11-12",
         "end": "2026-11-15",
         "pattern": "fixed",
         "times": "11am - 9.30pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -3682,7 +3400,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Free Family Screenings at vOilah! French Film Festival 2026",
@@ -3700,7 +3419,8 @@
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -3729,7 +3449,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Joe Hisaishi World Dream Tour",
@@ -3739,15 +3460,16 @@
         "name": "Esplanade and The Star Theatre",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.290205,
+        "lng": 103.855567
       },
       "dates": {
         "start": "2026-11-12",
         "end": "2026-11-14",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -3777,7 +3499,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "The Ultimate Holiday Playdate at Suntec City",
@@ -3787,15 +3510,16 @@
         "name": "Suntec City Atrium (Tower 1 & 2) and Suntec Plaza",
         "address": "3 Temasek Boulevard, Singapore 038983",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.295932,
+        "lng": 103.859014
       },
       "dates": {
         "start": "2026-11-12",
         "end": "2026-12-27",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -3824,7 +3548,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "A Happy Jolly Christmas with PEANUTS at Frasers Property Malls",
@@ -3842,7 +3567,8 @@
         "end": "2026-12-31",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -3872,7 +3598,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "A Sound Not Yet",
@@ -3882,15 +3609,16 @@
         "name": "42 Waterloo Street Blackbox",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.298397,
+        "lng": 103.850923
       },
       "dates": {
         "start": "2026-11-13",
         "end": "2026-11-14",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -3920,7 +3648,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Early READ Fiesta 2026/2027",
@@ -3938,7 +3667,8 @@
         "end": "2027-03-20",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": 0,
@@ -3967,7 +3697,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Early READ Fiesta - Woodlands Library",
@@ -3977,15 +3708,19 @@
         "name": "Woodlands Library",
         "address": null,
         "region": "north",
-        "lat": null,
-        "lng": null
+        "lat": 1.434966,
+        "lng": 103.786857
       },
       "dates": {
         "start": "2026-11-13",
         "end": "2026-11-14",
         "pattern": "fixed",
         "times": "10am - 5pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": 0,
@@ -4015,55 +3750,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Holiday Express: A Magical Journey",
-      "summary": "Tanglin Mall's outdoor Christmas carnival with festive train rides, an elf castle bouncy area and fairground games, plus weekend Christmas markets and nightly snowfall.",
-      "category": "festival",
-      "venue": {
-        "name": "Tanglin Mall",
-        "address": null,
-        "region": "central",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-13",
-        "end": "2027-01-03",
-        "pattern": "fixed",
-        "times": "Snowfall nightly 7.30pm, plus 8.30pm on weekends and selected PH",
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": null,
-        "price_text": null,
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "outdoor",
-      "notes": "Snowfall experience is complimentary.",
-      "id": "ev_16604c6baeb6",
-      "sources": [
-        {
-          "source_id": "littledayout",
-          "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
-          "article_title": "27 Year-End School Holidays 2026 Things To Do: Kid-Friendly Activities For The Family",
-          "published": "2026-11-05"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "No Strings Attached International Festival 2026",
@@ -4073,15 +3761,16 @@
         "name": "Goodman Arts Centre, The Artground White Box",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.304135,
+        "lng": 103.885272
       },
       "dates": {
         "start": "2026-11-13",
         "end": "2026-11-15",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -4111,7 +3800,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Singapore Writers Festival 2026",
@@ -4129,7 +3819,8 @@
         "end": "2026-11-22",
         "pattern": "fixed",
         "times": "Various times",
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -4165,7 +3856,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "The Emperor's New Clothes by Wild Rice",
@@ -4175,15 +3867,16 @@
         "name": "Wild Rice at Funan",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.291348,
+        "lng": 103.84999
       },
       "dates": {
         "start": "2026-11-13",
         "end": "2026-12-21",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -4219,7 +3912,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "The Enchanted Nutcracker at West Mall",
@@ -4229,15 +3923,16 @@
         "name": "West Mall",
         "address": "1 Bukit Batok Central Link, Singapore 658713",
         "region": "west",
-        "lat": null,
-        "lng": null
+        "lat": 1.350021,
+        "lng": 103.749216
       },
       "dates": {
         "start": "2026-11-13",
         "end": "2026-12-31",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -4266,7 +3961,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Body Defenders: Shoo Flu!",
@@ -4276,15 +3972,19 @@
         "name": "The Black Box, KidsSTOP, Science Centre Singapore",
         "address": "21 Jurong Town Hall Road, Singapore 609433",
         "region": "west",
-        "lat": null,
-        "lng": null
+        "lat": 1.335116,
+        "lng": 103.735117
       },
       "dates": {
         "start": "2026-11-14",
         "end": "2027-06-28",
         "pattern": "fixed",
         "times": "10.30am - 1pm (last entry 12.30pm), 2.30pm - 5pm (last entry 4.30pm)",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": 4,
@@ -4313,7 +4013,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-03"
+      "last_seen": "2026-11-03",
+      "fit": "low"
     },
     {
       "title": "Defence Collective Festival 2026",
@@ -4323,15 +4024,19 @@
         "name": "Singapore Discovery Centre, Singapore Navy Museum and Singapore Air Force Museum",
         "address": null,
         "region": "west",
-        "lat": null,
-        "lng": null
+        "lat": 1.332594,
+        "lng": 103.678953
       },
       "dates": {
         "start": "2026-11-14",
         "end": "2026-11-15",
         "pattern": "fixed",
         "times": "10am to 6pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -4373,7 +4078,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Ottie Shares with Those in Need (storytelling)",
@@ -4383,15 +4089,18 @@
         "name": "Children's Museum Singapore, Discovery Room",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.292845,
+        "lng": 103.848705
       },
       "dates": {
         "start": "2026-11-14",
         "end": "2026-11-15",
         "pattern": "fixed",
         "times": "2.45pm to 3.15pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": 4,
@@ -4421,7 +4130,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Pokémon Meet & Greets with Pikachu and friends (14-15 Nov)",
@@ -4431,15 +4141,16 @@
         "name": "Changi Airport Terminal 3 Departure Hall",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.361291,
+        "lng": 103.990606
       },
       "dates": {
         "start": "2026-11-14",
         "end": "2026-11-15",
         "pattern": "fixed",
         "times": "Queue opens 30 min before each session",
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -4469,7 +4180,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Snow Splendours & Holiday Express at Tanglin Mall",
@@ -4479,20 +4191,21 @@
         "name": "Tanglin Mall",
         "address": "163 Tanglin Road, Singapore 247933",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.304843,
+        "lng": 103.823853
       },
       "dates": {
         "start": "2026-11-14",
         "end": "2027-01-01",
         "pattern": "fixed",
         "times": "Snowfall 7.30pm nightly; extra 8.30pm session on weekends and public holidays",
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
         "age_max": null,
-        "toddler_ok": "unclear"
+        "toddler_ok": "yes"
       },
       "cost": {
         "is_free": true,
@@ -4500,7 +4213,7 @@
         "min_sgd": null
       },
       "booking": {
-        "required": null,
+        "required": false,
         "status": null,
         "url": null,
         "opens": null
@@ -4514,49 +4227,13 @@
           "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
           "article_title": "28 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
           "published": "2026-11-02"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Tanglin Mall Holiday Express / Snow Splendours",
-      "summary": "Tanglin Mall's free Christmas showcase opens mid-November and runs to New Year's Day, with evening snowfall sessions.",
-      "category": "festival",
-      "venue": {
-        "name": "Tanglin Mall",
-        "address": null,
-        "region": "central",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-14",
-        "end": "2027-01-01",
-        "pattern": "fixed",
-        "times": "Snowfall sessions in the evenings",
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "yes"
-      },
-      "cost": {
-        "is_free": true,
-        "price_text": "Free",
-        "min_sgd": null
-      },
-      "booking": {
-        "required": false,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "unclear",
-      "notes": "Billed for all ages. Public launch 14 Nov; no ticket stated; evening snowfall sessions can be crowded.",
-      "id": "ev_945058a182de",
-      "sources": [
+        },
+        {
+          "source_id": "littledayout",
+          "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
+          "article_title": "27 Year-End School Holidays 2026 Things To Do: Kid-Friendly Activities For The Family",
+          "published": "2026-11-05"
+        },
         {
           "source_id": "muse",
           "url": "https://www.bykido.com/blogs/events-and-activities/christmas-events-markets-activities-to-explore-with-your-family?srsltid=AfmBOoo4zpAiBvy1P2rlbnRpDp1nCUfP8bEY2x6IIYDTy1ld8AcRGJt9",
@@ -4565,7 +4242,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Telok Blangah Heritage Breakfast Club",
@@ -4585,6 +4263,9 @@
         "times": "9.30am to 11am; 11am to 12.30pm",
         "days": [
           "sat"
+        ],
+        "slots": [
+          "morning"
         ]
       },
       "audience": {
@@ -4615,7 +4296,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "The Mad Kueh Party (Singapore Writers Festival)",
@@ -4625,15 +4307,18 @@
         "name": "Asian Civilisations Museum, Discovery Room",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.287441,
+        "lng": 103.851375
       },
       "dates": {
         "start": "2026-11-14",
         "end": "2026-11-14",
         "pattern": "fixed",
         "times": "2pm (90 minutes)",
-        "days": []
+        "days": [],
+        "slots": [
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": 9,
@@ -4663,7 +4348,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "The Priceless Pantry: Festive Rainbow Sugee Cookies",
@@ -4673,15 +4359,18 @@
         "name": "Lewin Terrace (meet at Children's Museum Singapore lobby)",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.293227,
+        "lng": 103.847905
       },
       "dates": {
         "start": "2026-11-14",
         "end": "2026-11-15",
         "pattern": "fixed",
         "times": "10am to 12.45pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning"
+        ]
       },
       "audience": {
         "age_min": 5,
@@ -4711,7 +4400,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "WonderBot's Rainbow Market",
@@ -4721,15 +4411,19 @@
         "name": "Children's Museum Singapore, Discovery Room",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.292845,
+        "lng": 103.848705
       },
       "dates": {
         "start": "2026-11-14",
         "end": "2026-11-15",
         "pattern": "fixed",
         "times": "11am to 12.30pm, 2pm to 3.30pm, 4pm to 5.30pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": 4,
@@ -4759,7 +4453,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Kampung Cookhouse @ Tiong Bahru",
@@ -4769,8 +4464,8 @@
         "name": "Tiong Bahru Community Centre, Culinary Studio (Level 1)",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.283049,
+        "lng": 103.832197
       },
       "dates": {
         "start": "2026-11-15",
@@ -4779,6 +4474,10 @@
         "times": "11am to 1pm",
         "days": [
           "sun"
+        ],
+        "slots": [
+          "morning",
+          "afternoon"
         ]
       },
       "audience": {
@@ -4809,7 +4508,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Kampung Play (15 Nov)",
@@ -4819,15 +4519,16 @@
         "name": "Kampung Kampus",
         "address": "11 Chencharu Close, Singapore 769287",
         "region": "north",
-        "lat": null,
-        "lng": null
+        "lat": 1.415391,
+        "lng": 103.829828
       },
       "dates": {
         "start": "2026-11-15",
         "end": "2026-11-15",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -4857,7 +4558,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "A Sweet Christmas at Downtown East",
@@ -4867,15 +4569,16 @@
         "name": "Downtown East",
         "address": "1 Pasir Ris Close, Singapore 519599",
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.379127,
+        "lng": 103.955445
       },
       "dates": {
         "start": "2026-11-16",
         "end": "2026-12-31",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -4916,7 +4619,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Christmas on a Great Street 2026",
@@ -4926,15 +4630,16 @@
         "name": "Orchard Road",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.303228,
+        "lng": 103.83668
       },
       "dates": {
         "start": "2026-11-17",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -4970,7 +4675,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Marina Square 40th Anniversary Monopoly Celebration",
@@ -4980,15 +4686,16 @@
         "name": "Level 2 Central Atrium, Marina Square",
         "address": "6 Raffles Boulevard, Singapore 039594",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.291855,
+        "lng": 103.858578
       },
       "dates": {
         "start": "2026-11-18",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": "Bubble show daily at 7pm, 7.30pm and 8pm",
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5018,7 +4725,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Our Climate-Ready Home",
@@ -5028,15 +4736,16 @@
         "name": "Kampung Admiralty",
         "address": null,
         "region": "north",
-        "lat": null,
-        "lng": null
+        "lat": 1.439578,
+        "lng": 103.801145
       },
       "dates": {
         "start": "2026-11-18",
         "end": "2026-11-22",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5065,7 +4774,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Almost December: Christmas 2026 Marketplace",
@@ -5075,15 +4785,16 @@
         "name": "Far East Flora Centre",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.32788,
+        "lng": 103.775991
       },
       "dates": {
         "start": "2026-11-20",
         "end": "2026-11-22",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5113,7 +4824,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Gardens by the Bay Christmas Train Show",
@@ -5123,15 +4835,16 @@
         "name": "Flower Dome, Gardens by the Bay",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.28462,
+        "lng": 103.864735
       },
       "dates": {
         "start": "2026-11-20",
         "end": "2026-11-30",
         "pattern": "open_ended",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5161,7 +4874,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Home Team Festival 2026",
@@ -5171,15 +4885,16 @@
         "name": "Suntec Convention Centre",
         "address": "Level 3 Concourse & Level 4 Hall 401-406",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.293504,
+        "lng": 103.857195
       },
       "dates": {
         "start": "2026-11-20",
         "end": "2026-11-22",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5215,7 +4930,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Built to Chill: LEGO Pop-up at KidsSTOP",
@@ -5225,15 +4941,19 @@
         "name": "KidsSTOP Lobby, Science Centre Singapore",
         "address": "21 Jurong Town Hall Road, Singapore 609433",
         "region": "west",
-        "lat": null,
-        "lng": null
+        "lat": 1.335116,
+        "lng": 103.735117
       },
       "dates": {
         "start": "2026-11-21",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": "10am - 5pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon"
+        ]
       },
       "audience": {
         "age_min": 1.5,
@@ -5262,7 +4982,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-03"
+      "last_seen": "2026-11-03",
+      "fit": "great"
     },
     {
       "title": "Grandparents' Day Celebrations at National Museum of Singapore",
@@ -5272,8 +4993,8 @@
         "name": "National Museum of Singapore",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.29672,
+        "lng": 103.848511
       },
       "dates": {
         "start": "2026-11-21",
@@ -5282,7 +5003,8 @@
         "times": null,
         "days": [
           "sat"
-        ]
+        ],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5312,7 +5034,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Pokémon Meet & Greets with Pikachu and friends (21-22 Nov)",
@@ -5322,15 +5045,16 @@
         "name": "Changi Airport Terminal 3 Departure Hall",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.361291,
+        "lng": 103.990606
       },
       "dates": {
         "start": "2026-11-21",
         "end": "2026-11-22",
         "pattern": "fixed",
         "times": "Queue opens 30 min before each session",
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5360,7 +5084,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Stories in Stone: Katong-Joo Chiat Built Heritage and Historical Tour",
@@ -5370,8 +5095,8 @@
         "name": "Koon Seng Road Peranakan Houses (meeting point)",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.310902,
+        "lng": 103.903384
       },
       "dates": {
         "start": "2026-11-21",
@@ -5380,7 +5105,8 @@
         "times": "Various timings",
         "days": [
           "sat"
-        ]
+        ],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5410,7 +5136,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "The Model Car Show Singapore",
@@ -5420,15 +5147,16 @@
         "name": "*SCAPE",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.301011,
+        "lng": 103.835724
       },
       "dates": {
         "start": "2026-11-21",
         "end": "2026-11-22",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5458,7 +5186,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Walk for Hope 2026",
@@ -5468,8 +5197,8 @@
         "name": "YWCA @ Fort Canning (start and finish)",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.297499,
+        "lng": 103.845001
       },
       "dates": {
         "start": "2026-11-21",
@@ -5478,7 +5207,8 @@
         "times": null,
         "days": [
           "sat"
-        ]
+        ],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5508,7 +5238,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "British Council Year-End Holiday Camps",
@@ -5518,15 +5249,16 @@
         "name": "British Council (Toa Payoh or Napier Road)",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.30507,
+        "lng": 103.821463
       },
       "dates": {
         "start": "2026-11-23",
         "end": "2026-12-18",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5556,7 +5288,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Affordable Art Fair Singapore 2026",
@@ -5566,15 +5299,16 @@
         "name": "F1 Pit Building",
         "address": "1 Republic Boulevard, Singapore 038975",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.291372,
+        "lng": 103.863902
       },
       "dates": {
         "start": "2026-11-26",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5610,7 +5344,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "AIA HYROX Singapore and HYROX Youngstars",
@@ -5620,15 +5355,16 @@
         "name": "Singapore EXPO",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.334402,
+        "lng": 103.96036
       },
       "dates": {
         "start": "2026-11-26",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": 8,
@@ -5658,7 +5394,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "The Nutcracker by the State Ballet of Georgia",
@@ -5668,15 +5405,16 @@
         "name": "Sands Theatre, Marina Bay Sands",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.28523,
+        "lng": 103.860023
       },
       "dates": {
         "start": "2026-11-26",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5717,61 +5455,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "A Universal Christmas",
-      "summary": "Universal Studios Singapore's festive season with a dessert-themed Hollywood Boulevard, a 10m sweets Christmas tree, a new musical show and meet-and-greets with Santa, Hello Kitty and Kuromi.",
-      "category": "festival",
-      "venue": {
-        "name": "Universal Studios Singapore",
-        "address": null,
-        "region": "central",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-27",
-        "end": "2027-01-03",
-        "pattern": "fixed",
-        "times": null,
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": null,
-        "price_text": null,
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": "https://www.rwsentosa.com/en/guide-to-fun/christmas-season-of-joy-official-guide#universal-christmas",
-        "opens": null
-      },
-      "setting": "outdoor",
-      "notes": null,
-      "id": "ev_efad88751698",
-      "sources": [
-        {
-          "source_id": "littledayout",
-          "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
-          "article_title": "27 Year-End School Holidays 2026 Things To Do: Kid-Friendly Activities For The Family",
-          "published": "2026-11-05"
-        },
-        {
-          "source_id": "littledayout",
-          "url": "https://www.littledayout.com/new-family-kid-friendly-things-to-do-in-november-singapore/",
-          "article_title": "47 New Family-Friendly Things To Do In November 2026 With Kids In Singapore",
-          "published": "2026-11-04"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "A Universal Christmas at Universal Studios Singapore",
@@ -5781,15 +5466,16 @@
         "name": "Universal Studios Singapore, Resorts World Sentosa",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.25629,
+        "lng": 103.819935
       },
       "dates": {
         "start": "2026-11-27",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5803,7 +5489,7 @@
       },
       "booking": {
         "required": null,
-        "url": null,
+        "url": "https://www.rwsentosa.com/en/guide-to-fun/christmas-season-of-joy-official-guide#universal-christmas",
         "opens": null
       },
       "setting": "outdoor",
@@ -5815,10 +5501,23 @@
           "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
           "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
           "published": "2026-11-02"
+        },
+        {
+          "source_id": "littledayout",
+          "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
+          "article_title": "27 Year-End School Holidays 2026 Things To Do: Kid-Friendly Activities For The Family",
+          "published": "2026-11-05"
+        },
+        {
+          "source_id": "littledayout",
+          "url": "https://www.littledayout.com/new-family-kid-friendly-things-to-do-in-november-singapore/",
+          "article_title": "47 New Family-Friendly Things To Do In November 2026 With Kids In Singapore",
+          "published": "2026-11-04"
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Anime Festival Asia Singapore 2026",
@@ -5828,15 +5527,16 @@
         "name": "Suntec Singapore Hall 401-406",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.295932,
+        "lng": 103.859014
       },
       "dates": {
         "start": "2026-11-27",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -5872,55 +5572,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Christmas Together 2026",
-      "summary": "A large Christmas village with 150 brands, festive shopping, food, performances and giving activities supporting Singapore Red Cross Young Hearts.",
-      "category": "market",
-      "venue": {
-        "name": "Sands Expo & Convention Centre, Hall F, Marina Bay Sands",
-        "address": null,
-        "region": "central",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-27",
-        "end": "2026-11-29",
-        "pattern": "fixed",
-        "times": null,
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": null,
-        "price_text": null,
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": "https://sustainablemarkets.sg/",
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": null,
-      "id": "ev_3ec644679674",
-      "sources": [
-        {
-          "source_id": "littledayout",
-          "url": "https://www.littledayout.com/new-family-kid-friendly-things-to-do-in-november-singapore/",
-          "article_title": "47 New Family-Friendly Things To Do In November 2026 With Kids In Singapore",
-          "published": "2026-11-04"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Christmas Together 2026: A Singaporean Christmas Village",
@@ -5930,15 +5583,20 @@
         "name": "Hall F, Sands Expo & Convention Centre, Marina Bay Sands",
         "address": "10 Bayfront Ave, Singapore 018956",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.282397,
+        "lng": 103.858405
       },
       "dates": {
         "start": "2026-11-27",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": "10am - 9pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -5965,10 +5623,17 @@
           "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
           "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
           "published": "2026-11-02"
+        },
+        {
+          "source_id": "littledayout",
+          "url": "https://www.littledayout.com/new-family-kid-friendly-things-to-do-in-november-singapore/",
+          "article_title": "47 New Family-Friendly Things To Do In November 2026 With Kids In Singapore",
+          "published": "2026-11-04"
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Christmas Wonderland 2026",
@@ -5978,15 +5643,16 @@
         "name": "Gardens by the Bay",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.284589,
+        "lng": 103.864657
       },
       "dates": {
         "start": "2026-11-27",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6022,55 +5688,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Glowcean Wonderland",
-      "summary": "Singapore Oceanarium dresses up for Christmas with marine-glow decorations, a manta ray stamp trail and glass-neon sculptures.",
-      "category": "exhibition",
-      "venue": {
-        "name": "Singapore Oceanarium",
-        "address": null,
-        "region": "central",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-27",
-        "end": "2027-01-03",
-        "pattern": "fixed",
-        "times": "Sculptures 10am-8pm daily",
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": null,
-        "price_text": null,
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "indoor",
-      "notes": null,
-      "id": "ev_c75b47bbb85a",
-      "sources": [
-        {
-          "source_id": "littledayout",
-          "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
-          "article_title": "27 Year-End School Holidays 2026 Things To Do: Kid-Friendly Activities For The Family",
-          "published": "2026-11-05"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Glowcean Wonderland at Singapore Oceanarium",
@@ -6080,15 +5699,20 @@
         "name": "Singapore Oceanarium, Resorts World Sentosa",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.25629,
+        "lng": 103.819935
       },
       "dates": {
         "start": "2026-11-27",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": "10am to 8pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -6120,10 +5744,17 @@
           "url": "https://www.littledayout.com/new-family-kid-friendly-things-to-do-in-november-singapore/",
           "article_title": "47 New Family-Friendly Things To Do In November 2026 With Kids In Singapore",
           "published": "2026-11-04"
+        },
+        {
+          "source_id": "littledayout",
+          "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
+          "article_title": "27 Year-End School Holidays 2026 Things To Do: Kid-Friendly Activities For The Family",
+          "published": "2026-11-05"
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "IHC Special Thematic Tours",
@@ -6133,15 +5764,18 @@
         "name": "Indian Heritage Centre",
         "address": "5 Campbell Lane",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.305681,
+        "lng": 103.852252
       },
       "dates": {
         "start": "2026-11-27",
         "end": "2026-11-27",
         "pattern": "fixed",
         "times": "11am, last Friday of the month",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -6171,25 +5805,27 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
-      "title": "K-Wave Christmas",
-      "summary": "Adventure Cove Waterpark adds a DJ playing K-pop and Christmas songs, themed poolside activities and Korean-inspired festive snacks.",
+      "title": "K-Wave Christmas at Adventure Cove",
+      "summary": "Adventure Cove Waterpark adds K-pop and Christmas music from a resident DJ, themed poolside activities and Korean-inspired festive snacks.",
       "category": "festival",
       "venue": {
-        "name": "Adventure Cove Waterpark, Resorts World Sentosa",
+        "name": "Adventure Cove Waterpark",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.254989,
+        "lng": 103.820285
       },
       "dates": {
         "start": "2026-11-27",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6209,8 +5845,14 @@
       },
       "setting": "outdoor",
       "notes": null,
-      "id": "ev_a886bc6a344e",
+      "id": "ev_f7459ab5fde2",
       "sources": [
+        {
+          "source_id": "littledayout",
+          "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
+          "article_title": "27 Year-End School Holidays 2026 Things To Do: Kid-Friendly Activities For The Family",
+          "published": "2026-11-05"
+        },
         {
           "source_id": "littledayout",
           "url": "https://www.littledayout.com/new-family-kid-friendly-things-to-do-in-november-singapore/",
@@ -6219,55 +5861,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "K-Wave Christmas at Adventure Cove",
-      "summary": "Adventure Cove Waterpark adds K-pop and Christmas music from a resident DJ, themed poolside activities and Korean-inspired festive snacks.",
-      "category": "festival",
-      "venue": {
-        "name": "Adventure Cove Waterpark",
-        "address": null,
-        "region": "central",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-27",
-        "end": "2027-01-03",
-        "pattern": "fixed",
-        "times": null,
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": null,
-        "price_text": null,
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": null,
-        "opens": null
-      },
-      "setting": "outdoor",
-      "notes": null,
-      "id": "ev_f7459ab5fde2",
-      "sources": [
-        {
-          "source_id": "littledayout",
-          "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
-          "article_title": "27 Year-End School Holidays 2026 Things To Do: Kid-Friendly Activities For The Family",
-          "published": "2026-11-05"
-        }
-      ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Season of Joy at WEAVE: Colours of our Wishes",
@@ -6277,15 +5872,16 @@
         "name": "WEAVE, Resorts World Sentosa",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.25629,
+        "lng": 103.819935
       },
       "dates": {
         "start": "2026-11-27",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6314,7 +5910,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Enabling Lives Festival 2026",
@@ -6324,15 +5921,16 @@
         "name": "Enabling Village and Redhill",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.286956,
+        "lng": 103.814778
       },
       "dates": {
         "start": "2026-11-28",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6368,7 +5966,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "i'mable Collective Market",
@@ -6378,15 +5977,16 @@
         "name": "UOB Ability Hub, Enabling Village",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.286956,
+        "lng": 103.814778
       },
       "dates": {
         "start": "2026-11-28",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6416,7 +6016,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Kampong Kakee Carnival at One Punggol",
@@ -6426,15 +6027,20 @@
         "name": "One Punggol",
         "address": "1 Punggol Drive, Singapore 828629",
         "region": "north_east",
-        "lat": null,
-        "lng": null
+        "lat": 1.408728,
+        "lng": 103.905155
       },
       "dates": {
         "start": "2026-11-28",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": "11am - 9pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -6448,7 +6054,7 @@
       },
       "booking": {
         "required": null,
-        "url": null,
+        "url": "https://www.facebook.com/OnePunggol",
         "opens": null
       },
       "setting": "outdoor",
@@ -6460,49 +6066,7 @@
           "url": "https://www.bykido.com/blogs/events-and-activities/events-things-to-do-year-end-school-holidays",
           "article_title": "22 Events and Fun Things to do for Families this Year-End School Holidays in Singapore [2026 UPDATED]",
           "published": "2026-11-02"
-        }
-      ],
-      "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
-    },
-    {
-      "title": "Kampong Kakee Karnival",
-      "summary": "A two-day community carnival by POWER 98FM with entertainment and activities for families during the school break.",
-      "category": "festival",
-      "venue": {
-        "name": "One Punggol (Celebration Square and The Plaza)",
-        "address": null,
-        "region": "north_east",
-        "lat": null,
-        "lng": null
-      },
-      "dates": {
-        "start": "2026-11-28",
-        "end": "2026-11-29",
-        "pattern": "fixed",
-        "times": null,
-        "days": []
-      },
-      "audience": {
-        "age_min": null,
-        "age_max": null,
-        "toddler_ok": "unclear"
-      },
-      "cost": {
-        "is_free": null,
-        "price_text": null,
-        "min_sgd": null
-      },
-      "booking": {
-        "required": null,
-        "status": null,
-        "url": "https://www.facebook.com/OnePunggol",
-        "opens": null
-      },
-      "setting": "unclear",
-      "notes": null,
-      "id": "ev_87f1588ff32a",
-      "sources": [
+        },
         {
           "source_id": "littledayout",
           "url": "https://www.littledayout.com/year-end-school-holidays-kid-friendly-things-to-do-singapore/",
@@ -6516,8 +6080,9 @@
           "published": "2026-11-04"
         }
       ],
-      "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "first_seen": "2026-11-03",
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "More than Human: Making With the Living World",
@@ -6527,15 +6092,16 @@
         "name": "ArtScience Museum, Marina Bay Sands",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.286224,
+        "lng": 103.859271
       },
       "dates": {
         "start": "2026-11-28",
         "end": "2027-05-16",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6564,7 +6130,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Singapore Cat Festival (28-29 Nov)",
@@ -6574,15 +6141,20 @@
         "name": "Singapore EXPO Hall 6",
         "address": "1 Expo Dr, Singapore 486150",
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.334402,
+        "lng": 103.96036
       },
       "dates": {
         "start": "2026-11-28",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": "11am-9pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning",
+          "afternoon",
+          "evening"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -6612,7 +6184,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "SJ60 Musubi Singapore-Japan Festival 2026",
@@ -6622,15 +6195,16 @@
         "name": "Marina Bay Sands, Exhibition Hall D/E",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.283994,
+        "lng": 103.859451
       },
       "dates": {
         "start": "2026-11-28",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6660,7 +6234,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "PULSE 2026 Family Charity Sports Day",
@@ -6670,15 +6245,18 @@
         "name": "National Stadium Singapore",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.304698,
+        "lng": 103.873563
       },
       "dates": {
         "start": "2026-11-29",
         "end": "2026-11-29",
         "pattern": "fixed",
         "times": "8.30am - 12.30pm",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning"
+        ]
       },
       "audience": {
         "age_min": null,
@@ -6708,7 +6286,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "DINO-A-LIVE: Dinosaur Odyssey",
@@ -6718,15 +6297,16 @@
         "name": "Resorts World Sentosa",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.25629,
+        "lng": 103.819935
       },
       "dates": {
         "start": "2026-12-03",
         "end": "2026-12-06",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6755,7 +6335,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "GalleryToddlers! (December session)",
@@ -6765,15 +6346,18 @@
         "name": "National Gallery Singapore, Keppel Centre for Art Education",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.290655,
+        "lng": 103.851708
       },
       "dates": {
         "start": "2026-12-05",
         "end": "2026-12-05",
         "pattern": "fixed",
         "times": "10.30am & 11.30am",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning"
+        ]
       },
       "audience": {
         "age_min": 2,
@@ -6803,7 +6387,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "great"
     },
     {
       "title": "Pokémon Meet & Greets with Pikachu and friends (5-6 Dec)",
@@ -6813,15 +6398,16 @@
         "name": "Changi Airport Terminal 3 Departure Hall",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.361291,
+        "lng": 103.990606
       },
       "dates": {
         "start": "2026-12-05",
         "end": "2026-12-06",
         "pattern": "fixed",
         "times": "Queue opens 30 min before each session",
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6851,7 +6437,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "TOTally Science: Santa's Glowing Christmas Rescue",
@@ -6861,15 +6448,18 @@
         "name": "KidsSTOP, Science Centre Singapore",
         "address": "21 Jurong Town Hall Road, Singapore 609433",
         "region": "west",
-        "lat": null,
-        "lng": null
+        "lat": 1.335116,
+        "lng": 103.735117
       },
       "dates": {
         "start": "2026-12-05",
         "end": "2026-12-05",
         "pattern": "fixed",
         "times": "10am - 11.30am",
-        "days": []
+        "days": [],
+        "slots": [
+          "morning"
+        ]
       },
       "audience": {
         "age_min": 2,
@@ -6898,7 +6488,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-03"
+      "last_seen": "2026-11-03",
+      "fit": "great"
     },
     {
       "title": "A Christmas Story by World Christmas Market",
@@ -6908,15 +6499,16 @@
         "name": "Fort Canning Park & METT Hotel Singapore",
         "address": "11 Canning Rise, Singapore 179881",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.292516,
+        "lng": 103.847682
       },
       "dates": {
         "start": "2026-12-10",
         "end": "2027-01-03",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6945,7 +6537,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Pop after Pop: Art around Us",
@@ -6955,15 +6548,16 @@
         "name": "National Gallery Singapore",
         "address": "Level 3, City Hall Wing and other spaces",
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.290655,
+        "lng": 103.851708
       },
       "dates": {
         "start": "2026-12-11",
         "end": "2027-04-04",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -6993,7 +6587,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "SSO Christmas Concert",
@@ -7003,15 +6598,16 @@
         "name": "Esplanade Concert Hall",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.289544,
+        "lng": 103.855171
       },
       "dates": {
         "start": "2026-12-11",
         "end": "2026-12-12",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -7040,7 +6636,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "Pokémon Meet & Greets with Pikachu and friends (12-13 Dec)",
@@ -7050,15 +6647,16 @@
         "name": "Changi Airport Terminal 3 Departure Hall",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.361291,
+        "lng": 103.990606
       },
       "dates": {
         "start": "2026-12-12",
         "end": "2026-12-13",
         "pattern": "fixed",
         "times": "Queue opens 30 min before each session",
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -7088,7 +6686,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Camp Asia Winter Fantasy Camp",
@@ -7098,15 +6697,16 @@
         "name": "Australian International School or Stamford American International School",
         "address": null,
         "region": "north_east",
-        "lat": null,
-        "lng": null
+        "lat": 1.347707,
+        "lng": 103.859409
       },
       "dates": {
         "start": "2026-12-14",
         "end": "2027-01-08",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": 3,
@@ -7136,7 +6736,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "On My Own: Nathania Ong with the Singapore Symphony",
@@ -7146,15 +6747,16 @@
         "name": "Esplanade Concert Hall",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.289544,
+        "lng": 103.855171
       },
       "dates": {
         "start": "2026-12-17",
         "end": "2026-12-18",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -7183,7 +6785,8 @@
         }
       ],
       "first_seen": "2026-11-03",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     },
     {
       "title": "The Story of Studio Ghibli Exhibition",
@@ -7193,15 +6796,16 @@
         "name": "West Lawn, Gardens by the Bay",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.284589,
+        "lng": 103.864657
       },
       "dates": {
         "start": "2026-12-18",
         "end": "2027-07-04",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -7231,7 +6835,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Pokémon Meet & Greets with Pikachu and friends (19-20 Dec)",
@@ -7241,15 +6846,16 @@
         "name": "Changi Airport Terminal 3 Departure Hall",
         "address": null,
         "region": "east",
-        "lat": null,
-        "lng": null
+        "lat": 1.361291,
+        "lng": 103.990606
       },
       "dates": {
         "start": "2026-12-19",
         "end": "2026-12-20",
         "pattern": "fixed",
         "times": "Queue opens 30 min before each session",
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -7279,7 +6885,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "Kampung Play (20 Dec)",
@@ -7289,15 +6896,16 @@
         "name": "Kampung Kampus",
         "address": "11 Chencharu Close, Singapore 769287",
         "region": "north",
-        "lat": null,
-        "lng": null
+        "lat": 1.415391,
+        "lng": 103.829828
       },
       "dates": {
         "start": "2026-12-20",
         "end": "2026-12-20",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -7327,7 +6935,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "ok"
     },
     {
       "title": "D23 Asia: The Ultimate Disney Fan Event",
@@ -7337,15 +6946,16 @@
         "name": "Marina Bay Sands",
         "address": null,
         "region": "central",
-        "lat": null,
-        "lng": null
+        "lat": 1.283994,
+        "lng": 103.859451
       },
       "dates": {
         "start": "2027-06-25",
         "end": "2027-06-27",
         "pattern": "fixed",
         "times": null,
-        "days": []
+        "days": [],
+        "slots": []
       },
       "audience": {
         "age_min": null,
@@ -7375,7 +6985,8 @@
         }
       ],
       "first_seen": "2026-11-05",
-      "last_seen": "2026-11-05"
+      "last_seen": "2026-11-05",
+      "fit": "low"
     }
   ]
 }
