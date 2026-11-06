@@ -19,7 +19,7 @@ distance from Marine Parade.
 | Muse's weekly Instagram digest by email (`refresh/add_article.py`) | Works; the 5 Nov run read the 4 Nov email through Gmail (read-only tools) |
 | Places directory | Not started |
 | Web page (`site/`) | Second version 5 Nov 2026: picks, map, weather, filters; private claude.ai preview; hosting not set up |
-| Weekly email (`refresh/mail.py`, `refresh/plan.py`) | Built 6 Nov 2026; one sample sent to the owner; sending is not automated yet |
+| Weekly email (`refresh/mail.py`, `refresh/plan.py`) | First sent 6 Nov 2026; scheduled task "Weekend email" sends it every Thursday at about 4:35pm SGT |
 
 ## Decisions
 
@@ -84,6 +84,12 @@ Hosting is not set up yet. On Cloudflare Pages: connect this repo, build command
 with NEA's forecast, up to six picks, up to eight more events for the weekend, what to book in
 the next six weeks, and the top three for each of the next three weekends. The HTML has tables
 and inline styles only, with no images or scripts, because mail apps drop most other CSS.
+
+A second scheduled task, "Weekend email", runs every Thursday at about 4:35pm Singapore time,
+after the 2:39pm refresh. It pulls `main`, runs `python -m refresh.mail` and sends the result
+through the Gmail connector. Its only Gmail permission is sending: the event text it handles
+comes from web pages, so it gets no way to read the inbox. The recipient is in the task's
+settings, not in this repository.
 
 ## Development
 
