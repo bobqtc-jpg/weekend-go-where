@@ -17,20 +17,20 @@ from __future__ import annotations
 import json
 import math
 import sys
-import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from refresh.common import CONFIG_DIR, EVENTS_FILE, load_json, load_yaml, sg_now  # noqa: E402
+from refresh.common import EVENTS_FILE, load_json, sg_now  # noqa: E402
+from refresh.plan import load_settings  # noqa: E402
+from refresh.weather import forecast  # noqa: E402
 
 TEMPLATE = ROOT / "site" / "template.html"
 OUTLINE = ROOT / "site" / "singapore.json"
 DIST = ROOT / "dist"
 MARKER = "<!--BODY-->"
 PLACEHOLDER = "/*__DATA__*/null"
-FORECAST_URL = "https://api-open.data.gov.sg/v2/real-time/api/four-day-outlook"
 MAP_WIDTH = 1000  # SVG user units; the page scales it to fit
 
 
@@ -52,42 +52,13 @@ def singapore_map() -> dict:
             "credit": "Map outline: geoBoundaries, from URA data (ODbL)"}
 
 
-def forecast() -> dict | None:
-    """NEA's four-day outlook by date, or None when it cannot be fetched."""
-    req = urllib.request.Request(FORECAST_URL, headers={"User-Agent": "weekend-go-where/0.1"})
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            record = json.load(resp)["data"]["records"][0]
-    except Exception as exc:  # the page works without it
-        print(f"Forecast left out: {type(exc).__name__}: {exc}", file=sys.stderr)
-        return None
-    days = {
-        f["timestamp"][:10]: {
-            "summary": f["forecast"]["summary"],
-            "text": f["forecast"]["text"],
-            "low": f["temperature"]["low"],
-            "high": f["temperature"]["high"],
-        }
-        for f in record["forecasts"]
-    }
-    return {"issued": record.get("updatedTimestamp") or record.get("timestamp"), "days": days}
-
-
 def page_data() -> dict:
-    settings = load_yaml(CONFIG_DIR / "settings.yaml")
-    planning, home = settings.get("planning", {}), settings.get("home", {})
     store = load_json(EVENTS_FILE, {"updated": None, "events": []})
     return {
         "updated": store["updated"],
         "built": sg_now().isoformat(timespec="minutes"),
         "events": store["events"],
-        "settings": {
-            "limited_max_days": int(planning.get("limited_max_days", 42)),
-            "last_chance_days": int(planning.get("last_chance_days", 14)),
-            # YAML reads the date keys as dates; the page wants ISO strings.
-            "public_holidays": {str(k): str(v) for k, v in (planning.get("public_holidays") or {}).items()},
-            "home": {"label": home.get("label", "Home"), "lat": home.get("lat"), "lng": home.get("lng")},
-        },
+        "settings": load_settings(),
         "map": singapore_map(),
         "forecast": forecast(),
     }

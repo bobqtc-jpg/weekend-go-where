@@ -326,7 +326,8 @@ const WGW_DATA = /*__DATA__*/null;
   }
 
   // Picks: great events first, favouring ones that end soon, are near home, are free and say
-  // they suit toddlers; at most one per place, never fully booked.
+  // they suit toddlers; at most one per place, never fully booked. refresh/plan.py has the same
+  // rules for the weekly email, so change both together.
   function pickScore(e, wk) {
     let s = 0;
     const kind = classify(e, wk.sat);

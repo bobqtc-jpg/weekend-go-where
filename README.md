@@ -19,6 +19,7 @@ distance from Marine Parade.
 | Muse's weekly Instagram digest by email (`refresh/add_article.py`) | Works; the 5 Nov run read the 4 Nov email through Gmail (read-only tools) |
 | Places directory | Not started |
 | Web page (`site/`) | Second version 5 Nov 2026: picks, map, weather, filters; private claude.ai preview; hosting not set up |
+| Weekly email (`refresh/mail.py`, `refresh/plan.py`) | Built 6 Nov 2026; one sample sent to the owner; sending is not automated yet |
 
 ## Decisions
 
@@ -27,7 +28,7 @@ distance from Marine Parade.
 | Kids | One toddler; the default filter is "suits a 2-year-old" |
 | Home | Marine Parade; MRT, bus and car all fine |
 | Hosting | Private web app with a login limited to two emails; shared lists in v2 |
-| Planning | Thursdays, in the app; no Telegram or digest |
+| Planning | Thursdays, by email, with the web page for more detail; no Telegram |
 | Claude | The owner's Max plan, through a scheduled Claude Code task; no API key |
 | Sources | Sassy Mama, Little Day Out, ByKido, Honeykids Asia, Sunny City Kids, and Muse's Instagram digest (emailed Wednesday evenings, read through Gmail). Time Out was dropped: its new site refuses automated readers |
 | Filters | No dietary filter; paid indoor playgrounds included |
@@ -76,6 +77,14 @@ Hosting is not set up yet. On Cloudflare Pages: connect this repo, build command
 `pip install pyyaml && python3 site/build.py`, output directory `dist`. Every Thursday push of
 `data/` then rebuilds the page. Cloudflare Access can limit it to two email addresses.
 
+## The weekly email
+
+`python -m refresh.mail` writes `dist/email.html`, `dist/email.txt` (its plain-text copy) and
+`dist/email-subject.txt`. It uses the same rules as the page, from `refresh/plan.py`: the days
+with NEA's forecast, up to six picks, up to eight more events for the weekend, what to book in
+the next six weeks, and the top three for each of the next three weekends. The HTML has tables
+and inline styles only, with no images or scripts, because mail apps drop most other CSS.
+
 ## Development
 
 ```bash
@@ -89,6 +98,7 @@ python -m refresh.geocode    # map positions for new venues, from OneMap
 python -m refresh.validate
 python -m refresh.preview    # the coming weekend's events, best fit first
 python site/build.py         # the web page, into dist/
+python -m refresh.mail       # the weekly email, into dist/
 ```
 
 ## Network access
